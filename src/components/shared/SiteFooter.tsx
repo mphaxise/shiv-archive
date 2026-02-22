@@ -31,7 +31,11 @@ export function SiteFooter({
         Last updated: <strong>{lastUpdated}</strong>
       </p>
       <p>
-        Contact: <a href="mailto:praneet.koppula@gmail.com">praneet.koppula@gmail.com</a> |
+        LinkedIn:{" "}
+        <a href="https://www.linkedin.com/in/praneetkoppula/" target="_blank" rel="noreferrer">
+          linkedin.com/in/praneetkoppula
+        </a>{" "}
+        |
         GitHub:{" "}
         <a href="https://github.com/mphaxise/shiv-archive" target="_blank" rel="noreferrer">
           github.com/mphaxise/shiv-archive
