@@ -1116,6 +1116,254 @@ body {
   text-decoration: underline;
 }
 
+.longformArticle {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(248, 252, 251, 0.9);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.longformHeader {
+  display: grid;
+  gap: 0.44rem;
+  border-bottom: 1px solid rgba(71, 90, 98, 0.2);
+  padding-bottom: 0.76rem;
+}
+
+.longformKicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #3c6771;
+}
+
+.longformHeader h1 {
+  margin: 0;
+  font-family: "Spectral", "Times New Roman", serif;
+  font-size: clamp(1.42rem, 2.1vw, 2rem);
+  line-height: 1.14;
+}
+
+.longformLead {
+  margin: 0;
+  color: #2f444c;
+  line-height: 1.56;
+  font-size: 0.99rem;
+}
+
+.longformMeta {
+  margin: 0;
+  color: #4a5d64;
+  font-size: 0.84rem;
+}
+
+.republicContextIntro {
+  display: grid;
+  gap: 0.52rem;
+}
+
+.republicContextIntro h2 {
+  margin: 0;
+  font-family: "Spectral", "Times New Roman", serif;
+  font-size: 1.16rem;
+  line-height: 1.24;
+}
+
+.republicContextGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.56rem;
+}
+
+.republicContextCard {
+  border: 1px solid rgba(65, 84, 92, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 0.7rem;
+  display: grid;
+  gap: 0.34rem;
+}
+
+.republicContextCard p {
+  margin: 0;
+  color: #33464d;
+  line-height: 1.58;
+  font-size: 0.89rem;
+}
+
+.republicContextLabel {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #3f6770;
+}
+
+.longformSection {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.longformSection h2 {
+  margin: 0;
+  font-family: "Spectral", "Times New Roman", serif;
+  font-size: 1.2rem;
+  line-height: 1.23;
+}
+
+.longformSection p {
+  margin: 0;
+  line-height: 1.6;
+  color: #35474f;
+  font-size: 0.93rem;
+}
+
+.longformStatList {
+  margin: 0;
+  padding-left: 1.08rem;
+  display: grid;
+  gap: 0.24rem;
+  color: #3e4f56;
+  font-size: 0.88rem;
+  line-height: 1.46;
+}
+
+.longformThemeBlock {
+  margin-top: 0.35rem;
+  border-top: 1px solid rgba(70, 89, 97, 0.18);
+  padding-top: 0.58rem;
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 0.62rem;
+  align-items: start;
+}
+
+.longformConnectorPanel {
+  border: 1px solid rgba(53, 78, 90, 0.28);
+  border-left: 4px solid rgba(29, 103, 114, 0.8);
+  border-radius: 12px;
+  padding: 0.62rem 0.66rem;
+  background: linear-gradient(145deg, rgba(241, 250, 249, 0.94), rgba(234, 245, 247, 0.88));
+  box-shadow: 0 10px 26px rgba(10, 17, 20, 0.12);
+  display: grid;
+  gap: 0.34rem;
+  position: sticky;
+  top: 0.8rem;
+}
+
+.longformConnectorLabel {
+  margin: 0;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #2f5f6b;
+}
+
+.longformConnectorPanel h3 {
+  margin: 0;
+  font-family: "Spectral", "Times New Roman", serif;
+  font-size: 1.06rem;
+  line-height: 1.28;
+  color: #223840;
+}
+
+.longformConnectorText {
+  margin: 0;
+  color: #2e4750;
+  line-height: 1.58;
+  font-size: 0.88rem;
+}
+
+.longformConnectorMeta {
+  margin: 0;
+  width: fit-content;
+  border: 1px solid rgba(51, 78, 88, 0.28);
+  border-radius: 8px;
+  padding: 0.14rem 0.46rem;
+  color: #335864;
+  font-size: 0.73rem;
+  letter-spacing: 0.02em;
+  background: rgba(248, 252, 253, 0.86);
+}
+
+.longformEvidenceStream {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.longformEvidenceEntry {
+  border: 1px solid rgba(67, 83, 92, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.66rem;
+  display: grid;
+  gap: 0.34rem;
+}
+
+.longformEvidenceKicker {
+  margin: 0;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #466472;
+}
+
+.longformEvidenceTitle {
+  margin: 0;
+  font-family: "Spectral", "Times New Roman", serif;
+  font-size: 1.02rem;
+  line-height: 1.24;
+}
+
+.longformEvidenceTitle a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.longformEvidenceTitle a:hover {
+  text-decoration: underline;
+}
+
+.longformEvidenceMeta {
+  margin: 0;
+  color: #4f626a;
+  font-size: 0.79rem;
+}
+
+.longformEvidenceBody {
+  margin: 0;
+  color: #364a52;
+  line-height: 1.54;
+  font-size: 0.87rem;
+}
+
+.longformQuote {
+  margin: 0;
+  border-left: 3px solid rgba(36, 92, 103, 0.6);
+  background: rgba(236, 246, 245, 0.82);
+  padding: 0.6rem 0.72rem;
+  color: #2b454e;
+  line-height: 1.58;
+  font-size: 0.88rem;
+}
+
+.longformInferenceList {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.26rem;
+  color: #34474f;
+  line-height: 1.55;
+  font-size: 0.92rem;
+}
+
 .globalFooterShell {
   width: min(1240px, calc(100vw - 2rem));
   margin: 0 auto 0.8rem;
@@ -1153,6 +1401,18 @@ body {
 
   .narrativeSplit {
     grid-template-columns: 1fr;
+  }
+
+  .republicContextGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .longformThemeBlock {
+    grid-template-columns: 1fr;
+  }
+
+  .longformConnectorPanel {
+    position: static;
   }
 }
 
