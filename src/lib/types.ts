@@ -37,6 +37,7 @@ export interface RawArticleRecord {
   has_full_text?: boolean;
   tags: DatasetTag[];
   shift_annotations?: Partial<Record<ShiftId, PersistedShiftAnnotation>>;
+  republic_critical?: RepublicCriticalAnalysis;
 }
 
 export interface PersistedShiftAnnotation {
@@ -53,6 +54,25 @@ export interface PersistedShiftAnnotation {
   };
 }
 
+export interface RepublicCriticalAnalysis {
+  phase: ShiftPhase;
+  include_in_story: boolean;
+  relevance_score: number;
+  strength_label: "strong" | "moderate" | "weak";
+  connection_text: string;
+  rationale: string;
+  quote_text: string;
+  quote_source: "body_paragraph" | "summary_sentence" | "title";
+  quote_confidence: number;
+  audit: {
+    method: string;
+    version: string;
+    input_fingerprint: string;
+    run_uid: string;
+    generated_at: string;
+  };
+}
+
 export interface DatasetMetadata {
   project: string;
   dataset: string;
@@ -64,6 +84,7 @@ export interface DatasetMetadata {
   full_text_count?: number;
   shift_annotation_count?: number;
   republic_annotation_count?: number;
+  republic_curated_count?: number;
   year_range: number[];
   years: number[];
   publications?: Array<{

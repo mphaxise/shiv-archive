@@ -20,6 +20,13 @@ fi
   --shift-id all \
   --annotation-version rule_based_v1_multisource
 
+"$ROOT/scripts/generate_republic_critical_evidence.py" \
+  --master-db-path "$MASTER_DB" \
+  --analysis-db-path "$ANALYSIS_DB" \
+  --version critical_v1 \
+  --max-per-phase 18 \
+  --min-score 11
+
 "$ROOT/scripts/export_public_json_dual.py" \
   --master-db-path "$MASTER_DB" \
   --analysis-db-path "$ANALYSIS_DB" \

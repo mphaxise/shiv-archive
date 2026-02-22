@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 import { ArticleCard } from "@/components/shared/ArticleCard";
 import { buildShiftSplit } from "@/lib/shift-engine";
@@ -62,6 +63,9 @@ export function OpinionShiftView({ articles }: { articles: RawArticleRecord[] })
           <br />
           <strong>To:</strong> {shift.toStatement}
         </p>
+        <Link href="/deep-analysis/republic-shift" className="analysisNarrativeLink">
+          Open interactive narrative article
+        </Link>
       </header>
 
       <div className="dialecticGrid">

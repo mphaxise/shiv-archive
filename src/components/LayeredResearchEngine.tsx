@@ -85,6 +85,9 @@ export function LayeredResearchEngine({ dataset }: { dataset: DatasetPayload }) 
                 {typeof dataset.metadata.full_text_count === "number"
                   ? ` | full text ${dataset.metadata.full_text_count}`
                   : ""}
+                {typeof dataset.metadata.republic_curated_count === "number"
+                  ? ` | republic curated ${dataset.metadata.republic_curated_count}`
+                  : ""}
               </p>
             </div>
             <p className="workspaceSources">Sources: {sourceBreakdown}</p>

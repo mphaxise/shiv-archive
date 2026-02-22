@@ -2,14 +2,15 @@
   "metadata": {
     "project": "Shiv Visvanathan Opinion Archive",
     "dataset": "Multi-publication archive v1.1 (97 verified articles across 4 sources)",
-    "generated_at_utc": "2026-02-22T21:26:14Z",
+    "generated_at_utc": "2026-02-22T21:58:47Z",
     "database_mode": "dual_db",
     "article_count": 97,
     "verified_count": 97,
     "source_url_count": 97,
-    "full_text_count": 0,
+    "full_text_count": 85,
     "shift_annotation_count": 388,
     "republic_annotation_count": 97,
+    "republic_curated_count": 36,
     "year_range": [
       2010,
       2026
@@ -305,6 +306,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 5.2,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 2 because it articulates emerging vocabularies of a contested Second Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=5.2; phase=after; anchors=0; lead_group=new_grammar; group_hits=[new_grammar:0, embodied_ethics:0, plural_futures:0].",
+        "quote_text": "A tribute to Beteille's sociological rigor, contrasting it with the modern 'tutorial' college culture.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "83a06a73877a5ccbe9a4aa11694aca370c1e3b09",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -324,8 +343,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -416,6 +435,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 13.0,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it articulates emerging vocabularies of a contested Second Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=13.0; phase=after; anchors=6; lead_group=new_grammar; group_hits=[new_grammar:1, embodied_ethics:1, plural_futures:1].",
+        "quote_text": "But Madhav Gadgil would go further. Today, he might have suggested the establishment of a Knowledge Panchayat. It is an institution to combine layman's language and expert insight. A Knowledge Panchayat would capture a spectrum of insights and theories about the Aravallis. In ordinary language, the Aravalli report has to democratise knowledge and focus on diversity to sustain democracy. In a deeply technical sense, it is both one-sided and monochromatic.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.65,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "921de9425305455c7726103667fc5889ad1549eb",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -435,8 +472,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -526,6 +563,24 @@
             "generated_at": "2026-02-22 20:42:30",
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
+        }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 17.8,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it articulates emerging vocabularies of a contested Second Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=17.8; phase=after; anchors=7; lead_group=new_grammar; group_hits=[new_grammar:4, plural_futures:2, embodied_ethics:1].",
+        "quote_text": "My friend then asked to consider an exercise. \u201cOne of the things that bothers me is that democracy is too often seen purely as an electoral ritual. One has to see it at a normative level. One has to see the concepts, the language and the institutions that sustain a democracy.\u201d In this context, he pointed out that citizenship has become a nebulous concept. It has a kind of temporariness that it never had before. Sometimes it's even difficult to differentiate between a refugee and a resident.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "d87c5b83ad472e07adfc942e8ab7407526491f47",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
         }
       }
     },
@@ -638,6 +693,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 6.0,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 2 because it articulates emerging vocabularies of a contested Second Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=6.0; phase=after; anchors=1; lead_group=new_grammar; group_hits=[new_grammar:0, embodied_ethics:0, plural_futures:0].",
+        "quote_text": "Critiques 'museumification' as a way for the state to erase ongoing suffering and accountability.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "64e1e31a04790fb50093fd39c64ee34d98a0b124",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -657,8 +730,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ecology",
@@ -749,6 +822,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 13.3,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it reframes democratic futures through plural knowledge and ecological survival.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=13.3; phase=after; anchors=1; lead_group=plural_futures; group_hits=[plural_futures:5, embodied_ethics:1, new_grammar:0].",
+        "quote_text": "The second day focused on the basic theme of the conference: the Anthropocene. The word \u2018Anthropocene\u2019 was coined by Dutch scientist Paul J Crutzen. He believed it\u2019s a new geological era during which human activity has been the dominant influence on climate and the environment. Crutzen wanted to create the picture of a wounded Earth\u2014damaged by a promethean man. The Anthropocene was a statement of guilt.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.575,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "9af7644abf1d0f6b79836ef4236c9d58cb46d1f4",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -768,8 +859,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -860,6 +951,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 10.700000000000001,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=10.7; phase=after; anchors=1; lead_group=embodied_ethics; group_hits=[embodied_ethics:5, plural_futures:1, new_grammar:0].",
+        "quote_text": "The first thing we have to understand is that the emphasis on the nation-state is misleading. For many nationalists in India\u2014from Tagore to Patrick Geddes to Maria Montessori\u2014it was their childhood that was the basis of the dream world. Childhood, in a way, was an articulation of alternatives. And this is what we must begin by emphasising that the nation-state was not so much a political economy as a pedagogic construct\u2014a new way of understanding reality, teaching it, and communicating it.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.575,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "4c287a6be521fbd500db0600305cc3bcef84b222",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -879,8 +988,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -971,6 +1080,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 15.2,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=15.2; phase=after; anchors=0; lead_group=embodied_ethics; group_hits=[embodied_ethics:8, plural_futures:2, new_grammar:0].",
+        "quote_text": "Bhatt has often been seen as the founder of the Self Employed Women\u2019s Association and nothing more. But in later years, she was in many senses deeply involved in peace and peacemaking with the likes of Jimmy Carter. She pointed out that peace cannot be worked out of a handbook. It is not a technology. Peace, she said, has to emerge as a metaphysic, out of the local languages, out of indigenous modes of thought. In this context, she emphasised that Gandhi gave currency to the words satyagraha , swadeshi and swaraj .",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.55,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "707d3a1af4cd058fc471d87ccf1f8bc9197259d8",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -990,8 +1117,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -1082,6 +1209,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 14.8,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it articulates emerging vocabularies of a contested Second Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=14.8; phase=after; anchors=7; lead_group=new_grammar; group_hits=[new_grammar:2, embodied_ethics:1, plural_futures:1].",
+        "quote_text": "When first coined, citizenship was an ode to hope, a claim to membership and its rights. A poetry of possibility. Today, it has lost its magic. It has become empty and desiccated. Words like migrant, marginal, refugee, exile\u2014all emphasise the temporariness, tenuousness of citizenship. What one sees politically is the fragility of citizenship. One can see this state of being in Assam and Bangladesh. The tenuous fate of citizens emphasises the waywardness of democracy.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "86728c1187c937f71b80222474a6c3115cb955b3",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -1101,8 +1246,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -1193,6 +1338,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 14.9,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=14.9; phase=after; anchors=5; lead_group=embodied_ethics; group_hits=[embodied_ethics:3, new_grammar:2, plural_futures:2].",
+        "quote_text": "Swadeshi and swaraj would have shown that Trump\u2019s idea of culture and democracy is empty. An advocate of swadeshi would have opened out to the Mexican migrant and the Palestinian refugee. Swadeshi and swaraj enrich the concept of citizenship and does not subject it to the arid policy of security turning citizenship into the most impoverished forms of being. A citizenship without swadeshi and swaraj is empty.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.675,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "5873e3177676c5c783bf5dd58ecca743ffd067ac",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -1212,8 +1375,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -1304,6 +1467,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 19.8,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.8; phase=after; anchors=2; lead_group=embodied_ethics; group_hits=[embodied_ethics:12, plural_futures:1, new_grammar:0].",
+        "quote_text": "At a time when war seems to be a daily occurrence and an easy accompaniment to the nation state, thinking of peace is urgent.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.575,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "00a257e14d1c5ef810ec4e0308252bcccf7bac73",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -1323,8 +1504,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -1415,6 +1596,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 8.3,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=8.3; phase=after; anchors=3; lead_group=embodied_ethics; group_hits=[embodied_ethics:2, new_grammar:0, plural_futures:0].",
+        "quote_text": "Trump is not the beginning of a new age, but the symbol of a dying one. America needs to rethink itself as a civilisation because its indifference to death marks it as a genocidal country. The transition from a democracy to being genocidal is an ironic one. It is in this context that India needs to invent a new ethical politics. Today, ethics compose necrophile regimes. And their technicalities and passivity are passed off as diplomacy.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.575,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "476acd486e1cbbbb60cf355ddfa4567eb513f983",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -1434,8 +1633,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Knowledge Systems",
@@ -1526,6 +1725,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 19.9,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.9; phase=after; anchors=5; lead_group=embodied_ethics; group_hits=[embodied_ethics:10, plural_futures:2, new_grammar:0].",
+        "quote_text": "Articulating such issues in the language of everyday ethics is not easy. However, with the use of metaphor and storytelling, our moralists need to do so. Democracy, in that sense, is always a futuristic framework which has to be built into the choices we make today. Every choice now is one for the future. India, if it wishes to remain democratic and survive beyond majoritarianism, must consider a more supple, unconventional and innovative democracy.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.775,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "b71f098f5b382644ef2180b283909a7409333257",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -1545,8 +1762,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -1637,6 +1854,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 18.2,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=18.2; phase=after; anchors=5; lead_group=embodied_ethics; group_hits=[embodied_ethics:5, plural_futures:4, new_grammar:0].",
+        "quote_text": "Firstly, Indian democracy has to re-assert itself to ensure that its model always contains a yearning for peace. Here, peace is not a passive concept. It is a dream of alternatives, possibilities and one of the utopias we have to invoke is to revive the idea of South Asia. For this, India and Pakistan cannot be seen as nation-states. The nation-state as a possibility exhausts itself as an instrument of peace. What one needs is a broader idea of the commons in South Asia.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "63cf6d64f38d338bd819df067277ad2462ec5c55",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -1656,8 +1891,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -1748,6 +1983,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 14.8,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=14.8; phase=after; anchors=7; lead_group=embodied_ethics; group_hits=[embodied_ethics:3, plural_futures:1, new_grammar:0].",
+        "quote_text": "Such activism would completely alter the logic of international relations. It would change not just the logic of the syllabus, but of constitutions, too. The logic of social Darwinism played out by Putin, Trump and Israel will have to be openly challenged. International relations is now an arid field built around security and the nation-state. One will have to rework and pluralise it by creating new possibilities of citizenship and freedom.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.875,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "409fca9f4c7f23b7ffb04758e37051d7e03cf47d",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -1767,8 +2020,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -1859,6 +2112,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 8.5,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=8.5; phase=after; anchors=2; lead_group=embodied_ethics; group_hits=[embodied_ethics:3, new_grammar:0, plural_futures:0].",
+        "quote_text": "Third, we need to reinvent the idea of satyagraha. Gandhian satyagraha emerged out of colonial rule and had little to say about, say, nuclear energy. The desperate need of our times is to reinvent the idea of satyagraha to confront the ideas of genocide, triage and obsolescence\u2014and link them to a new democratic imagination.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.575,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "ce8b11d0e8e4140c6f609a6e08e0625019b55c1a",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -1878,8 +2149,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -1970,6 +2241,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 7.800000000000001,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=7.8; phase=after; anchors=2; lead_group=embodied_ethics; group_hits=[embodied_ethics:1, new_grammar:0, plural_futures:0].",
+        "quote_text": "For Raghu Rai, secularism is an empty word. Photography is a rite of passage. A repeated initiation into authenticity. Each picture surprising the one before. His use of language is remarkable. For him democracy does not begin with representation and elections. It begins with a different kind of vocabulary. For Rai, democracy cannot survive without grace. And secularism without grace is empty. Democracy needs the sacred, to create a sense of possibilities and limits.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.575,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "9f2b3c0973e6206dc31a8356128dbf3412d50522",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -1989,8 +2278,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -2081,6 +2370,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 12.0,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=12.0; phase=after; anchors=6; lead_group=embodied_ethics; group_hits=[embodied_ethics:1, plural_futures:1, new_grammar:0].",
+        "quote_text": "It is at this point that my friend pointed out that the dullest of cultural games today is democracy. As an electoral system, it has become an arid rules game. Foisting majoritarian governments on people, it leaves the marginals, the minority, the migrants little scope. Democracy, which was based on the ontology of citizenship, has disempowered the world. The citizen today is more a fragment of a refugee or a displaced person.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "3d754c12c79462aabac638a9f75277897254f2da",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -2100,8 +2407,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -2192,6 +2499,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 18.2,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=18.2; phase=after; anchors=5; lead_group=embodied_ethics; group_hits=[embodied_ethics:8, plural_futures:1, new_grammar:0].",
+        "quote_text": "Trump adds crudeness to obscenity. He recently described the reconstruction of the devastated Gaza Strip as an act similar to building a riviera. To him, it\u2019s a real-estate operation in which people can be easily discounted and citizens, in the demographic and democratic imagination, make little sense. Trump has created a new sense of democracy where the people are no longer important.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "df6138c55ef2b1f411541a9d16b52ac66ccc2070",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -2211,8 +2536,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -2303,6 +2628,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 11.8,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it reframes democratic futures through plural knowledge and ecological survival.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=11.8; phase=after; anchors=7; lead_group=plural_futures; group_hits=[plural_futures:1, new_grammar:0, embodied_ethics:0].",
+        "quote_text": "What we need is a more dialogic vision of plurality, where democracy empowers each citizen to become an inventor of new political possibilities. In many ways, AAP\u2019s defeat is as devastating as Donald Trump\u2019s victory\u2014both undermine the idea of citizenship as a space for reimagining political narratives. The fall of AAP serves as a stark reminder that the true hope for politics lies in the dreams of citizenship itself. Clinging to rigid, institutionalised and mediocre politics will no longer suffice.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.8,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "2b8e4388396c05a9decb7159294ae9b9a0517641",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -2322,8 +2665,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -2414,6 +2757,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 13.0,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=13.0; phase=after; anchors=6; lead_group=embodied_ethics; group_hits=[embodied_ethics:2, plural_futures:1, new_grammar:0].",
+        "quote_text": "Secondly, Seshadri expressed hope that democracy would evolve not just as a theory of citizenship, but one of innovation. He emphasised that the plurality of technology was inherently tied to the plurality of democracy.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7250000000000001,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "767bfe213e96df2ac84a19d5fb7a1a0c23f36b01",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -2433,8 +2794,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -2525,6 +2886,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 10.2,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 2 because it reframes democratic futures through plural knowledge and ecological survival.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=10.2; phase=after; anchors=0; lead_group=plural_futures; group_hits=[plural_futures:4, embodied_ethics:1, new_grammar:0].",
+        "quote_text": "The sense of science was Ludic and civilisational. Patrick Geddes in fact felt India had developed a post-Germanic science and politics. He cited the examples of Bose and Gandhi, as the gumboots of war made little sense for either of them. Their sense of peace went beyond war to non-violence. Geddes and Bose dreamt of how interdisciplinarity could create peace. One misses this with experiments today.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.5,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "3f1fdac9082d17c6f0a9c6cef40bc40b90c4b4a8",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -2544,8 +2923,8 @@
       "status": "verified",
       "summary_method": "manual_curated",
       "retrieval_method": "user_curated_json",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ecology",
@@ -2636,6 +3015,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 18.0,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 2 because it reframes democratic futures through plural knowledge and ecological survival.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=18.0; phase=after; anchors=6; lead_group=plural_futures; group_hits=[plural_futures:6, embodied_ethics:2, new_grammar:0].",
+        "quote_text": "The Anthropocene has to go beyond the nation state and have responsibility both for ecosystem and territory. It demands that man revive a new ethics and new words of governance. Scientist C V Seshadri suggested the Constitution should be reworked to Swaraj, ranging from civilisational commons, civics, syllabus, citizenship. The Constitution has to rework law, morals and responsibility across the scales.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.95,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "c459061e820e531c4a539e8d8cb1a95adf3df19b",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -2655,8 +3052,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -2747,6 +3144,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 16.0,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it articulates emerging vocabularies of a contested Second Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=16.0; phase=after; anchors=6; lead_group=new_grammar; group_hits=[new_grammar:5, embodied_ethics:1, plural_futures:0].",
+        "quote_text": "One represents the symbolic and representational, and the other the immediate and innovative. The direct democracy movement is a rare example of the latter. One must emphasise that most thinking about parties is representational. One must add that modern semiotics has shown such representation does not go far\u2014that in India, citizenship is more a promissory note, a myth rather than a guarantee of a beginning. It regularises which smells of permanence haunt these encounters.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.675,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "215fc4196547656a8aa77b557cd7d31f8a1d684b",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -2766,8 +3181,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Memory",
@@ -2858,6 +3273,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 9.4,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 2 because it reframes democratic futures through plural knowledge and ecological survival.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=9.4; phase=after; anchors=4; lead_group=plural_futures; group_hits=[plural_futures:1, new_grammar:0, embodied_ethics:0].",
+        "quote_text": "The politics of the left and right has become tragedies of democratic India. What one needs is a new history of politics and new way of inventing democracy where liberty, justice, equality find new variants\u2014a new diversity that should not merely be along quantitative criterions. One hopes the feminists, the ecologically minded and some of the new movements would make democracy more inventive and imaginative.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.6,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "eebae35b9f9662d7b32a093b151561bf4dff3848",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -2877,8 +3310,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Memory",
@@ -2969,6 +3402,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 24.0,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 2 because it reframes democratic futures through plural knowledge and ecological survival.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=24.0; phase=after; anchors=6; lead_group=plural_futures; group_hits=[plural_futures:14, new_grammar:0, embodied_ethics:0].",
+        "quote_text": "One must insist that the nation-state provide a sense to the Anthropocene. The state is too parochial. One needs civilisations as a framework of values. One needs a dense network of institutions from civilisations, constitution, civics, the syllabus, citizenship and the commons to weave a new response to the Anthropocene.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.925,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "1225b7849b7020b5933b66b1b94c0f7535b95b57",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -2988,8 +3439,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Memory",
@@ -3080,6 +3531,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 11.399999999999999,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it reframes democratic futures through plural knowledge and ecological survival.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=11.4; phase=after; anchors=4; lead_group=plural_futures; group_hits=[plural_futures:2, embodied_ethics:1, new_grammar:0].",
+        "quote_text": "One has to note that his language was always ordinary. Even his theorising was transparent. That is why Gandhi remains more democratic than many others. He realised democracy demanded an ethical vulnerability of a different kind.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.6,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "9b73da26f448409ab3b351859399d3b0d4718682",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -3099,8 +3568,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Knowledge Systems",
@@ -3191,6 +3660,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 19.2,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 2 because it articulates emerging vocabularies of a contested Second Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.2; phase=after; anchors=5; lead_group=new_grammar; group_hits=[new_grammar:6, plural_futures:4, embodied_ethics:0].",
+        "quote_text": "The other solution is the idea of a \u2018knowledge panchayat\u2019. The introduction of any policy needs a knowledge panchayat to democratise it. It is a representation of different communities, different knowledge systems that go into the making of a project. Knowledge panchayats would give a place to the housewife and the tribal in the articulation and critiquing of policy. It is clear by now that democracy must be more inventive than science if it is to survive.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.775,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "29be0731fbefac50f7fe9f4e8079a84aaebe6071",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -3210,8 +3697,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -3302,6 +3789,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 13.8,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it articulates emerging vocabularies of a contested Second Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=13.8; phase=after; anchors=7; lead_group=new_grammar; group_hits=[new_grammar:1, embodied_ethics:1, plural_futures:1].",
+        "quote_text": "Independence day is a time for reflection. The discussion has to go beyond the gossip of personalities and the pull of charisma. It has to focus on institutions and the value systems they maintain. It has to identify us a society that has become a hybrid social construct between democracy and the nation-state. How have these institutions fared? Such questions should immediately summon the storyteller. Tragically, the storyteller is missing\u2014another creature rendered obsolescent by so-called modernity.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.675,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "fcc4794f3a21c14ba4d538c70ec462a4699aa061",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -3321,8 +3826,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -3413,6 +3918,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 10.6,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 2 because it articulates emerging vocabularies of a contested Second Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=10.6; phase=after; anchors=3; lead_group=new_grammar; group_hits=[new_grammar:1, embodied_ethics:1, plural_futures:1].",
+        "quote_text": "Yet, one has the more immediate task of theorising in a way that such activities become possible. Today, civil society is often seen as residual. It is a depleted idea that leaves all critical activity to the state. One sees the problem even in the idea of the definition of \u2018opposition\u2019 as a formal party affair. Civil society must be seen in its own anarchic relation to the state. It must produce difference. Therefore, it exists. Civil society makes the everydayness of dialogues possible.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.6,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "8abd444879da9f0dede25e4f522bce3353c8d7ad",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -3432,8 +3955,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -3524,6 +4047,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 9.600000000000001,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 2 because it shifts politics toward embodied action, moral imagination, and public pedagogy.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=9.6; phase=after; anchors=3; lead_group=embodied_ethics; group_hits=[embodied_ethics:2, new_grammar:0, plural_futures:0].",
+        "quote_text": "This does not mean that the fight is over and there is no time for realism. Modi has won as prime minister, but the battle is not over. Hope is not always of a majoritarian flavour. There are urgent tasks before the INDIA group. They have to see politics as an ongoing philosophical discourse. A performance that needs new plots and actors. Politics in India desperately needs new ideas. It has to enact the future in a different way.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.6,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "d6ca0ffc66e1f5f00bab4c195f043c7722a4abd6",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -3543,8 +4084,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -3635,6 +4176,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 11.399999999999999,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it reframes democratic futures through plural knowledge and ecological survival.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=11.4; phase=after; anchors=4; lead_group=plural_futures; group_hits=[plural_futures:2, embodied_ethics:1, new_grammar:0].",
+        "quote_text": "Uberoi added there was nothing futuristic in the Modi dream. Indian nationalism always presented an ascetic view of the world. There is also an indifference to suffering. We saw it during the farmers\u2019 strike, the various riots. People are made to be eliminated. Jeet added that only when democracy is about truth can it solve law and order issues. The notion of time as pluralistic has given way to nation states as ideologies.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "7204b58297a52a0e0a7e549c92610222f92ef1ab",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -3654,8 +4213,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -3746,6 +4305,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": false,
+        "relevance_score": 11.2,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it reframes democratic futures through plural knowledge and ecological survival.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=11.2; phase=after; anchors=0; lead_group=plural_futures; group_hits=[plural_futures:5, embodied_ethics:1, new_grammar:0].",
+        "quote_text": "I remember, one lazy afternoon we were sitting in an empty classroom. There were remnants of the previous lecture on the board, a few dog-eaten triangles. Jit was chewing on it. \u201cThis faded triangle,\u201d he said, \u201ccaptures the power of the enlightenment. It signifies the slogan of the French revolution: liberty, equality and fraternity.\u201d He quickly added, \u201cThe West is stronger on the first two. The dog-eared part of western theory is fraternity.\u201d The West was poor on difference and plurality.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.5,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "f693212b83b18a8d4f1999fb6aa059cd5aee8c4c",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -3765,8 +4342,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -3857,6 +4434,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "after",
+        "include_in_story": true,
+        "relevance_score": 15.2,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 2 because it articulates emerging vocabularies of a contested Second Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=15.2; phase=after; anchors=5; lead_group=new_grammar; group_hits=[new_grammar:4, embodied_ethics:1, plural_futures:1].",
+        "quote_text": "Yet, one has to recognise that Modi has reshaped our sense of India by altering the very idea of India. The plural, informal, syncretic, playful sense of civilisation has given way to the puritanical nation-state as a monolithic entity. Governance today speaks a language alienated from democracy. The nation-state has grown many layers to not only be a developmental state but a national security state. Democracy has become majoritarian to serve the surveillance state.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7250000000000001,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "eece4051507d50d0a137aeee90a095ded980849b",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -3876,8 +4471,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -3954,6 +4549,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 11.0,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=11.0; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:2, decay_diagnostics:2, democratic_urgency:2].",
+        "quote_text": "As we explore the implications of these official terms, we sense a backstage of violence around them. There is a conviviality between official policy and violence. The term \u2018banalisation of violence\u2019 was used by philosopher Hannah Arendt to describe the behaviour of Adolf Eichmann. Eichmann, she claimed, was a clear clich\u00e9. Modi created a variant of this for his own actions after the Gujarat violence. He emphasised that violence was a routine ritual used by the perpetrators of bureaucracy to create a new normal.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.675,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "abd3e71cd6b3716a459fb089e1f4db22bfcff4b8",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -3973,8 +4586,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -4051,6 +4664,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 11.5,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=11.5; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:3, decay_diagnostics:2, democratic_urgency:2].",
+        "quote_text": "Civil society experiments around peace are critical. We need to rewrite the directive principles of state policy to create a peace constitution that goes beyond the correctness of the Japanese constitution. Such experiments deal not just with war but with memory, violence and the challenge of genocide. A constitution which says no to nuclear energy and yes to the festival of nature in a life-giving sense would be a new beginning.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.8,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "5d4fd715c54f393a4510dd525d54219701e4d933",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -4070,8 +4701,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Public Sphere",
@@ -4148,6 +4779,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 10.5,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=10.5; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:3, democratic_urgency:2, decay_diagnostics:1].",
+        "quote_text": "I was remembering Ela\u2019s argument when Israel and Hamas went to war. Her book was a tacit commentary on three things. She was candid about the sense of helplessness citizens and housewives felt in the face of war and violence. She was vocal about what war does to domesticity and everydayness, a precious state of being today. Less than two weeks ago, Israel imperiously ordered everyone in Gaza City and in the north of the Gaza Strip\u20141.1 million people\u2014to move south immediately.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "cdec600671f2061dcd52cb1b177523de79151590",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -4167,8 +4816,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -4245,6 +4894,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 7.6,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it diagnoses democratic erosion within First Republic structures.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=7.6; phase=before; anchors=0; lead_group=decay_diagnostics; group_hits=[decay_diagnostics:4, democratic_urgency:1, institutional_grammar:0].",
+        "quote_text": "A student of Martin Heidegger, Arendt was a political philosopher who was stunned by the presence of Adolf Eichmann. In her book Eichmann in Jerusalem, she asked how such a puny mediocre individual could be responsible for the genocide of millions. She coined the term \u2018banality of evil\u2019 to capture the ordinariness of Eichmann. She claimed that his originality consisted of being a complete bundle of clich\u00e9s. She claimed there was nothing Shakespearean about him. The poignancy of theatre eluded him.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.55,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "d47a6c10685e58a63002fe7e6365ce20f4c78755",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -4264,8 +4931,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -4342,6 +5009,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 17.2,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=17.2; phase=before; anchors=7; lead_group=institutional_grammar; group_hits=[institutional_grammar:5, democratic_urgency:3, decay_diagnostics:1].",
+        "quote_text": "A constitution, my friend claimed, was a collection of myths connected by a contract. But these myths required a different understanding. He said the dualism of thought destroys the fragile world of rights. He believed a formal constitution had little to say about the informal world. While the Constitution deals with the concept of citizenship in a formal manner, the everyday interactions of citizens are informal. Yet our governance and law have little sense of it.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.875,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "1730b411bc21c6f06d48c4c6edb8f504c0a6c2ad",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -4361,8 +5046,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Public Sphere",
@@ -4439,6 +5124,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 7.5,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=7.5; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:2, democratic_urgency:1, decay_diagnostics:0].",
+        "quote_text": "We need to ritualise the process of thought in playful ways and still make sure such institutions are neither clerical nor authoritarian. The inventiveness of such entities weaves democracy and science together, adding not only to the imagination of knowledge but also to the diversities of science. It challenges Big Science with a sense of playfulness.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "ef7ebc64faae610b752fb0ece5047c910929e393",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -4458,8 +5161,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -4536,6 +5239,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 19.0,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.0; phase=before; anchors=3; lead_group=democratic_urgency; group_hits=[democratic_urgency:10, institutional_grammar:2, decay_diagnostics:2].",
+        "quote_text": "Another reason for seeing violence as a neutral space is that we reduce the creativity of citizenship to an ethically neutral spectatorship. Spectatorship, unlike the poetic act of witnessing, is neutral, even passive. One is reminded of a famous anecdote in communication studies. It is about a young woman called Kitty Genovese.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "e4fd41b60796f039934ce0c134c39d0b2e519486",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -4555,8 +5276,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -4633,6 +5354,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 25.8,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=25.8; phase=before; anchors=9; lead_group=democratic_urgency; group_hits=[democratic_urgency:7, institutional_grammar:6, decay_diagnostics:3].",
+        "quote_text": "Citizenship\u2014rather than being fortified and substantial\u2014has been emptied out. It does not even stand as hope anymore, as events in the Northeast, Kashmir and elsewhere show. Citizenship becomes a surreal and haunting emptiness, a stigmatisation of the person as alien as he or she becomes the new non-being of the constitutional regime. Whether it is Assam, Myanmar or Manipur, citizenship, rather than guaranteeing hospitality and residency, becomes a Kafkaesque process to which everyone is subject.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.95,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "97b42500d406d6b0285b6513faa5c38cf9281b3c",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -4652,8 +5391,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -4730,6 +5469,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 5.6,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=5.6; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:2, decay_diagnostics:1, democratic_urgency:1].",
+        "quote_text": "It\u2019s time-space has a Peace Constitution, a formal statement against war. Peace becomes more attractive when outer space is treated as part of the earth, both belonging to a commons of discovery. Space cannot just be a technical journey; it has to be a normative framework, a pilgrim\u2019s progress. Science needs to add to the moral perspective.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "53a8576c7234c2418923327b65c3a7d6776dcb52",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -4749,8 +5506,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Pluralism",
@@ -4827,6 +5584,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 17.8,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it diagnoses democratic erosion within First Republic structures.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=17.8; phase=before; anchors=4; lead_group=decay_diagnostics; group_hits=[decay_diagnostics:7, democratic_urgency:3, institutional_grammar:2].",
+        "quote_text": "One has to indict the media and the current morality of politics. The language of violence points to neither pain nor humiliation. It is seen as a political circus, a spectacle that the majoritarian democracy seems to enjoy.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "95567bff6410b1afefa0ddfb0c8292b9258d2c26",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -4846,8 +5621,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -4924,6 +5699,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 18.6,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=18.6; phase=before; anchors=5; lead_group=democratic_urgency; group_hits=[democratic_urgency:8, institutional_grammar:2, decay_diagnostics:2].",
+        "quote_text": "Today, one does not need authoritarianism to legitimise it. Management as a model of control would suffice. Modi shows that populism was a prelude to majoritarianism. The India of the future has learnt to combine violence, management and development to create a flatland of citizenship, without any diversity. Be it urban displacement or refugee camps, authoritarianism is presented as a policy imperative.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.925,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "b3863d8a59de9f908725ff0bb773f4cb2880abc6",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -4943,8 +5736,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -5021,6 +5814,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 4.9,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=4.9; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:2, decay_diagnostics:0, democratic_urgency:0].",
+        "quote_text": "Often, I feel that institutions today are ham-handed because they do not know how to remember. Anniversaries are too truncated. They cannot create a commons of memory because the official text amputates orality. Tutu read the Apartheid as a fable, a folktale and a memory rather than as a legal text. He showed how the folktale could both forget and forgive. It had the normative power to go on. It is a cultural skill that modernity lacks.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.575,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "5873c4debe886279625b128e35a92e6f6492a449",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -5040,8 +5851,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Pluralism",
@@ -5132,6 +5943,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 42.800000000000004,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=42.8; phase=before; anchors=7; lead_group=institutional_grammar; group_hits=[institutional_grammar:16, democratic_urgency:13, decay_diagnostics:3].",
+        "quote_text": "Democracy in India and elsewhere has become a caricature, a set of surreal episodes which would do a Duchamp proud. Democracy, rather than playing out the theatre of freedom, has become a demographic game, where numbers count, and the majority is idolised. A majoritarian calculus seems indifferent to minorities and margins, creating a violence out of indifference. Words which were once redeeming add to its genocidal power.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 1.0,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "3e6d61e56b67e8bd29fd31aae2e3435ad6100e0a",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -5151,8 +5980,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Pluralism",
@@ -5229,6 +6058,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 15.9,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=15.9; phase=before; anchors=2; lead_group=democratic_urgency; group_hits=[democratic_urgency:8, institutional_grammar:3, decay_diagnostics:2].",
+        "quote_text": "On another occasion, I remember talking to the Kannada author U R Ananthamurthy. He had a tremendous sense of the gossip of politics. Murthy felt that radicalism and dissent provided predictable answers. Dissent, he believed, had to be inventive and full of conceptual ambushes. In this context, he advocated a civil society of UNESCO to save languages. A UNESCO for diversity run by civil society would challenge the conformity of the nation-state.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.8,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "e3c86b09550f17cf3638693161ea71c8c0835df7",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -5248,8 +6095,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Pluralism",
@@ -5326,6 +6173,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 23.5,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=23.5; phase=before; anchors=9; lead_group=democratic_urgency; group_hits=[democratic_urgency:8, institutional_grammar:6, decay_diagnostics:1].",
+        "quote_text": "The silence of civil society is the greatest victory of the majoritarian regime. The disintegration of civil society was achieved systematically. The BJP merged the nation state and democracy, making patriotism the greatest virtue, and dissent the dominant political vice. Secondly, it turned minoritarian politics into a mechanical affair. Political violence against minorities was now a standardised prelude to all elections.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 1.0,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "85bb4052c5a0d720ebed75a33fba4810f8408a00",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -5345,8 +6210,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -5423,6 +6288,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 8.4,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=8.4; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:4, democratic_urgency:2, decay_diagnostics:0].",
+        "quote_text": "People overplaying the nation state often forget that the real dreams of Indian nationalism were visions of childhood and science. This was true of Gandhi, Tagore, Geddes, Besant and Raman. They dreamt a different science. A science with a different spirit which this regime seeks to clericalise through governmental committees. Protecting autonomous science is a guarantee against clericalised science. This is a promise we need to make to the future. Play and freedom make science and democracy liveable and possible.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "a0d9090a66ec4e422be359f06374b1870b7fb3a9",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -5442,8 +6325,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -5520,6 +6403,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 17.2,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=17.2; phase=before; anchors=7; lead_group=institutional_grammar; group_hits=[institutional_grammar:4, democratic_urgency:4, decay_diagnostics:1].",
+        "quote_text": "Elections thus become critically important for Rajni. They were carnivals of democracy, festive inversions which celebrated citizenship and its inherent drama. It allowed one to laugh at power and the powerful. Elections became events one had to take seriously. The upcoming Lok Sabha election of 2024 would have inspired Rajni to get into action mode. He would set up a class, a panchayat of oppositions to rework democracy. A BJP victory, he\u2019d warn, would create a flatland of ideas.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.95,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "e92037c5cdfaaaa64dea60ee3154fcda9f9b2cd2",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -5539,8 +6440,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Memory",
@@ -5617,6 +6518,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 6.9,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it diagnoses democratic erosion within First Republic structures.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=6.9; phase=before; anchors=2; lead_group=decay_diagnostics; group_hits=[decay_diagnostics:2, democratic_urgency:2, institutional_grammar:0].",
+        "quote_text": "Let\u2019s consider the Gujarat riots. The Delhi riots of 1984 and the Gujarat violence of 2002 represented a different kind of violence. But both these riots were no longer seen as occasional and random but systematic acts of extermination of people. Genocide was woven into the texture of the act and rape was openly methodological. The perpetrator pretends he is a victim restoring himself to history. Oddly, even rape becomes a restoration of justice.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.625,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "5a8b134d14ed54193054036670e5fc3a34f9186f",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -5636,8 +6555,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Knowledge Systems",
@@ -5714,6 +6633,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 21.8,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=21.8; phase=before; anchors=9; lead_group=institutional_grammar; group_hits=[institutional_grammar:6, democratic_urgency:5, decay_diagnostics:1].",
+        "quote_text": "When one thinks of democracy as an imagination, one senses that it loses out to an impoverished idea of citizenship which fails to recognise the possibilities of innovation and knowledge. Citizenship, rather than becoming a creative civics, becomes reduced to certification and residency. The citizen is whittled down to a consumer or voter. Very rarely is a citizen seen as a person, a carrier and a creator of knowledge.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.9,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "4102ad4d1f721ffbad2e76c406e3abf3f7349d7a",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -5733,8 +6670,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ecology",
@@ -5811,6 +6748,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 10.700000000000001,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=10.7; phase=before; anchors=3; lead_group=democratic_urgency; group_hits=[democratic_urgency:4, institutional_grammar:2, decay_diagnostics:1].",
+        "quote_text": "Democracy now includes nature in its logic of representation, while ethics is more sensitive about time. Our Constitution and syllabus must be rethought in line with the idea that man has to survive amiably with the earth. This effort demands a new kind of storyteller to capture the future as an epic and ethic of survival.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "5ed5a7378dc4fea9bc39a5201e02efe4b6bc7fab",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -5830,8 +6785,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ritual and Symbol",
@@ -5908,6 +6863,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 11.6,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=11.6; phase=before; anchors=5; lead_group=institutional_grammar; group_hits=[institutional_grammar:2, decay_diagnostics:2, democratic_urgency:1].",
+        "quote_text": "I was intrigued by this and asked people to clarify. They observed that ideology created a bad script and a worse clich\u00e9. Great American filmmaker Orson Welles once insisted, \u201cItaly was a country of great actors; only the worst ones were on stage.\u201d Similarly, Indian citizens have an acute sense of politics as theatre. Sadly, our worst politicians are on stage. As a result, majoritarianism dissolved surprises, and violence became a bad habit.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "11bcd4107752533cf713214bddb4fff2fea05a04",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -5927,8 +6900,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -6005,6 +6978,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 28.200000000000003,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=28.2; phase=before; anchors=7; lead_group=democratic_urgency; group_hits=[democratic_urgency:13, institutional_grammar:6, decay_diagnostics:1].",
+        "quote_text": "With these three moves towards ecology, peace and knowledge, democracy gets redefined beyond a rudimentary idea of citizenship and rights. The marginals must find a new voice, and our country a new way of reinventing civilisation. By reinventing civilisation, India achieves a sense of life and life-giving activities. That is the dream we have to look for\u2014a civil society that thinks and acts towards a different future and different ethics.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.9750000000000001,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "4f13971fd14567531e3c423bed665e3113d88daf",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -6024,8 +7015,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -6102,6 +7093,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 19.4,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.4; phase=before; anchors=6; lead_group=democratic_urgency; group_hits=[democratic_urgency:7, institutional_grammar:4, decay_diagnostics:1].",
+        "quote_text": "One of the beautiful aspects of democracy is its sense of diversity and complexity. When the official theories of democracy are wearing out and its major concepts look mouldy, democracy is busy reinventing itself at the margins. At a time when electoral democracy is ossifying in majoritarian authoritarianism, minorities are reinventing a direct and dialogic democracy. This experiment in dialogic democracy has as its roots the dialogue of religions.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.9,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "f4b285071f5cd68e35bebe637594b30a02dc6c6a",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -6121,8 +7130,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -6198,6 +7207,24 @@
             "generated_at": "2026-02-22 21:01:20",
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
+        }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 10.2,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=10.2; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:3, democratic_urgency:2, decay_diagnostics:1].",
+        "quote_text": "I think you signalled it through the people who walked with you. There was Bezwada Wilson who dreams of equality in society. There was Ganesh Devy, T M Krishna, Harsh Mander, Swara Bhaskar, Amol Palekar, Akshay Shimpi, Medha Patkar, Admiral Ramdas\u2014a festival of civil society. There were stars like Kamal Haasan desperate to carry the metaphor of films as politics into your party which lacks a sense of theatre. Their message is simple: We need new ideas and institutions which add to creativity.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.625,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "b5a9a010423d7809549f98e71e322dbb43d16202",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
         }
       }
     },
@@ -6282,6 +7309,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 0.0,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=0.0; phase=before; anchors=0; lead_group=institutional_grammar; group_hits=[institutional_grammar:0, decay_diagnostics:0, democratic_urgency:0].",
+        "quote_text": "Interprets the Bharat Jodo Yatra as 'Body Politics' reclaiming the land.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "aa3771f63f72b0af7079d6d50000fd082b803d6c",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -6301,8 +7346,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -6379,6 +7424,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 19.8,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.8; phase=before; anchors=4; lead_group=democratic_urgency; group_hits=[democratic_urgency:11, decay_diagnostics:2, institutional_grammar:1].",
+        "quote_text": "Issues like peace and the idea of the Anthropocene have to be opened to citizens. Ordinary language should have the power to articulate issues. Ideas like violence, defence and genocide should be questions we should confront in an everyday sense because ethics and memory weave to create character. Myth becomes an important part of life and no society should be devoid of legends and literary classics. There is relevance and an excitement to them that one has to capture.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 1.0,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "2e7a640700066884e310b8596c31c894016e57af",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -6398,8 +7461,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Knowledge Systems",
@@ -6476,6 +7539,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 7.9,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=7.9; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:3, decay_diagnostics:1, democratic_urgency:1].",
+        "quote_text": "When one gets up in the morning and grabs the newspaper, he or she is surprised to see that global headlines give way to huge advertisements. What dominates the front page are tutorial college advertisements. They are full-page statements where every teacher is called Sir, and all the performances are announced with a loudness that would be the envy of any town crier. Different groups advertise their wares on different days, virtually declaring a brand war.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.575,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "924a7b4a46871607d9822b98a58d6f0ff859a876",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -6495,8 +7576,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -6573,6 +7654,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 9.2,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=9.2; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:3, decay_diagnostics:1, democratic_urgency:1].",
+        "quote_text": "It was a reinvention of citizenship which she translated for women into a graceful open everydayness. She loved concepts but wanted them to dance, in an everyday sense. I remember once when she asked me to choreograph the word \u2018rights\u2019 which was getting too indexical. Rights, we felt, ranged across life, livelihood, lifestyles, and life cycle. It needed a symbiotic relation with each word above. That is why the Self Employed Women\u2019s Association (SEWA) was different. It created a sense of belonging.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "13462adc42203e8b570cf504c54fd27915375550",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -6592,8 +7691,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -6670,6 +7769,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 7.199999999999999,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=7.2; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:1, decay_diagnostics:1, democratic_urgency:1].",
+        "quote_text": "He begins as a na\u00efve figure who appeals to law and respectability but soon realises that idealism alone is powerless. By the interval, he senses that only the sheer heroic, brute power of violence can overcome the evils of society. From Deewar to Sholay , Amitabh creates the myth of violence as catharsis, as a substitute to the slowness of reform. Violence has clarity and epic power that the idea of normative democracy lacks. Bachchan represents that power and its charisma.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.625,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "35a8dea2ab435ea46900b4fed6c0d89ca28579ba",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -6689,8 +7806,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -6767,6 +7884,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 6.9,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it diagnoses democratic erosion within First Republic structures.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=6.9; phase=before; anchors=2; lead_group=decay_diagnostics; group_hits=[decay_diagnostics:2, institutional_grammar:1, democratic_urgency:1].",
+        "quote_text": "They began exploring the political reasons claiming states and corporations understood policy and philanthropy, not culture. Culture needs a sense of alternative diversities. It needs the availability of eccentricity, of vernacular talking to vernacular, as it happens in Carnatic music. Orality and memory must confront the officialdom of text and create a realm of freedom only civil society can grasp. Freedom, U R Ananthamurthy said, is also an act of culture and craftsmanship.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.625,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "8dcced0d1259b7618ffe81348cf8b5bf361371c0",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -6786,8 +7921,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Pluralism",
@@ -6864,6 +7999,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 18.200000000000003,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it diagnoses democratic erosion within First Republic structures.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=18.2; phase=before; anchors=2; lead_group=decay_diagnostics; group_hits=[decay_diagnostics:11, democratic_urgency:2, institutional_grammar:1].",
+        "quote_text": "The question lies in how one stands up to it. I think we need more creative ethics and a community of scholars who unravel the logic of such acts rather than seeing them as indispensable logic. At another level, we need new narratives to chronicle the banality of such violence. The very idea of the \u2018satyagrahi\u2019 needs to be reinvented to confront such innovative evil. We need a new language of morals and the creative power of literature to confront genocide today.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7250000000000001,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "e7aca7be3f33b5010e0f3ffbe99551f08f250b40",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -6883,8 +8036,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -6961,6 +8114,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 28.6,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=28.6; phase=before; anchors=5; lead_group=institutional_grammar; group_hits=[institutional_grammar:11, democratic_urgency:9, decay_diagnostics:2].",
+        "quote_text": "It is the silence of citizenship that is disquieting. It is eerie to watch the lack of public response to the atrocities of the regime. In fact, in an Orwellian style, the regime is able to impoverish and emasculate dissent as an adolescent phenomenon, as a set of bad manners, as impudence, as hysteria conducted by marginal groups. Subtly, it has become an imaginary double of the anti-national. The citizen becomes a chorus, a mob demanding that the dissenters be punished as spoilt children of democracy.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.95,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "47663612e6fe1b97793a2ef241f4351d603d3442",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -6980,8 +8151,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ecology",
@@ -7072,6 +8243,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 16.0,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=16.0; phase=before; anchors=1; lead_group=democratic_urgency; group_hits=[democratic_urgency:10, institutional_grammar:0, decay_diagnostics:0].",
+        "quote_text": "The Gadgil report on the Western Ghats is a major ecological tract and a significant reflection on the politics of ecology. It illustrates how a theory of nature, lives, livelihood combined with local knowledge, decentralisation, and diversity add to the dynamism of democracy. In contrast, the Kasturirangan report is an antidote to such therapeutic ecology and shows how development creates the asymmetries of injustice and representation.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.575,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "2b0fd26371e140182de7f8963b6fc5b06c97b999",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -7091,8 +8280,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Knowledge Systems",
@@ -7168,6 +8357,24 @@
             "generated_at": "2026-02-22 21:01:20",
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
+        }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 22.200000000000003,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=22.2; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:9, decay_diagnostics:6, democratic_urgency:3].",
+        "quote_text": "Memories become crucial to university. It cannot survive without storytelling. I remember my PhD guide Andre Beteille, a legend in the sociology department. We used to quarrel over everything from ideas to events to my delays in submitting my chapter. We met once thirty years later in Canada. He stopped, looked at me impishly, and said, \u201cI am still recovering from you.\u201d I remember when he was on the board for a Professorship, he chose me.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.675,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "2647590c8ede0632f8cd684d85f6d7e7d210036c",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
         }
       }
     },
@@ -7252,6 +8459,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 8.0,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=8.0; phase=before; anchors=0; lead_group=institutional_grammar; group_hits=[institutional_grammar:4, decay_diagnostics:4, democratic_urgency:0].",
+        "quote_text": "Laments the transformation of education into a skills-based tutorial system.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "5cb701a65625086dd5655c2aa0bd13beb4df9a30",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -7271,8 +8496,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -7349,6 +8574,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 14.6,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=14.6; phase=before; anchors=5; lead_group=democratic_urgency; group_hits=[democratic_urgency:4, institutional_grammar:3, decay_diagnostics:1].",
+        "quote_text": "Liberty as a term evokes possibilities and limits. It is both specific and convivial and evokes the social of citizenship, not the anarchy of freedom. It oozes rights which are specific demands. It is more thinkable as a social science. Liberty evokes humanity and citizenship. It implies civics. The Greek sense of liberty evokes civitas both as a city and civilisation. Rights and liberties serve as doubles in this civics discourse. Liberty is a sign and possibility of civics and citizenship as ways of life.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.875,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "25efa3804a0f5a227c028d83f4b8198b765d73d5",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -7368,8 +8611,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ecology",
@@ -7460,6 +8703,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 12.4,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=12.4; phase=before; anchors=1; lead_group=democratic_urgency; group_hits=[democratic_urgency:6, institutional_grammar:3, decay_diagnostics:0].",
+        "quote_text": "Social science, of late, has become a tame, domesticated exercise, an extension of state policy, a legitimiser of current knowledge systems. Even as -isms, whether feminist, Marxist or liberal, it produces the predictable and the routine. As politics, one faces a redundancy of concepts which offer little and promises less. Contemporary social science needs to recover the magic of its concepts, a sense of polysemy that granted a long tumultuous career to each word as world.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.625,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "1b8929fb5914d314e4e30ffcf288ded2ff1a92c9",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -7479,8 +8740,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "partial",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ecology",
@@ -7571,6 +8832,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 17.3,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=17.3; phase=before; anchors=0; lead_group=democratic_urgency; group_hits=[democratic_urgency:10, decay_diagnostics:6, institutional_grammar:0].",
+        "quote_text": "The ethical codes of the professional academies have become a clich. There might be references to gender out of regard to political correctness, but there is hardly a nod to violence. Even the Pugwash movement seems to belong to an old testament era of science. Not only is ethics missing, but it has been banalised through the efforts of corporations, which locate spirituality, sustainability, and corporate social responsibility (CSR) at the same pedestrian level.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.6,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "75fdc9040355fade7873cc7cdbbb3d6cf4533b7d",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -7590,8 +8869,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -7681,6 +8960,24 @@
             "generated_at": "2026-02-22 20:42:30",
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
+        }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 19.0,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it diagnoses democratic erosion within First Republic structures.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=19.0; phase=before; anchors=1; lead_group=decay_diagnostics; group_hits=[decay_diagnostics:7, democratic_urgency:6, institutional_grammar:0].",
+        "quote_text": "This article raises wider questions like whether the social sciences have been able to provide any meaning to the Covid-19 crisis by exploring the life worlds of body, time and nature. It also focuses on the role of policy and the connectivity between social science and democracy.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.625,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "84a479adeca309be33f85ee18bd1e4ee27c5187d",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
         }
       }
     },
@@ -7793,6 +9090,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 21.0,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=21.0; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:12, democratic_urgency:4, decay_diagnostics:0].",
+        "quote_text": "The Citizenship law, which pretended to be a humanitarian exercise, became a parochial, communal act exposing the cosmopolitan pretensions of the BJP.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "480de374be819a0c86a6cffeaf1c94d4814b5891",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -7903,6 +9218,24 @@
             "generated_at": "2026-02-22 20:42:30",
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
+        }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 4.6,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it diagnoses democratic erosion within First Republic structures.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=4.6; phase=before; anchors=0; lead_group=decay_diagnostics; group_hits=[decay_diagnostics:2, institutional_grammar:0, democratic_urgency:0].",
+        "quote_text": "A quick history of each of those mentoring makes you wonder at the sanitisation of evil, of how quickly violence and war can be forgotten.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "164041773f325b5b6bb9d19cf62803e61c51f55b",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
         }
       }
     },
@@ -8015,6 +9348,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 21.8,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=21.8; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:8, decay_diagnostics:4, democratic_urgency:4].",
+        "quote_text": "The idea of minority as a category evokes representation, number in stereotyped ways.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "35ec8c5eef0799ebd85b87d0bf537f8a8e0023b8",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -8125,6 +9476,24 @@
             "generated_at": "2026-02-22 20:42:30",
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
+        }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 2.6,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=2.6; phase=before; anchors=0; lead_group=institutional_grammar; group_hits=[institutional_grammar:0, decay_diagnostics:0, democratic_urgency:0].",
+        "quote_text": "The little Swedish schoolgirl Greta Thornburg has an ethical startup.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "f53227385e9b0f3bc204919b02d6720c5b959c79",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
         }
       }
     },
@@ -8237,6 +9606,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 2.6,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=2.6; phase=before; anchors=0; lead_group=institutional_grammar; group_hits=[institutional_grammar:0, decay_diagnostics:0, democratic_urgency:0].",
+        "quote_text": "The High Court\u2019s decision on Daryaganj was not an act of civic hygiene or crowd control but a sheer cleansing of memory.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "24879d22fb5a619e6a8ed5c31895156c8ebee0b1",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -8256,8 +9643,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -8348,6 +9735,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 12.8,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=12.8; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:3, democratic_urgency:3, decay_diagnostics:1].",
+        "quote_text": "Sometimes, as I sit and watch Delhi, I am weighed down by the gravitas of scholars, bureaucrats and politicians. They reduce administration to a dismal science which they label policy. This greyness is compounded by a radical critique which is as heavy and, as a scholar, I keep wondering where all the laughter gone has. Laughter today wears so many corsets. It cannot offend anyone, it cannot disturb law and order, it has to be politically correct, if not constitutional.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "d17b8c2662f3ec1c07fd6fec10bb6207eeaea9f7",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -8367,8 +9772,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -8459,6 +9864,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 28.5,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=28.5; phase=before; anchors=7; lead_group=institutional_grammar; group_hits=[institutional_grammar:16, democratic_urgency:2, decay_diagnostics:1].",
+        "quote_text": "Macwan understands a more creative sense of secularism. He is not referring to the emptying out of religion. His is a dialogic pluralism between his Christianity seeking justice and solidarity and the Constitution and democracy as similar quests for the human and the humane. He believes in prayer and he emphasises that faith and prayer can move majoritarianian mountains. Like Mahatma Gandhi, he believes in the power of prayer and in the courage of conviction. Prayer creates history, he says.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 1.0,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "4b8397e71f1a8b7129f7e24bcd4ac3bbf9a626cf",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -8478,8 +9901,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Knowledge Systems",
@@ -8570,6 +9993,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 22.6,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=22.6; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:12, democratic_urgency:3, decay_diagnostics:0].",
+        "quote_text": "I wish the University Grants Commission committee would look at the work of the theologian Raimundo Panikkar, who spent years in Banaras. He offered the idea of the university and of religion as dialogic entities. Dialogic universities initiate a conversation of knowledges. They sense that secularism itself is an outgrowth of religion. Panikkar argued that the separation of religion and the state is often confused with the separation of religion and life.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7250000000000001,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "35ea4ffda104b033c95aafd056d39dc360b212e6",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -8589,8 +10030,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Culture and Modernity",
@@ -8681,6 +10122,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 15.0,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=15.0; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:4, decay_diagnostics:3, democratic_urgency:3].",
+        "quote_text": "Democratic politics in India at this moment is in a state of depression. At the national level, the Bharatiya Janata Party, on a juggernaut, is attempting to colour saffron those spots on India\u2019s map that have so far resisted its onslaught. There is a sense of inevitability to its dominance as it swallows the North East, and threatens to destabilise Kerala.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "e1304945b24ff40f37dea8c024e0a77a4d81cd17",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -8700,8 +10159,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Memory",
@@ -8792,6 +10251,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 18.5,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it diagnoses democratic erosion within First Republic structures.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=18.5; phase=before; anchors=2; lead_group=decay_diagnostics; group_hits=[decay_diagnostics:9, institutional_grammar:3, democratic_urgency:1].",
+        "quote_text": "At a seminar on Violence and Forgiveness, psychologist Ashis Nandy was chairing and listening to presentations on Afghanistan, South Africa, the United States (US) and other communities. After listening carefully, he commented on the hollowness of international relations as a discipline, claiming that it was one of the emptiest efforts at thinking. He emphasised the gap between peace as a responsibility and the clichd predictability of concepts like security.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.675,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "a89863f7947b0b4c29787cdaa8051b284a7025d3",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -8811,8 +10288,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -8903,6 +10380,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 12.3,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=12.3; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:5, democratic_urgency:1, decay_diagnostics:0].",
+        "quote_text": "There was a celebration in Madhav\u2019s opening paragraph that all the high constitutional positions \u2013 the president, vice president, prime minister \u2013 are occupied by leaders belonging to \u201cthe same ideological fraternity\u201d. He celebrated the fact that they are all from humble backgrounds and then took a logical leap when he sought to equate the entire Opposition with representing the affluent classes, arguing that the BJP will serve the poor and the Opposition the rich.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "fae9ec7806abcef5507ad4a706f383687f9cca12",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -8922,8 +10417,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -9014,6 +10509,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 21.5,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=21.5; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:12, decay_diagnostics:2, democratic_urgency:2].",
+        "quote_text": "Neither Nehru nor his Jeeves, VK Krishna Menon, knew much about security. So security becomes the key word in the post-Nehruvian script. Security is Modi\u2019s hedgehog to the Nehruvian fox of nation-building. Security creates a sense of panopticon and enclosure. What security challenged was the word \u201cdiversity\u201d. The word that described the Nehruvian aesthetic of nation-building was now anti-national. Minority, margin, dissent did not wear the uniform of the nation state.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.675,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "e5e49956d2911bb8c0d18037b40f28bad16a40bc",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -9033,8 +10546,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -9125,6 +10638,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 8.5,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=8.5; phase=before; anchors=2; lead_group=democratic_urgency; group_hits=[democratic_urgency:2, decay_diagnostics:1, institutional_grammar:0].",
+        "quote_text": "The second phenomenon we did not understand was the Indian ability to normalise violence and be happy with authoritarianism. Modi, Bollywood style, believed that goodness was weak, socialism was slow and that he needed to create an assertive aggressive Indian for whom the end justified the means. Middle class India is quite happy to be Chinese, Indian style, to argue that democracy beyond a point does not make sense. Majoritarian rule is middle class India\u2019s answer to the success of authoritarianism elsewhere.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "54a1648e7793cf445ef8db7168c7d11c8ec1ac4a",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -9144,8 +10675,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -9236,6 +10767,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 23.299999999999997,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=23.3; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:7, democratic_urgency:6, decay_diagnostics:4].",
+        "quote_text": "It is almost as if each professional group \u2013 whether it is party or media or army \u2013 is taking strategy while the wider issues of ethics and democracy seem second hand. In fact, it echoes the recent statement of Narendra Modi asking Kashmiri youth to opt between tourism and terrorism. There is a facileness here which again reveals an alienation, a distance from the ground. No wonder The Indian Express editorial shrugged Modi\u2019s option off as \u201ca blithe binary\u201d.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.75,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "c02acb2eeb18d11de3528ec65baece2f77752db5",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -9255,8 +10804,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -9347,6 +10896,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 14.100000000000001,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=14.1; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:4, democratic_urgency:2, decay_diagnostics:1].",
+        "quote_text": "Years ago, after the Gujarat riots of 2002, the Gujarat State Director-General of Police RB Sreekumar, who happened to be a deep believer, spelt out his objections to Narendra Modi as chief minister. Sreekumar saw Modi as a double danger, as a threat to the Constitution and to his sense of Hinduism. In a similar way, despite his election, Adityanath is not just anti-secular but anti-Hindu, a man who violates law and appears contemptuous of the Constitution.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.825,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "1b73bc7ab717df69266de79aa73862616cfdfe16",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -9366,8 +10933,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -9458,6 +11025,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 18.1,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=18.1; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:9, decay_diagnostics:2, democratic_urgency:0].",
+        "quote_text": "Long-range rituals demand that we go beyond blame games and breast-beating and confront the ironies, the paradoxes of the ideals we followed. It is difficult to admit that the scale of the Bharatiya Janata Party victory (the party won 312 of the state\u2019s 403 seats) showed there was something hollow in the ideals we followed. Words like secularism, socialism, justice somehow felt parochial. What were cosmopolitan ideals were reduced to provincial terms.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.8,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "fc69ad1b1f152ad55c5a2ca8f78df6ebe701a4fc",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -9477,8 +11062,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Knowledge Systems",
@@ -9569,6 +11154,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": true,
+        "relevance_score": 19.1,
+        "strength_label": "strong",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.1; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:9, decay_diagnostics:2, democratic_urgency:1].",
+        "quote_text": "The sadness was that this inane exchange of messages got caught between populism and elitism. Javed Akhtar, the poet and Hindi movie script writer, condemned a \u201chardly literate player or a wrestler\u201d. There is a snobbery here that is distressing especially from someone who was the Sehwag of film scripts. Others dismissed Randeep Hooda, someone who had found Sehwag\u2019s humour very funny, on parochial grounds. Sadly, Left snobbery met Right populism which turned its obsession with nationalism into an official gestate.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.7250000000000001,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "da4fae5c23353df847f03105382db50a7bd8bae7",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -9588,8 +11191,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Memory",
@@ -9680,6 +11283,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 12.6,
+        "strength_label": "moderate",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=12.6; phase=before; anchors=5; lead_group=institutional_grammar; group_hits=[institutional_grammar:5, democratic_urgency:1, decay_diagnostics:0].",
+        "quote_text": "Acharyulu\u2019s career embodies his philosophy and it should be welcomed. In fact, his open, everyday democratic sense of the Right to Information could lay to rest a whole epidemic of unnecessary controversies and in fact, show that security plays the role that sexuality did a few decades ago. Only, instead of the individual, it is the state that wears the corset. The very matter of factness of Acharyulu shows that security is a Stakhonovite, overworked term which protects the state from critique.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.775,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "ff21f5a2b4e1e87f4ed1d2e89a6cd8a93f961fc9",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -9699,8 +11320,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "heuristic_url_backfill",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -9777,6 +11398,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 4.4,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=4.4; phase=before; anchors=1; lead_group=institutional_grammar; group_hits=[institutional_grammar:1, decay_diagnostics:0, democratic_urgency:0].",
+        "quote_text": "Remember, the word Bangladesh evokes a mindset. Bangladesh in the Indian mind is still read as failed state. Indians do not grasp that Sri Lanka and Bangladesh have higher quality of life indices and that Bangladesh has a more sophisticated concept of NGOs than the Modi regime. When Indian cricketers plan a trip to Bangladesh, they see it as an easy time. The team management thinks of resting its best players. We Indians still treat Bangladesh as a club team till reality rubs our pompous noses in the mud.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.575,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "ce3d8b23adb6ae63db44b94f8779fac15a877ca5",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -9796,8 +11435,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "partial",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -9887,6 +11526,24 @@
             "generated_at": "2026-02-22 20:42:30",
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
+        }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 6.9,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=6.9; phase=before; anchors=0; lead_group=institutional_grammar; group_hits=[institutional_grammar:3, decay_diagnostics:0, democratic_urgency:0].",
+        "quote_text": "One has to ask, what was the logic called Narendra Modi and what was the nature of the campaign? Modi was a semiotic construct who went on to fight a symbolic war. The Nehruvian nation, Delhi, Development were all semiotically reconstructed in a brilliantly executed campaign. This article is a preliminary attempt at an ethnography of a brilliantly executed campaign.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.5,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "ea1545990898f61b4691923b1a8e822d7bfecab7",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
         }
       }
     },
@@ -9999,6 +11656,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 2.6,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=2.6; phase=before; anchors=0; lead_group=institutional_grammar; group_hits=[institutional_grammar:0, decay_diagnostics:0, democratic_urgency:0].",
+        "quote_text": "Dreams of Reason.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "1821ea315aeb050187e9a273669c13866fffc924",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -10018,8 +11693,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "full",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Ethics",
@@ -10109,6 +11784,24 @@
             "generated_at": "2026-02-22 20:42:30",
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
+        }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 9.4,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=9.4; phase=before; anchors=1; lead_group=institutional_grammar; group_hits=[institutional_grammar:3, democratic_urgency:3, decay_diagnostics:0].",
+        "quote_text": "The story of the Centre for the Study of Developing Societies (CSDS) spelt out in the Outlook and Seminar magazine issues recently, creates a simple frame. To me what made CSDS famous was that it was a quarrel, a conversation and one with much causality. The CSDS was one of the serious attempts to construct a social science outside economics, which could provide a different imagination for democracy in India.",
+        "quote_source": "body_paragraph",
+        "quote_confidence": 0.625,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "38f5b52f9c5b20d6ed23c150f65e1f7c1bbf7bef",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
         }
       }
     },
@@ -10214,6 +11907,24 @@
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
         }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 2.6,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=2.6; phase=before; anchors=0; lead_group=institutional_grammar; group_hits=[institutional_grammar:0, decay_diagnostics:0, democratic_urgency:0].",
+        "quote_text": "Early work on anti-nuclear protests and the right to survival.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "5b45ce52ad6260806c7c584fd758d94ee8e854b6",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
+        }
       }
     },
     {
@@ -10233,8 +11944,8 @@
       "status": "verified",
       "summary_method": "meta_description",
       "retrieval_method": "forwarded_archive_metadata_fetch",
-      "text_state": "missing",
-      "has_full_text": false,
+      "text_state": "partial",
+      "has_full_text": true,
       "tags": [
         {
           "label": "Memory",
@@ -10324,6 +12035,24 @@
             "generated_at": "2026-02-22 20:42:30",
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
+        }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 2.6,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=2.6; phase=before; anchors=0; lead_group=institutional_grammar; group_hits=[institutional_grammar:0, decay_diagnostics:0, democratic_urgency:0].",
+        "quote_text": "As the Anna Hazare-led anti-corruption movement moves to the legislative phase it has to rid itself of the panacea model.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "5ff5e2cee8538532ef4fad45d5415a29f0eba4df",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
         }
       }
     },
@@ -10435,6 +12164,24 @@
             "generated_at": "2026-02-22 20:42:30",
             "provenance_note": "Generated from article title, summary, and tags via deterministic rules."
           }
+        }
+      },
+      "republic_critical": {
+        "phase": "before",
+        "include_in_story": false,
+        "relevance_score": 2.6,
+        "strength_label": "weak",
+        "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+        "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=2.6; phase=before; anchors=0; lead_group=institutional_grammar; group_hits=[institutional_grammar:0, decay_diagnostics:0, democratic_urgency:0].",
+        "quote_text": "Dear Professor Manmohan Singh.",
+        "quote_source": "summary_sentence",
+        "quote_confidence": 0.42,
+        "audit": {
+          "method": "rule_based_critical",
+          "version": "critical_v1",
+          "input_fingerprint": "871a0d20dc8b7c6958cdb4c3525492e82693a56c",
+          "run_uid": "repcrit-20260222T215843Z-6276737e",
+          "generated_at": "2026-02-22 21:58:43"
         }
       }
     }

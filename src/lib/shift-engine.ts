@@ -155,6 +155,7 @@ function persistedAnnotationForPhase(
 
 function toProjection(article: RawArticleRecord, shift: ShiftDefinition, score: number): ShiftProjectionRecord {
   const phase: "before" | "after" = article.year < shift.milestoneYear ? "before" : "after";
+  const republicCritical = shift.id === "republic_shift" ? article.republic_critical : undefined;
   const persisted = persistedAnnotationForPhase(article, shift, phase);
 
   return {
@@ -176,8 +177,14 @@ function toProjection(article: RawArticleRecord, shift: ShiftDefinition, score: 
     shift_context: {
       shift_id: shift.id,
       phase,
-      narrative_note: persisted?.connection ?? buildNarrativeNote(article, shift, phase),
-      key_message: persisted?.key_message ?? buildKeyMessage(article, shift, phase),
+      narrative_note:
+        republicCritical?.include_in_story && republicCritical.connection_text
+          ? republicCritical.connection_text
+          : persisted?.connection ?? buildNarrativeNote(article, shift, phase),
+      key_message:
+        republicCritical?.include_in_story && republicCritical.rationale
+          ? republicCritical.rationale
+          : persisted?.key_message ?? buildKeyMessage(article, shift, phase),
     },
     score,
   };
@@ -230,7 +237,13 @@ export function buildShiftSplit(
   searchTerm: string,
   yearFilter: "all" | number
 ): ShiftSplitResult {
-  const projected = articles
+  const curatedRepublic = articles.filter(
+    (article) => article.republic_critical?.include_in_story === true
+  );
+  const workingSet =
+    shift.id === "republic_shift" && curatedRepublic.length > 0 ? curatedRepublic : articles;
+
+  const projected = workingSet
     .map((article) => {
       const score = shiftScore(article, shift);
       return { article, score };
@@ -238,7 +251,7 @@ export function buildShiftSplit(
     .filter((entry) => entry.score >= 2)
     .map((entry) => toProjection(entry.article, shift, entry.score));
 
-  const withCoverage = ensureCoverage(articles, shift, projected);
+  const withCoverage = ensureCoverage(workingSet, shift, projected);
   const searched = searchShiftRecords(withCoverage, searchTerm);
   const yearFiltered =
     yearFilter === "all"

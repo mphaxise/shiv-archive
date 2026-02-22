@@ -85,3 +85,45 @@ ON shift_annotations(article_uid, shift_id, generated_at DESC, id DESC);
 
 CREATE INDEX IF NOT EXISTS idx_shift_annotations_run_uid
 ON shift_annotations(run_uid);
+
+CREATE TABLE IF NOT EXISTS republic_shift_evidence_runs (
+    id INTEGER PRIMARY KEY,
+    run_uid TEXT NOT NULL UNIQUE,
+    started_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    finished_at TEXT,
+    method TEXT NOT NULL,
+    version TEXT NOT NULL,
+    inserted_count INTEGER NOT NULL DEFAULT 0,
+    skipped_count INTEGER NOT NULL DEFAULT 0,
+    selected_before_count INTEGER NOT NULL DEFAULT 0,
+    selected_after_count INTEGER NOT NULL DEFAULT 0,
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS republic_shift_evidence (
+    id INTEGER PRIMARY KEY,
+    article_uid TEXT NOT NULL,
+    phase TEXT NOT NULL CHECK (phase IN ('before', 'after')),
+    include_in_story INTEGER NOT NULL CHECK (include_in_story IN (0, 1)),
+    relevance_score REAL NOT NULL,
+    strength_label TEXT NOT NULL CHECK (strength_label IN ('strong', 'moderate', 'weak')),
+    connection_text TEXT NOT NULL,
+    rationale TEXT NOT NULL,
+    quote_text TEXT NOT NULL,
+    quote_source TEXT NOT NULL CHECK (quote_source IN ('body_paragraph', 'summary_sentence', 'title')),
+    quote_confidence REAL NOT NULL CHECK (quote_confidence >= 0.0 AND quote_confidence <= 1.0),
+    method TEXT NOT NULL,
+    version TEXT NOT NULL,
+    input_fingerprint TEXT NOT NULL,
+    run_uid TEXT NOT NULL REFERENCES republic_shift_evidence_runs(run_uid) ON DELETE RESTRICT,
+    generated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_republic_shift_evidence_unique_input
+ON republic_shift_evidence(article_uid, version, input_fingerprint);
+
+CREATE INDEX IF NOT EXISTS idx_republic_shift_evidence_lookup
+ON republic_shift_evidence(article_uid, generated_at DESC, id DESC);
+
+CREATE INDEX IF NOT EXISTS idx_republic_shift_evidence_selected
+ON republic_shift_evidence(include_in_story, phase, relevance_score DESC);

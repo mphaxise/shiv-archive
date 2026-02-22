@@ -17,6 +17,19 @@ METHOD_PRIORITY = {
 }
 
 
+def table_exists(cur: sqlite3.Cursor, table_name: str) -> bool:
+    row = cur.execute(
+        """
+        SELECT 1
+        FROM sqlite_master
+        WHERE type = 'table' AND name = ?
+        LIMIT 1
+        """,
+        (table_name,),
+    ).fetchone()
+    return row is not None
+
+
 def pick_tag(existing: dict, candidate: dict) -> dict:
     existing_score = (METHOD_PRIORITY.get(existing["method"], 0), existing["confidence"])
     candidate_score = (METHOD_PRIORITY.get(candidate["method"], 0), candidate["confidence"])
@@ -68,6 +81,61 @@ def gather_shift_annotations(cur: sqlite3.Cursor) -> dict[str, dict[str, dict]]:
         }
 
     return annotations
+
+
+def gather_republic_evidence(cur: sqlite3.Cursor) -> dict[str, dict]:
+    if not table_exists(cur, "republic_shift_evidence"):
+        return {}
+    rows = cur.execute(
+        """
+        SELECT
+            e.article_uid,
+            e.phase,
+            e.include_in_story,
+            e.relevance_score,
+            e.strength_label,
+            e.connection_text,
+            e.rationale,
+            e.quote_text,
+            e.quote_source,
+            e.quote_confidence,
+            e.method,
+            e.version,
+            e.input_fingerprint,
+            e.run_uid,
+            e.generated_at
+        FROM republic_shift_evidence e
+        JOIN (
+            SELECT article_uid, MAX(id) AS max_id
+            FROM republic_shift_evidence
+            GROUP BY article_uid
+        ) latest
+            ON latest.max_id = e.id
+        ORDER BY e.article_uid ASC
+        """
+    ).fetchall()
+
+    out: dict[str, dict] = {}
+    for row in rows:
+        out[str(row["article_uid"])] = {
+            "phase": row["phase"],
+            "include_in_story": bool(row["include_in_story"]),
+            "relevance_score": float(row["relevance_score"]),
+            "strength_label": row["strength_label"],
+            "connection_text": row["connection_text"],
+            "rationale": row["rationale"],
+            "quote_text": row["quote_text"],
+            "quote_source": row["quote_source"],
+            "quote_confidence": float(row["quote_confidence"]),
+            "audit": {
+                "method": row["method"],
+                "version": row["version"],
+                "input_fingerprint": row["input_fingerprint"],
+                "run_uid": row["run_uid"],
+                "generated_at": row["generated_at"],
+            },
+        }
+    return out
 
 
 def gather_analysis(cur: sqlite3.Cursor) -> tuple[dict[str, sqlite3.Row], dict[str, dict], dict[str, dict[str, dict]]]:
@@ -155,6 +223,7 @@ def gather_articles(master_conn: sqlite3.Connection, analysis_conn: sqlite3.Conn
     ).fetchall()
 
     analysis_by_uid, tags_by_article, annotations_by_article = gather_analysis(analysis_cur)
+    republic_evidence_by_article = gather_republic_evidence(analysis_cur)
 
     output: list[dict] = []
     for row in master_rows:
@@ -189,6 +258,7 @@ def gather_articles(master_conn: sqlite3.Connection, analysis_conn: sqlite3.Conn
                     key=lambda item: (item["domain"], item["label"].lower()),
                 ),
                 "shift_annotations": annotations_by_article.get(article_uid, {}),
+                "republic_critical": republic_evidence_by_article.get(article_uid),
             }
         )
     return output
@@ -223,6 +293,9 @@ def build_metadata(articles: list[dict]) -> dict:
     republic_annotations = sum(
         1 for a in articles if "republic_shift" in (a.get("shift_annotations") or {})
     )
+    republic_curated = sum(
+        1 for a in articles if (a.get("republic_critical") or {}).get("include_in_story")
+    )
 
     tag_counts: dict[str, dict] = {}
     for article in articles:
@@ -254,6 +327,7 @@ def build_metadata(articles: list[dict]) -> dict:
         "full_text_count": with_full_text,
         "shift_annotation_count": total_shift_annotations,
         "republic_annotation_count": republic_annotations,
+        "republic_curated_count": republic_curated,
         "year_range": [min(years), max(years)] if years else [],
         "years": years,
         "publications": publications,

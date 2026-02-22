@@ -26,6 +26,7 @@ This workspace contains:
 - Dual-db shift annotation generator script: `/Users/praneet/shiv-archive/scripts/generate_shift_annotations_dual.py`
 - Legacy-to-dual migration script: `/Users/praneet/shiv-archive/scripts/migrate_to_dual_db.py`
 - Full text backfill script (master DB): `/Users/praneet/shiv-archive/scripts/backfill_article_texts.py`
+- Republic critical evidence generator (analysis DB): `/Users/praneet/shiv-archive/scripts/generate_republic_critical_evidence.py`
 - DB snapshot script: `/Users/praneet/shiv-archive/scripts/snapshot_db.sh`
 - Public data export script: `/Users/praneet/shiv-archive/scripts/export_public_json.py`
 - Dual-db export script: `/Users/praneet/shiv-archive/scripts/export_public_json_dual.py`
@@ -142,6 +143,16 @@ Preview mode:
   --master-db-path /Users/praneet/shiv-archive/data/shiv_master.db \
   --batch-size 5 \
   --dry-run
+```
+
+## Generate strict Republic shift picks with quote-backed rationale
+```bash
+/Users/praneet/shiv-archive/scripts/generate_republic_critical_evidence.py \
+  --master-db-path /Users/praneet/shiv-archive/data/shiv_master.db \
+  --analysis-db-path /Users/praneet/shiv-archive/data/shiv_analysis.db \
+  --version critical_v1 \
+  --max-per-phase 18 \
+  --min-score 11
 ```
 
 ## Legacy single-db shift annotations (compatibility mode)

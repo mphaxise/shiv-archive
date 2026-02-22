@@ -7,3 +7,7 @@ npm-debug.log*
 
 data/snapshots/
 *.db-journal
+
+__pycache__/
+*.pyc
+tsconfig.tsbuildinfo
