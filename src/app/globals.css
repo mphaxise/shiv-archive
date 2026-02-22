@@ -1116,6 +1116,11 @@ body {
   text-decoration: underline;
 }
 
+.globalFooterShell {
+  width: min(1240px, calc(100vw - 2rem));
+  margin: 0 auto 0.8rem;
+}
+
 @media (max-width: 1140px) {
   .heroPanel {
     grid-template-columns: 1fr;
@@ -1168,5 +1173,9 @@ body {
   .searchControl {
     flex-basis: 100%;
     min-width: 100%;
+  }
+
+  .globalFooterShell {
+    width: calc(100vw - 1rem);
   }
 }
