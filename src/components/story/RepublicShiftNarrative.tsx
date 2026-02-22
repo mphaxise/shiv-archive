@@ -3,40 +3,16 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 
+import { OpinionEvidenceCard, OpinionEvidenceCardData } from "@/components/shared/OpinionEvidenceCard";
 import { RawArticleRecord } from "@/lib/types";
 
-interface NarrativeRecord {
-  id: string;
-  title: string;
-  dateIso: string;
+interface NarrativeRecord extends OpinionEvidenceCardData {
   year: number;
-  url: string | null;
-  publication: string;
-  summary: string | null;
-  phase: "before" | "after";
-  shortSummary: string;
-  themes: string[];
-  takeaway: string;
-  connection: string;
-  rationale: string;
-  quoteText: string;
-  relevanceScore: number;
-  strengthLabel: "strong" | "moderate" | "weak";
-  quoteSource: "body_paragraph" | "summary_sentence" | "title";
   includeInStory: boolean;
 }
 
 const REPUBLIC_MILESTONE_YEAR = 2024;
 const CHUNK_SIZE = 8;
-
-function formatDate(dateIso: string): string {
-  const date = new Date(`${dateIso}T00:00:00Z`);
-  return new Intl.DateTimeFormat("en-IN", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric",
-  }).format(date);
-}
 
 function firstSentence(text: string | null): string {
   const normalized = (text ?? "").replace(/\s+/g, " ").trim();
@@ -83,8 +59,7 @@ function toNarrativeRecord(article: RawArticleRecord): NarrativeRecord {
   const critical = article.republic_critical;
   const fallbackPhase: "before" | "after" = article.year < REPUBLIC_MILESTONE_YEAR ? "before" : "after";
   const phase = critical?.phase ?? annotation?.phase ?? fallbackPhase;
-  const themes = article.tags.slice(0, 3).map((tag) => tag.label);
-  const shortSummary = shrink(firstSentence(article.summary), 230);
+  const summarySentence = firstSentence(article.summary);
   const takeaway = buildTakeaway(phase, annotation?.key_message, article.summary);
 
   return {
@@ -94,10 +69,12 @@ function toNarrativeRecord(article: RawArticleRecord): NarrativeRecord {
     year: article.year,
     url: article.url,
     publication: article.publication,
-    summary: article.summary,
+    section: article.section,
+    readingMinutes: article.reading_minutes,
+    tone: article.tone,
+    tags: article.tags.slice(0, 3).map((tag) => tag.label),
+    summary: shrink(summarySentence, 230),
     phase,
-    shortSummary,
-    themes,
     takeaway,
     connection:
       critical?.connection_text ??
@@ -109,7 +86,7 @@ function toNarrativeRecord(article: RawArticleRecord): NarrativeRecord {
       critical?.rationale ??
       annotation?.key_message ??
       "Selected because it contributes to the Republic-shift argument with sufficient evidence.",
-    quoteText: critical?.quote_text ?? firstSentence(article.summary),
+    quoteText: critical?.quote_text ?? summarySentence,
     relevanceScore: critical?.relevance_score ?? 0,
     strengthLabel: critical?.strength_label ?? "weak",
     quoteSource: critical?.quote_source ?? "summary_sentence",
@@ -161,86 +138,6 @@ function yearBand(records: NarrativeRecord[]): string {
   }
   const years = records.map((record) => record.year);
   return `${Math.min(...years)}-${Math.max(...years)}`;
-}
-
-function EvidenceCard({ record }: { record: NarrativeRecord }) {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  return (
-    <article className={`narrativeEvidenceCard ${isFlipped ? "isFlipped" : ""}`}>
-      <div className="narrativeFlipInner">
-        <section className="narrativeFlipFace narrativeFlipFront">
-          <header className="narrativeEvidenceHead">
-            <p className="narrativeEvidenceDate">{formatDate(record.dateIso)}</p>
-            <p className="narrativeEvidenceSource">{record.publication}</p>
-            <button
-              type="button"
-              className="narrativeFlipIconButton"
-              onClick={() => setIsFlipped(true)}
-              aria-label={`Show strict analysis for ${record.title}`}
-              title="Show strict analysis"
-            >
-              <span className="narrativeFlipIcon" aria-hidden="true" />
-            </button>
-          </header>
-          <h3 className="narrativeEvidenceTitle">
-            {record.url ? (
-              <a href={record.url} target="_blank" rel="noreferrer">
-                {record.title}
-              </a>
-            ) : (
-              record.title
-            )}
-          </h3>
-          <p className="narrativeSummary">
-            <strong>Summary:</strong> {record.shortSummary}
-          </p>
-          <p className="narrativeTakeaway">
-            <strong>Takeaway:</strong> {record.takeaway}
-          </p>
-          <blockquote className="narrativeQuote">"{record.quoteText}"</blockquote>
-          <div className="narrativeThemeRow">
-            {record.themes.length > 0 ? (
-              record.themes.map((theme) => (
-                <span key={`${record.id}-${theme}`} className="narrativeThemeChip">
-                  {theme}
-                </span>
-              ))
-            ) : (
-              <span className="narrativeThemeChip">Republic Shift</span>
-            )}
-          </div>
-        </section>
-
-        <section className="narrativeFlipFace narrativeFlipBack">
-          <header className="narrativeEvidenceHead">
-            <p className="narrativeEvidenceDate">{formatDate(record.dateIso)}</p>
-            <p className="narrativeEvidenceSource">Critical evidence</p>
-            <button
-              type="button"
-              className="narrativeFlipIconButton"
-              onClick={() => setIsFlipped(false)}
-              aria-label={`Return to qualitative view for ${record.title}`}
-              title="Back to qualitative view"
-            >
-              <span className="narrativeFlipIcon" aria-hidden="true" />
-            </button>
-          </header>
-          <p className="narrativeConnection">
-            <strong>Phase connection:</strong> {record.connection}
-          </p>
-          <p className="narrativeKeyMessage">
-            <strong>Selection rationale:</strong> {record.rationale}
-          </p>
-          <p className="narrativeEvidenceScore">
-            Strength: <strong>{record.strengthLabel}</strong> | Relevance score:{" "}
-            <strong>{record.relevanceScore.toFixed(1)}</strong> | Quote source:{" "}
-            <strong>{record.quoteSource}</strong>
-          </p>
-        </section>
-      </div>
-    </article>
-  );
 }
 
 export function RepublicShiftNarrative({
@@ -342,7 +239,7 @@ export function RepublicShiftNarrative({
           </header>
           <div className="narrativeEvidenceList">
             {visiblePhaseOne.map((record) => (
-              <EvidenceCard key={`before-${record.id}`} record={record} />
+              <OpinionEvidenceCard key={`before-${record.id}`} data={record} />
             ))}
           </div>
           <div ref={phaseOneLazy.sentinelRef} className="narrativeSentinel" />
@@ -363,7 +260,7 @@ export function RepublicShiftNarrative({
           </header>
           <div className="narrativeEvidenceList">
             {visiblePhaseTwo.map((record) => (
-              <EvidenceCard key={`after-${record.id}`} record={record} />
+              <OpinionEvidenceCard key={`after-${record.id}`} data={record} />
             ))}
           </div>
           <div ref={phaseTwoLazy.sentinelRef} className="narrativeSentinel" />

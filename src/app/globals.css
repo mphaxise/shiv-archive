@@ -98,6 +98,35 @@ body {
   line-height: 1.42;
 }
 
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.2rem;
+}
+
+.heroCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  border: 1px solid rgba(20, 103, 99, 0.62);
+  border-radius: 999px;
+  padding: 0 0.82rem;
+  background: rgba(232, 247, 245, 0.92);
+  color: #1f555f;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.heroCta:hover {
+  border-color: rgba(20, 103, 99, 0.84);
+  background: rgba(227, 245, 242, 0.98);
+}
+
 .heroFigure {
   margin: 0;
   border-radius: 16px;
@@ -274,7 +303,8 @@ body {
 }
 
 .searchControl {
-  flex: 1 1 420px;
+  flex: 1 1 520px;
+  min-width: 340px;
 }
 
 .filterControl > span {
@@ -291,6 +321,11 @@ body {
   padding: 0.3rem 0.55rem;
   font: inherit;
   background: rgba(255, 255, 255, 0.95);
+}
+
+.filterControl input::placeholder {
+  font-size: 0.88rem;
+  opacity: 0.95;
 }
 
 .searchInputWrap {
@@ -413,6 +448,43 @@ body {
   color: var(--muted);
   font-size: 0.94rem;
   line-height: 1.42;
+}
+
+.chronicleToolbar {
+  margin-top: 0.66rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: flex-end;
+}
+
+.chronicleSortControl {
+  display: grid;
+  gap: 0.26rem;
+}
+
+.chronicleSortControl span {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #3f5964;
+}
+
+.chronicleSortControl select {
+  min-width: 220px;
+  height: 2.05rem;
+  border: 1px solid rgba(62, 75, 84, 0.26);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 0.22rem 0.5rem;
+  font: inherit;
+}
+
+.chronicleSortMeta {
+  margin: 0 0 0.14rem;
+  color: #455760;
+  font-size: 0.82rem;
 }
 
 .analysisNarrativeLink {
@@ -1021,6 +1093,29 @@ body {
   font-size: 0.78rem;
 }
 
+.siteFooter {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.68);
+  padding: 0.82rem 0.9rem;
+  display: grid;
+  gap: 0.32rem;
+}
+
+.siteFooter p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.44;
+  color: #33424b;
+}
+
+.siteFooter a {
+  color: #1d5d68;
+  text-decoration: underline;
+}
+
 @media (max-width: 1140px) {
   .heroPanel {
     grid-template-columns: 1fr;
@@ -1072,5 +1167,6 @@ body {
 
   .searchControl {
     flex-basis: 100%;
+    min-width: 100%;
   }
 }

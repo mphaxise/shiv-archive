@@ -3,11 +3,69 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
-import { ArticleCard } from "@/components/shared/ArticleCard";
+import { OpinionEvidenceCard, OpinionEvidenceCardData } from "@/components/shared/OpinionEvidenceCard";
 import { buildShiftSplit } from "@/lib/shift-engine";
 import { SHIFT_DEFINITIONS } from "@/lib/shift-definitions";
-import { RawArticleRecord } from "@/lib/types";
+import { RawArticleRecord, ShiftProjectionRecord } from "@/lib/types";
 import { useResearchState } from "@/state/research-state";
+
+function firstSentence(text: string | null): string {
+  const normalized = (text ?? "").replace(/\s+/g, " ").trim();
+  if (!normalized) {
+    return "Summary pending.";
+  }
+  const match = normalized.match(/^(.+?[.!?])(\s|$)/);
+  return (match?.[1] ?? normalized).trim();
+}
+
+function shrink(text: string, maxChars: number): string {
+  const clean = text.trim();
+  if (clean.length <= maxChars) {
+    return clean;
+  }
+  const chunk = clean.slice(0, maxChars);
+  const cut = chunk.lastIndexOf(" ");
+  if (cut > maxChars * 0.62) {
+    return `${chunk.slice(0, cut)}...`;
+  }
+  return `${chunk.trimEnd()}...`;
+}
+
+function scoreToStrength(score: number): "strong" | "moderate" | "weak" {
+  if (score >= 7) {
+    return "strong";
+  }
+  if (score >= 4) {
+    return "moderate";
+  }
+  return "weak";
+}
+
+function toOpinionEvidenceCard(record: ShiftProjectionRecord): OpinionEvidenceCardData {
+  const summarySentence = firstSentence(record.analysis.summary);
+  const takeawaySentence = firstSentence(record.shift_context.key_message);
+
+  return {
+    id: record.article_id,
+    title: record.meta.title,
+    dateIso: record.meta.date_iso,
+    url: record.meta.url,
+    publication: record.meta.publication,
+    section: record.meta.section,
+    readingMinutes: record.meta.reading_minutes,
+    tone: record.analysis.tone,
+    tags: record.analysis.tags.slice(0, 3).map((tag) => tag.label),
+    summary: shrink(summarySentence, 220),
+    takeaway: shrink(takeawaySentence, 210),
+    quoteText: summarySentence === "Summary pending." ? record.meta.title : summarySentence,
+    phase: record.shift_context.phase,
+    connection: record.shift_context.narrative_note,
+    rationale: record.shift_context.key_message,
+    strengthLabel: scoreToStrength(record.score),
+    relevanceScore: Number(record.score.toFixed(1)),
+    quoteSource: "summary_sentence",
+  };
+}
 
 export function OpinionShiftView({ articles }: { articles: RawArticleRecord[] }) {
   const { state } = useResearchState();
@@ -74,7 +132,11 @@ export function OpinionShiftView({ articles }: { articles: RawArticleRecord[] })
           <p className="phaseSubtitle">{shift.beforeNarrative}</p>
           <AnimatePresence mode="popLayout">
             {split.before.map((record) => (
-              <ArticleCard key={record.article_id} record={record} variant="shift" />
+              <OpinionEvidenceCard
+                key={record.article_id}
+                layoutId={`shift-${record.article_id}`}
+                data={toOpinionEvidenceCard(record)}
+              />
             ))}
           </AnimatePresence>
         </motion.section>
@@ -94,7 +156,11 @@ export function OpinionShiftView({ articles }: { articles: RawArticleRecord[] })
           <p className="phaseSubtitle">{shift.afterNarrative}</p>
           <AnimatePresence mode="popLayout">
             {split.after.map((record) => (
-              <ArticleCard key={record.article_id} record={record} variant="shift" />
+              <OpinionEvidenceCard
+                key={record.article_id}
+                layoutId={`shift-${record.article_id}`}
+                data={toOpinionEvidenceCard(record)}
+              />
             ))}
           </AnimatePresence>
         </motion.section>

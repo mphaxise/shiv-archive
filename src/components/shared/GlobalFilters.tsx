@@ -292,7 +292,7 @@ export function GlobalFilters({ metadata }: { metadata: DatasetMetadata }) {
               }, 120);
             }}
             onKeyDown={onSearchKeyDown}
-            placeholder="Search themes, tags, summaries..."
+            placeholder="Search tags, themes, summaries, sources..."
             aria-label="Search by tag, theme, summary, source, or tone"
             aria-expanded={isOpen}
             aria-autocomplete="list"

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { ChangeEvent, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { ArticleCard } from "@/components/shared/ArticleCard";
@@ -9,12 +9,65 @@ import { searchShiftRecords } from "@/lib/semantic-search";
 import { RawArticleRecord, ShiftProjectionRecord } from "@/lib/types";
 import { useResearchState } from "@/state/research-state";
 
-function sortChronicle(records: ShiftProjectionRecord[]): ShiftProjectionRecord[] {
-  return [...records].sort((a, b) => b.meta.date_iso.localeCompare(a.meta.date_iso));
+type ChronicleSortMode =
+  | "date_desc"
+  | "date_asc"
+  | "publication_asc"
+  | "publication_desc"
+  | "title_asc";
+
+const SORT_LABELS: Record<ChronicleSortMode, string> = {
+  date_desc: "Newest first",
+  date_asc: "Oldest first",
+  publication_asc: "Publication A-Z",
+  publication_desc: "Publication Z-A",
+  title_asc: "Title A-Z",
+};
+
+function alphaCompare(left: string, right: string): number {
+  return left.localeCompare(right, undefined, { sensitivity: "base" });
+}
+
+function sortChronicle(
+  records: ShiftProjectionRecord[],
+  mode: ChronicleSortMode
+): ShiftProjectionRecord[] {
+  const sorted = [...records];
+
+  sorted.sort((a, b) => {
+    if (mode === "date_asc") {
+      return a.meta.date_iso.localeCompare(b.meta.date_iso) || alphaCompare(a.meta.title, b.meta.title);
+    }
+    if (mode === "publication_asc") {
+      return (
+        alphaCompare(a.meta.publication, b.meta.publication) ||
+        b.meta.date_iso.localeCompare(a.meta.date_iso) ||
+        alphaCompare(a.meta.title, b.meta.title)
+      );
+    }
+    if (mode === "publication_desc") {
+      return (
+        alphaCompare(b.meta.publication, a.meta.publication) ||
+        b.meta.date_iso.localeCompare(a.meta.date_iso) ||
+        alphaCompare(a.meta.title, b.meta.title)
+      );
+    }
+    if (mode === "title_asc") {
+      return (
+        alphaCompare(a.meta.title, b.meta.title) ||
+        b.meta.date_iso.localeCompare(a.meta.date_iso) ||
+        alphaCompare(a.meta.publication, b.meta.publication)
+      );
+    }
+    return b.meta.date_iso.localeCompare(a.meta.date_iso) || alphaCompare(a.meta.title, b.meta.title);
+  });
+
+  return sorted;
 }
 
 export function ChronicleView({ articles }: { articles: RawArticleRecord[] }) {
   const { state } = useResearchState();
+  const [sortMode, setSortMode] = useState<ChronicleSortMode>("date_desc");
   const activeShift = SHIFT_DEFINITIONS[state.activeShift];
 
   const projected = useMemo<ShiftProjectionRecord[]>(
@@ -51,7 +104,11 @@ export function ChronicleView({ articles }: { articles: RawArticleRecord[] }) {
     state.activeFilter.year === "all"
       ? searched
       : searched.filter((record) => record.meta.year === state.activeFilter.year);
-  const list = sortChronicle(yearFiltered);
+  const list = useMemo(() => sortChronicle(yearFiltered, sortMode), [yearFiltered, sortMode]);
+
+  const onSortChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    setSortMode(event.target.value as ChronicleSortMode);
+  };
 
   return (
     <motion.section
@@ -70,6 +127,21 @@ export function ChronicleView({ articles }: { articles: RawArticleRecord[] }) {
           Cards show title, quick summary, publish date, article type, and three key tags. Active
           shift context remains available for the Opinion Shift view: <strong>{activeShift.label}</strong>.
         </p>
+        <div className="chronicleToolbar">
+          <label className="chronicleSortControl">
+            <span>Sort Archive</span>
+            <select value={sortMode} onChange={onSortChange} aria-label="Sort archive cards">
+              <option value="date_desc">Newest first</option>
+              <option value="date_asc">Oldest first</option>
+              <option value="publication_asc">Publication A-Z</option>
+              <option value="publication_desc">Publication Z-A</option>
+              <option value="title_asc">Title A-Z</option>
+            </select>
+          </label>
+          <p className="chronicleSortMeta">
+            {list.length} articles shown | sorted by <strong>{SORT_LABELS[sortMode]}</strong>
+          </p>
+        </div>
       </header>
 
       <div className="chronicleGrid">

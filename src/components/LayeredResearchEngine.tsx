@@ -6,6 +6,22 @@ import { LayerHost } from "@/components/layers/LayerHost";
 import { DatasetPayload } from "@/lib/types";
 import { ResearchStateProvider } from "@/state/research-state";
 
+function formatUtcStamp(value: string): string {
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) {
+    return value;
+  }
+  return new Intl.DateTimeFormat("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "UTC",
+    timeZoneName: "short",
+  }).format(parsed);
+}
+
 export function LayeredResearchEngine({ dataset }: { dataset: DatasetPayload }) {
   const visibleCount = dataset.articles.filter((article) => article.status !== "draft").length;
   const yearStart = dataset.metadata.year_range[0] ?? dataset.metadata.years.at(-1) ?? "";
@@ -13,6 +29,7 @@ export function LayeredResearchEngine({ dataset }: { dataset: DatasetPayload }) 
     dataset.metadata.year_range[dataset.metadata.year_range.length - 1] ??
     dataset.metadata.years[0] ??
     "";
+  const lastUpdated = formatUtcStamp(dataset.metadata.generated_at_utc);
   const sourceBreakdown = (dataset.metadata.publications ?? [])
     .map((source) => `${source.name} (${source.count})`)
     .join(" | ");
@@ -36,6 +53,11 @@ export function LayeredResearchEngine({ dataset }: { dataset: DatasetPayload }) 
                 shift annotations evolve in a separate analysis database through auditable scripts.
               </p>
               <p className="heroSources">Article sources: {sourceBreakdown}</p>
+              <div className="heroActions">
+                <a className="heroCta" href="#research-archive">
+                  Jump to Archive
+                </a>
+              </div>
             </div>
             <figure className="heroFigure">
               <img
@@ -75,7 +97,7 @@ export function LayeredResearchEngine({ dataset }: { dataset: DatasetPayload }) 
             </article>
           </section>
 
-          <section className="workspaceHead">
+          <section id="research-archive" className="workspaceHead">
             <div>
               <p className="eyebrow">Research Corpus</p>
               <h2>{dataset.metadata.dataset}</h2>
@@ -99,6 +121,23 @@ export function LayeredResearchEngine({ dataset }: { dataset: DatasetPayload }) 
           <ViewSwitcher />
           <GlobalFilters metadata={dataset.metadata} />
           <LayerHost articles={dataset.articles} />
+
+          <footer className="siteFooter">
+            <p>
+              Last updated: <strong>{lastUpdated}</strong>
+            </p>
+            <p>
+              Contact: <a href="mailto:praneet.koppula@gmail.com">praneet.koppula@gmail.com</a> |
+              GitHub:{" "}
+              <a href="https://github.com/mphaxise/shiv-archive" target="_blank" rel="noreferrer">
+                github.com/mphaxise/shiv-archive
+              </a>
+            </p>
+            <p>
+              Citation guidance: cite the original publication URL for each article, and cite this
+              archive with the snapshot timestamp above.
+            </p>
+          </footer>
         </main>
       </div>
     </ResearchStateProvider>
