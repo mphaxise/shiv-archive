@@ -2,10 +2,10 @@
 const isDev = process.env.NODE_ENV === "development";
 
 const nextConfig = {
-  // Keep dev and production build artifacts separate to avoid missing-chunk
-  // errors when `next dev` and `next build` are run in the same workspace.
-  distDir: isDev ? ".next-dev" : ".next-build",
-  ...(isDev ? {} : { output: "export" }),
+  // Keep dev artifacts separate so local `next dev` and `next build` do not
+  // stomp on each other; keep production on default export output (`out`).
+  ...(isDev ? { distDir: ".next-dev" } : {}),
+  output: "export",
   images: {
     unoptimized: true,
   },
