@@ -23,9 +23,11 @@ fi
 "$ROOT/scripts/generate_republic_critical_evidence.py" \
   --master-db-path "$MASTER_DB" \
   --analysis-db-path "$ANALYSIS_DB" \
-  --version critical_v1 \
-  --max-per-phase 18 \
-  --min-score 11
+  --version critical_v2 \
+  --max-per-phase 12 \
+  --min-score 14 \
+  --min-anchor-hits 3 \
+  --min-group-hits 2
 
 "$ROOT/scripts/export_public_json_dual.py" \
   --master-db-path "$MASTER_DB" \

@@ -857,19 +857,44 @@ body {
 }
 
 .narrativeEvidenceCard {
+  perspective: 1200px;
+  min-height: 360px;
+}
+
+.narrativeFlipInner {
+  position: relative;
+  min-height: 360px;
+  transition: transform 0.48s ease;
+  transform-style: preserve-3d;
+}
+
+.narrativeEvidenceCard.isFlipped .narrativeFlipInner {
+  transform: rotateY(180deg);
+}
+
+.narrativeFlipFace {
+  position: absolute;
+  inset: 0;
   border: 1px solid rgba(68, 83, 92, 0.2);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.94);
   padding: 0.62rem;
   display: grid;
   gap: 0.34rem;
+  align-content: start;
+  backface-visibility: hidden;
+  overflow: auto;
+}
+
+.narrativeFlipBack {
+  transform: rotateY(180deg);
 }
 
 .narrativeEvidenceHead {
   display: flex;
-  justify-content: space-between;
   gap: 0.4rem;
-  align-items: baseline;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .narrativeEvidenceDate {
@@ -885,6 +910,47 @@ body {
   color: #5a6a71;
 }
 
+.narrativeFlipIconButton {
+  margin-left: auto;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid rgba(23, 112, 106, 0.55);
+  border-radius: 999px;
+  background: rgba(233, 247, 246, 0.78);
+  color: #1f575f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.narrativeFlipIconButton:hover {
+  border-color: rgba(23, 112, 106, 0.84);
+  background: rgba(229, 245, 243, 0.95);
+}
+
+.narrativeFlipIcon {
+  width: 0.78rem;
+  height: 0.78rem;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 999px;
+  position: relative;
+  display: block;
+}
+
+.narrativeFlipIcon::after {
+  content: "";
+  position: absolute;
+  right: -0.22rem;
+  top: -0.14rem;
+  width: 0;
+  height: 0;
+  border-left: 0.24rem solid currentColor;
+  border-top: 0.14rem solid transparent;
+  border-bottom: 0.14rem solid transparent;
+}
+
 .narrativeEvidenceTitle {
   margin: 0;
   font-size: 0.97rem;
@@ -893,6 +959,31 @@ body {
 
 .narrativeEvidenceTitle a {
   color: inherit;
+}
+
+.narrativeSummary,
+.narrativeTakeaway {
+  margin: 0;
+  color: #3f5058;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.narrativeThemeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.34rem;
+}
+
+.narrativeThemeChip {
+  border: 1px solid rgba(63, 82, 92, 0.26);
+  background: rgba(238, 246, 245, 0.76);
+  border-radius: 999px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: #355864;
 }
 
 .narrativeQuote {

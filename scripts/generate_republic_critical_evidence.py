@@ -367,14 +367,26 @@ def main() -> int:
     parser.add_argument(
         "--max-per-phase",
         type=int,
-        default=18,
+        default=12,
         help="Maximum selected articles per phase.",
     )
     parser.add_argument(
         "--min-score",
         type=float,
-        default=11.0,
+        default=14.0,
         help="Minimum score to be selectable.",
+    )
+    parser.add_argument(
+        "--min-anchor-hits",
+        type=int,
+        default=3,
+        help="Minimum Republic anchor-term hits required for selection.",
+    )
+    parser.add_argument(
+        "--min-group-hits",
+        type=int,
+        default=2,
+        help="Minimum number of concept groups with non-zero hits required for selection.",
     )
     parser.add_argument(
         "--dry-run",
@@ -450,7 +462,11 @@ def main() -> int:
             body_text=body_text,
         )
         strongest_group = max(group_hits.items(), key=lambda item: item[1])[0]
-        should_include = score >= float(args.min_score) and anchor_hits >= 2 and active_groups >= 2
+        should_include = (
+            score >= float(args.min_score)
+            and anchor_hits >= int(args.min_anchor_hits)
+            and active_groups >= int(args.min_group_hits)
+        )
         quote_text, quote_source, quote_confidence = choose_quote(
             phase=phase,
             body_text=body_text,
@@ -509,7 +525,11 @@ def main() -> int:
                 run_uid,
                 args.method,
                 args.version,
-                f"Strict selection for Republic shift with max_per_phase={args.max_per_phase}, min_score={args.min_score}.",
+                (
+                    "Strict selection for Republic shift with "
+                    f"max_per_phase={args.max_per_phase}, min_score={args.min_score}, "
+                    f"min_anchor_hits={args.min_anchor_hits}, min_group_hits={args.min_group_hits}."
+                ),
             ),
         )
 

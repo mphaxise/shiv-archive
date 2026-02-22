@@ -14,6 +14,9 @@ interface NarrativeRecord {
   publication: string;
   summary: string | null;
   phase: "before" | "after";
+  shortSummary: string;
+  themes: string[];
+  takeaway: string;
   connection: string;
   rationale: string;
   quoteText: string;
@@ -44,10 +47,45 @@ function firstSentence(text: string | null): string {
   return (match?.[1] ?? normalized).trim();
 }
 
+function shrink(text: string, maxChars: number): string {
+  const clean = (text ?? "").trim();
+  if (clean.length <= maxChars) {
+    return clean;
+  }
+  const slice = clean.slice(0, maxChars);
+  const cut = slice.lastIndexOf(" ");
+  if (cut > maxChars * 0.62) {
+    return `${slice.slice(0, cut)}...`;
+  }
+  return `${slice.trimEnd()}...`;
+}
+
+function buildTakeaway(
+  phase: "before" | "after",
+  keyMessage: string | undefined,
+  summary: string | null
+): string {
+  const keySentence = firstSentence(keyMessage ?? "");
+  if (keySentence && keySentence !== "Summary pending.") {
+    return shrink(keySentence, 210);
+  }
+  const summarySentence = firstSentence(summary);
+  if (summarySentence && summarySentence !== "Summary pending.") {
+    return shrink(summarySentence, 210);
+  }
+  return phase === "before"
+    ? "Highlights pressure points in First Republic institutions and democratic grammar."
+    : "Signals emerging vocabularies and tensions shaping the Second Republic.";
+}
+
 function toNarrativeRecord(article: RawArticleRecord): NarrativeRecord {
   const annotation = article.shift_annotations?.republic_shift;
   const critical = article.republic_critical;
   const fallbackPhase: "before" | "after" = article.year < REPUBLIC_MILESTONE_YEAR ? "before" : "after";
+  const phase = critical?.phase ?? annotation?.phase ?? fallbackPhase;
+  const themes = article.tags.slice(0, 3).map((tag) => tag.label);
+  const shortSummary = shrink(firstSentence(article.summary), 230);
+  const takeaway = buildTakeaway(phase, annotation?.key_message, article.summary);
 
   return {
     id: String(article.id),
@@ -57,7 +95,10 @@ function toNarrativeRecord(article: RawArticleRecord): NarrativeRecord {
     url: article.url,
     publication: article.publication,
     summary: article.summary,
-    phase: critical?.phase ?? annotation?.phase ?? fallbackPhase,
+    phase,
+    shortSummary,
+    themes,
+    takeaway,
     connection:
       critical?.connection_text ??
       annotation?.connection ??
@@ -123,33 +164,81 @@ function yearBand(records: NarrativeRecord[]): string {
 }
 
 function EvidenceCard({ record }: { record: NarrativeRecord }) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
   return (
-    <article className="narrativeEvidenceCard">
-      <header className="narrativeEvidenceHead">
-        <p className="narrativeEvidenceDate">{formatDate(record.dateIso)}</p>
-        <p className="narrativeEvidenceSource">{record.publication}</p>
-      </header>
-      <h3 className="narrativeEvidenceTitle">
-        {record.url ? (
-          <a href={record.url} target="_blank" rel="noreferrer">
-            {record.title}
-          </a>
-        ) : (
-          record.title
-        )}
-      </h3>
-      <blockquote className="narrativeQuote">"{record.quoteText}"</blockquote>
-      <p className="narrativeConnection">
-        <strong>Phase connection:</strong> {record.connection}
-      </p>
-      <p className="narrativeKeyMessage">
-        <strong>Selection rationale:</strong> {record.rationale}
-      </p>
-      <p className="narrativeEvidenceScore">
-        Strength: <strong>{record.strengthLabel}</strong> | Relevance score:{" "}
-        <strong>{record.relevanceScore.toFixed(1)}</strong> | Quote source:{" "}
-        <strong>{record.quoteSource}</strong>
-      </p>
+    <article className={`narrativeEvidenceCard ${isFlipped ? "isFlipped" : ""}`}>
+      <div className="narrativeFlipInner">
+        <section className="narrativeFlipFace narrativeFlipFront">
+          <header className="narrativeEvidenceHead">
+            <p className="narrativeEvidenceDate">{formatDate(record.dateIso)}</p>
+            <p className="narrativeEvidenceSource">{record.publication}</p>
+            <button
+              type="button"
+              className="narrativeFlipIconButton"
+              onClick={() => setIsFlipped(true)}
+              aria-label={`Show strict analysis for ${record.title}`}
+              title="Show strict analysis"
+            >
+              <span className="narrativeFlipIcon" aria-hidden="true" />
+            </button>
+          </header>
+          <h3 className="narrativeEvidenceTitle">
+            {record.url ? (
+              <a href={record.url} target="_blank" rel="noreferrer">
+                {record.title}
+              </a>
+            ) : (
+              record.title
+            )}
+          </h3>
+          <p className="narrativeSummary">
+            <strong>Summary:</strong> {record.shortSummary}
+          </p>
+          <p className="narrativeTakeaway">
+            <strong>Takeaway:</strong> {record.takeaway}
+          </p>
+          <blockquote className="narrativeQuote">"{record.quoteText}"</blockquote>
+          <div className="narrativeThemeRow">
+            {record.themes.length > 0 ? (
+              record.themes.map((theme) => (
+                <span key={`${record.id}-${theme}`} className="narrativeThemeChip">
+                  {theme}
+                </span>
+              ))
+            ) : (
+              <span className="narrativeThemeChip">Republic Shift</span>
+            )}
+          </div>
+        </section>
+
+        <section className="narrativeFlipFace narrativeFlipBack">
+          <header className="narrativeEvidenceHead">
+            <p className="narrativeEvidenceDate">{formatDate(record.dateIso)}</p>
+            <p className="narrativeEvidenceSource">Critical evidence</p>
+            <button
+              type="button"
+              className="narrativeFlipIconButton"
+              onClick={() => setIsFlipped(false)}
+              aria-label={`Return to qualitative view for ${record.title}`}
+              title="Back to qualitative view"
+            >
+              <span className="narrativeFlipIcon" aria-hidden="true" />
+            </button>
+          </header>
+          <p className="narrativeConnection">
+            <strong>Phase connection:</strong> {record.connection}
+          </p>
+          <p className="narrativeKeyMessage">
+            <strong>Selection rationale:</strong> {record.rationale}
+          </p>
+          <p className="narrativeEvidenceScore">
+            Strength: <strong>{record.strengthLabel}</strong> | Relevance score:{" "}
+            <strong>{record.relevanceScore.toFixed(1)}</strong> | Quote source:{" "}
+            <strong>{record.quoteSource}</strong>
+          </p>
+        </section>
+      </div>
     </article>
   );
 }

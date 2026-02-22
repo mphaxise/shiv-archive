@@ -150,9 +150,11 @@ Preview mode:
 /Users/praneet/shiv-archive/scripts/generate_republic_critical_evidence.py \
   --master-db-path /Users/praneet/shiv-archive/data/shiv_master.db \
   --analysis-db-path /Users/praneet/shiv-archive/data/shiv_analysis.db \
-  --version critical_v1 \
-  --max-per-phase 18 \
-  --min-score 11
+  --version critical_v2 \
+  --max-per-phase 12 \
+  --min-score 14 \
+  --min-anchor-hits 3 \
+  --min-group-hits 2
 ```
 
 ## Legacy single-db shift annotations (compatibility mode)

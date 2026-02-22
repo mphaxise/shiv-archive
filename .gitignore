@@ -1,4 +1,6 @@
 .next/
+.next-dev/
+.next-build/
 out/
 node_modules/
 .env*
