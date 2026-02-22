@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiv Vishwanathan Opinions Atlas</title>
+    <meta
+      name="description"
+      content="Public archive and analysis browser for Shiv Vishwanathan's New Indian Express opinion writing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-a" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-b" aria-hidden="true"></div>
+
+    <header class="hero shell">
+      <p class="eyebrow">Public Archive v0.1</p>
+      <h1>Shiv Vishwanathan Opinions Atlas</h1>
+      <p class="hero-text">
+        A browseable corpus of New Indian Express writing with date, summaries,
+        and sociological-policy-anthropological tags.
+      </p>
+      <div class="hero-meta">
+        <span id="meta-range">Date range: ...</span>
+        <span id="meta-generated">Generated: ...</span>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="controls panel">
+        <div class="field wide">
+          <label for="search-input">Search title, summary, tags</label>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Try: democracy, anthropocene, ethics"
+          />
+        </div>
+        <div class="field">
+          <label for="year-select">Year</label>
+          <select id="year-select">
+            <option value="all">All years</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="tone-select">Tone</label>
+          <select id="tone-select">
+            <option value="all">All tones</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="section-select">Section</label>
+          <select id="section-select">
+            <option value="all">All sections</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="source-select">Source link</label>
+          <select id="source-select">
+            <option value="all">All records</option>
+            <option value="with_url">Only with article URL</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="status-select">Record status</label>
+          <select id="status-select">
+            <option value="public">Public only</option>
+            <option value="all">Include drafts</option>
+            <option value="draft">Draft only</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="sort-select">Sort</label>
+          <select id="sort-select">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="title">Title A-Z</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="stats">
+        <article class="stat panel">
+          <h2 id="stat-visible">0</h2>
+          <p>Visible records</p>
+        </article>
+        <article class="stat panel">
+          <h2 id="stat-verified">0</h2>
+          <p>Verified records</p>
+        </article>
+        <article class="stat panel">
+          <h2 id="stat-with-url">0</h2>
+          <p>With source URL</p>
+        </article>
+        <article class="stat panel">
+          <h2 id="stat-tagged">0</h2>
+          <p>Distinct tags in view</p>
+        </article>
+      </section>
+
+      <section class="panel tag-panel">
+        <div class="tag-panel-head">
+          <h2>Theme Filters</h2>
+          <button id="clear-tag-btn" type="button" class="text-btn" hidden>
+            Clear tag filter
+          </button>
+        </div>
+        <div id="tag-cloud" class="tag-cloud"></div>
+      </section>
+
+      <section class="article-section">
+        <div class="article-head">
+          <h2>Articles</h2>
+          <p id="active-filter-note">Showing all records</p>
+        </div>
+        <div id="article-list" class="article-list"></div>
+        <p id="empty-state" class="empty-state" hidden>
+          No records match the current filters.
+        </p>
+      </section>
+    </main>
+
+    <template id="article-card-template">
+      <article class="article-card panel">
+        <div class="card-top">
+          <span class="status-badge"></span>
+          <span class="tone-badge"></span>
+        </div>
+        <h3 class="card-title"></h3>
+        <p class="card-meta"></p>
+        <p class="card-summary"></p>
+        <div class="card-tags"></div>
+        <div class="card-actions">
+          <a class="source-link" target="_blank" rel="noopener noreferrer">
+            Read source
+          </a>
+        </div>
+      </article>
+    </template>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

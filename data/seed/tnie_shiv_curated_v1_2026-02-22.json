@@ -1,0 +1,405 @@
+[
+  {
+    "id": "beteille-2026",
+    "meta": {
+      "title": "Andre Beteille: A grammarian of culture",
+      "date_iso": "2026-02-20",
+      "year": 2026,
+      "url": "https://www.newindianexpress.com/opinions/2026/Feb/20/andre-beteille-a-grammarian-of-culture"
+    },
+    "analysis": {
+      "summary": "A tribute to Beteille's sociological rigor, contrasting it with the modern 'tutorial' college culture.",
+      "tone": "Tribute"
+    },
+    "tags": [
+      { "label": "Methodology" },
+      { "label": "Culture" }
+    ]
+  },
+  {
+    "id": "aravallis-2026",
+    "meta": {
+      "title": "The Aravallis: A Gadgilesque reimagination",
+      "date_iso": "2026-01-27",
+      "year": 2026,
+      "url": "https://www.newindianexpress.com/opinions/2026/Jan/27/the-aravallis-a-gadgilesque-reimagination"
+    },
+    "analysis": {
+      "summary": "Applying ecological frameworks to propose decentralized democracy for mountain conservation.",
+      "tone": "Proposal"
+    },
+    "tags": [
+      { "label": "Anthropocene" },
+      { "label": "Ecology" }
+    ]
+  },
+  {
+    "id": "democracy-2026",
+    "meta": {
+      "title": "Reimagining democracy: Making sense of the present with eye on the future",
+      "date_iso": "2026-01-13",
+      "year": 2026,
+      "url": "https://www.newindianexpress.com/opinions/2026/Jan/13/reimagining-democracy-making-sense-of-the-present-with-eye-on-the-future"
+    },
+    "analysis": {
+      "summary": "A futurist call to move beyond 'zombie' institutions toward new forms of citizen engagement.",
+      "tone": "Proposal"
+    },
+    "tags": [
+      { "label": "Democracy" }
+    ]
+  },
+  {
+    "id": "bhopal-2025",
+    "meta": {
+      "title": "Why a museum isn't enough to memorialise Bhopal gas tragedy",
+      "date_iso": "2025-12-23",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Dec/23/why-a-museum-isnt-enough-to-memorialise-bhopal-gas-tragedy"
+    },
+    "analysis": {
+      "summary": "Critiques 'museumification' as a way for the state to erase ongoing suffering and accountability.",
+      "tone": "Critique"
+    },
+    "tags": [
+      { "label": "Memory" },
+      { "label": "The Banal" }
+    ]
+  },
+  {
+    "id": "shaman-2025",
+    "meta": {
+      "title": "A shaman who shattered the lens of the Anthropocene",
+      "date_iso": "2025-12-09",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Dec/09/a-shaman-who-shattered-the-lens-of-the-anthropocene"
+    },
+    "analysis": {
+      "summary": "Explores alternative worldviews that challenge modern ecological destruction.",
+      "tone": "Philosophical"
+    },
+    "tags": [
+      { "label": "Anthropocene" }
+    ]
+  },
+  {
+    "id": "nationalism-2025",
+    "meta": {
+      "title": "Before dissent, need playfulness in nationalism",
+      "date_iso": "2025-11-25",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Nov/25/before-dissent-need-playfulness-in-nationalism"
+    },
+    "analysis": {
+      "summary": "Argues for a more creative form of national identity to allow for healthy dissent.",
+      "tone": "Opinion"
+    },
+    "tags": [
+      { "label": "Nationalism" }
+    ]
+  },
+  {
+    "id": "peacemaking-2025",
+    "meta": {
+      "title": "Warp and weft of peacemaking amid violence",
+      "date_iso": "2025-10-21",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Oct/21/warp-and-weft-of-peacemaking-amid-violence"
+    },
+    "analysis": {
+      "summary": "Peace as a daily craft and community practice rather than just a political treaty.",
+      "tone": "Philosophical"
+    },
+    "tags": [
+      { "label": "Peace" }
+    ]
+  },
+  {
+    "id": "imagination-2025",
+    "meta": {
+      "title": "The drying up of democratic imagination",
+      "date_iso": "2025-10-07",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Oct/07/the-drying-up-of-democratic-imagination"
+    },
+    "analysis": {
+      "summary": "Diagnoses how modern politics has lost the ability to dream of new engagement forms.",
+      "tone": "Critique"
+    },
+    "tags": [
+      { "label": "Democracy" }
+    ]
+  },
+  {
+    "id": "swadeshi-2025",
+    "meta": {
+      "title": "Rethinking Swadeshi in Trumpian era",
+      "date_iso": "2025-09-09",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Sep/09/rethinking-swadeshi-in-trumpian-era"
+    },
+    "analysis": {
+      "summary": "Re-evaluates local self-reliance against global populist shifts.",
+      "tone": "Philosophical"
+    },
+    "tags": [
+      { "label": "Swadeshi" }
+    ]
+  },
+  {
+    "id": "satyagraha-2025",
+    "meta": {
+      "title": "Needed: A new satyagraha for peace",
+      "date_iso": "2025-08-15",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Aug/15/needed-a-new-satyagraha-for-peace"
+    },
+    "analysis": {
+      "summary": "Calls for non-violent resistance tailored to modern systemic violence.",
+      "tone": "Proposal"
+    },
+    "tags": [
+      { "label": "Peace" }
+    ]
+  },
+  {
+    "id": "ethics-deaths-2025",
+    "meta": {
+      "title": "Making ethical sense of too many deaths",
+      "date_iso": "2025-07-09",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Jul/09/making-ethical-sense-of-too-many-deaths"
+    },
+    "analysis": {
+      "summary": "Reflects on the devaluation of human life in modern policy logic.",
+      "tone": "Opinion"
+    },
+    "tags": [
+      { "label": "Ethics" }
+    ]
+  },
+  {
+    "id": "patriotism-2025",
+    "meta": {
+      "title": "Why patriotism is no substitute for morality",
+      "date_iso": "2025-06-11",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Jun/11/why-patriotism-is-no-substitute-for-morality"
+    },
+    "analysis": {
+      "summary": "Distinguishes between national loyalty and the universal demands of conscience.",
+      "tone": "Critique"
+    },
+    "tags": [
+      { "label": "Morality" }
+    ]
+  },
+  {
+    "id": "south-asia-2025",
+    "meta": {
+      "title": "New dream for South Asia to give peace a chance",
+      "date_iso": "2025-05-21",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/May/21/new-dream-for-south-asia-to-give-peace-a-chance"
+    },
+    "analysis": {
+      "summary": "Proposes regional identity based on shared ecological and cultural commons.",
+      "tone": "Proposal"
+    },
+    "tags": [
+      { "label": "South Asia" }
+    ]
+  },
+  {
+    "id": "individual-2025",
+    "meta": {
+      "title": "The individual: For whom the bell tolls",
+      "date_iso": "2025-04-22",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Apr/22/the-individual-for-whom-the-bell-tolls"
+    },
+    "analysis": {
+      "summary": "A meditation on individual agency within rigid institutional structures.",
+      "tone": "Opinion"
+    },
+    "tags": [
+      { "label": "Individualism" }
+    ]
+  },
+  {
+    "id": "policy-violence-2025",
+    "meta": {
+      "title": "When violence is built into the logic of policy",
+      "date_iso": "2025-04-09",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Apr/09/when-violence-is-built-into-the-logic-of-policy"
+    },
+    "analysis": {
+      "summary": "Examines how 'security' policies often contain inherent, structural violence.",
+      "tone": "Critique"
+    },
+    "tags": [
+      { "label": "Policy" }
+    ]
+  },
+  {
+    "id": "raghu-rai-2025",
+    "meta": {
+      "title": "The World of Raghu Rai",
+      "date_iso": "2025-03-29",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Mar/29/the-world-of-raghu-rai"
+    },
+    "analysis": {
+      "summary": "A look at Rai's photography as a way of witnessing Indian reality.",
+      "tone": "Column"
+    },
+    "tags": [
+      { "label": "Art" }
+    ]
+  },
+  {
+    "id": "culture-cudgel-2025",
+    "meta": {
+      "title": "Wielding culture as a cudgel in Trumpian era",
+      "date_iso": "2025-03-25",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Mar/25/wielding-culture-as-a-cudgel-in-trumpian-era"
+    },
+    "analysis": {
+      "summary": "Analyzes the use of cultural identity as a weapon in global politics.",
+      "tone": "Opinion"
+    },
+    "tags": [
+      { "label": "Culture" }
+    ]
+  },
+  {
+    "id": "everyday-ethics-2025",
+    "meta": {
+      "title": "How to frame everyday ethics for the new era",
+      "date_iso": "2025-02-25",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Feb/25/how-to-frame-everyday-ethics-for-the-new-era"
+    },
+    "analysis": {
+      "summary": "Proposes maintaining personal ethics in a banalized, automated world.",
+      "tone": "Opinion"
+    },
+    "tags": [
+      { "label": "Ethics" }
+    ]
+  },
+  {
+    "id": "kejriwal-2025",
+    "meta": {
+      "title": "The banalisation of Kejriwal and Aam Aadmi Party",
+      "date_iso": "2025-02-11",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Feb/11/the-banalisation-of-kejriwal-and-aam-aadmi-party"
+    },
+    "analysis": {
+      "summary": "Critiques the shift of AAP from a movement to a standard bureaucracy.",
+      "tone": "Critique"
+    },
+    "tags": [
+      { "label": "Politics" }
+    ]
+  },
+  {
+    "id": "feminism-2025",
+    "meta": {
+      "title": "Innovation needs a dose of feminism",
+      "date_iso": "2025-01-21",
+      "year": 2025,
+      "url": "https://www.newindianexpress.com/opinions/2025/Jan/21/innovation-needs-a-dose-of-feminism"
+    },
+    "analysis": {
+      "summary": "Argues that innovation lacks the ethics of care found in feminist thought.",
+      "tone": "Opinion"
+    },
+    "tags": [
+      { "label": "Innovation" }
+    ]
+  },
+  {
+    "id": "outthink-2024",
+    "meta": {
+      "title": "What India needs to transform to outthink the west",
+      "date_iso": "2024-12-10",
+      "year": 2024,
+      "url": "https://www.newindianexpress.com/opinions/2024/Dec/10/what-india-needs-to-transform-to-outthink-the-west"
+    },
+    "analysis": {
+      "summary": "Argues for Cognitive Justice using Indian pluralism as an alternative.",
+      "tone": "Proposal"
+    },
+    "tags": [
+      { "label": "Knowledge" }
+    ]
+  },
+  {
+    "id": "anthropocene-const-2024",
+    "meta": {
+      "title": "Rethinking our constitution for the Anthropocene",
+      "date_iso": "2024-11-26",
+      "year": 2024,
+      "url": "https://www.newindianexpress.com/opinions/2024/Nov/26/rethinking-our-constitution-for-the-anthropocene"
+    },
+    "analysis": {
+      "summary": "Suggests legal frameworks to include the rights of nature.",
+      "tone": "Opinion"
+    },
+    "tags": [
+      { "label": "Law" }
+    ]
+  },
+  {
+    "id": "walking-rahul-2022",
+    "meta": {
+      "title": "Walking with Rahul Gandhi",
+      "date_iso": "2022-12-27",
+      "year": 2022,
+      "url": "https://www.newindianexpress.com/opinions/2022/Dec/27/walking-with-rahul-gandhi"
+    },
+    "analysis": {
+      "summary": "Interprets the Bharat Jodo Yatra as 'Body Politics' reclaiming the land.",
+      "tone": "Opinion"
+    },
+    "tags": [
+      { "label": "Politics" }
+    ]
+  },
+  {
+    "id": "sadness-univ-2022",
+    "meta": {
+      "title": "The sadness of the university today",
+      "date_iso": "2022-08-27",
+      "year": 2022,
+      "url": "https://www.newindianexpress.com/opinions/2022/Aug/27/the-sadness-of-the-university-today"
+    },
+    "analysis": {
+      "summary": "Laments the transformation of education into a skills-based tutorial system.",
+      "tone": "Critique"
+    },
+    "tags": [
+      { "label": "University" }
+    ]
+  },
+  {
+    "id": "khandwa-2012",
+    "meta": {
+      "title": "Khandwa to Koodankulam: Metaphor is the message",
+      "date_iso": "2012-10-13",
+      "year": 2012,
+      "url": "https://www.newindianexpress.com/opinions/2012/Oct/13/khandwa-to-koodankulam-metaphor-is-the-message"
+    },
+    "analysis": {
+      "summary": "Early work on anti-nuclear protests and the right to survival.",
+      "tone": "Opinion"
+    },
+    "tags": [
+      { "label": "Ecology" }
+    ]
+  }
+]

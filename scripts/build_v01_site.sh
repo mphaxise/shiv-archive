@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="/Users/praneet/shiv-archive"
+LEGACY_DB="$ROOT/data/shiv_opinions_v0.db"
+MASTER_DB="$ROOT/data/shiv_master.db"
+ANALYSIS_DB="$ROOT/data/shiv_analysis.db"
+
+if [ ! -f "$MASTER_DB" ] || [ ! -f "$ANALYSIS_DB" ]; then
+  echo "Dual DBs not found. Migrating from legacy DB..."
+  "$ROOT/scripts/migrate_to_dual_db.py" \
+    --source-db-path "$LEGACY_DB" \
+    --master-db-path "$MASTER_DB" \
+    --analysis-db-path "$ANALYSIS_DB"
+fi
+
+"$ROOT/scripts/generate_shift_annotations_dual.py" \
+  --master-db-path "$MASTER_DB" \
+  --analysis-db-path "$ANALYSIS_DB" \
+  --shift-id all \
+  --annotation-version rule_based_v1_multisource
+
+"$ROOT/scripts/export_public_json_dual.py" \
+  --master-db-path "$MASTER_DB" \
+  --analysis-db-path "$ANALYSIS_DB" \
+  --output-path "$ROOT/web/public/data/articles.json"
+
+"$ROOT/scripts/export_public_json_dual.py" \
+  --master-db-path "$MASTER_DB" \
+  --analysis-db-path "$ANALYSIS_DB" \
+  --output-path "$ROOT/src/data/articles.json"
+
+echo "v0.1 data build complete (dual DB mode)."
+echo "Preview: python3 -m http.server --directory $ROOT/web/public 4173"

@@ -1,0 +1,9 @@
+.next/
+out/
+node_modules/
+.env*
+npm-debug.log*
+.DS_Store
+
+data/snapshots/
+*.db-journal
