@@ -1,6 +1,6 @@
 # Requirements Catalog
 
-Last updated: 2026-02-25 (PST)
+Last updated: 2026-02-26 (PST)
 
 Status legend:
 - `resolved`: accepted for this discovery cycle
@@ -12,7 +12,7 @@ Status legend:
 | RQ-001 | Data architecture | Dual DB architecture remains canonical: `shiv_master.db` stores source corpus and text; `shiv_analysis.db` stores analysis layers. | resolved | README, schema files |
 | RQ-002 | Mutation policy | Database changes are applied only through repository scripts, never ad-hoc manual DB edits. | resolved | README policy |
 | RQ-003 | Public safety | Full article text remains internal-only; public payload is summaries/snippets/stubs with source attribution and outbound links. | resolved | User decision 2026-02-25 + README governance section |
-| RQ-004 | Build pipeline | Data build runs: dual shift generation, republic evidence generation, JSON export to both web and app data paths. | resolved | `scripts/build_v01_site.sh` |
+| RQ-004 | Build pipeline | Data build runs: dual shift generation, republic evidence generation, science research packet generation, and JSON export to both web and app data paths. | resolved | `scripts/build_v01_site.sh` |
 | RQ-005 | Core UX | Public site supports browse, search, year/tag filtering, and source URL opening. | resolved | PROJECT_PLAN, current app components |
 | RQ-006 | Dataset integrity thresholds | Strict-blocking release thresholds are: at least 95% article summary coverage, at least 95% article tag coverage (>=1 tag), and 100% shift coverage. | resolved | User decision 2026-02-25 |
 | RQ-007 | Shift coverage | Each article should retain latest annotation for all four shift IDs (`republic`, `ecological`, `science`, `political`). | resolved | analysis schema + DB query |
@@ -35,6 +35,10 @@ Status legend:
 | RQ-024 | Methodology checklist sections | Methodology/rights page must include fixed required sections: `scope`, `sources`, `rights posture`, `limitations`, `update cadence`, `feedback channel`. | resolved | User decision 2026-02-25 |
 | RQ-025 | Default sign-off owner | Project owner is the default release-owner sign-off role for transparency pages and safe notes. | resolved | User decision 2026-02-25 |
 | RQ-026 | Coverage exception escalation | No automatic SLA escalation is required; escalation for unresolved exceptions is owner-driven during review cadence. | resolved | User decision 2026-02-25 |
+| RQ-027 | Science opinion-view curation | Science Opinion Shift cards must use curated packet-selected evidence records, not generic heuristic fallback selection. | resolved | `src/components/layers/OpinionShiftView.tsx` |
+| RQ-028 | Narrative card language parity | Long-form evidence cards should standardize on `Summary`, `Takeaway`, and `Themes` field labels for consistency across views. | unresolved | User request 2026-02-26 + current Republic/Science UI diff |
+| RQ-029 | Republic packet parity | Republic Shift should gain a dedicated research packet artifact (selected + candidate records + selection params) analogous to Science Shift. | unresolved | Parity audit 2026-02-26 |
+| RQ-030 | Full-text strict mode parity | In strict mode, selected long-form shift evidence should default to full-text-backed records only. | unresolved | Parity audit 2026-02-26 |
 
 ## Open Acceptance Criteria to Finalize
 

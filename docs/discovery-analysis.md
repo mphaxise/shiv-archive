@@ -1,7 +1,7 @@
 # Discovery Analysis: Shiv Archive
 
-Last updated: 2026-02-25 (PST)
-Discovery status: Ready for implementation approval (current decision set resolved)
+Last updated: 2026-02-26 (PST)
+Discovery status: Extended for shift parity alignment (new assumptions open)
 Implementation gate: Pending explicit user approval
 
 ## Scope and Constraints
@@ -26,6 +26,8 @@ Source context reviewed in this run:
 - `db/master_schema.sql`
 - `db/analysis_schema.sql`
 - `scripts/build_v01_site.sh`
+- `scripts/generate_science_shift_research_packet.py`
+- `scripts/generate_republic_critical_evidence.py`
 - `scripts/export_public_json_dual.py`
 - `src/app/page.tsx`
 - `src/app/deep-analysis/republic-shift/page.tsx`
@@ -41,6 +43,8 @@ Current factual state:
 - Product surface:
   - Next.js layered archive explorer.
   - Dedicated deep-analysis narrative page for Republic Shift.
+  - Dedicated deep-analysis narrative page for Science Shift.
+  - Opinion Shift card layer uses curated packet-driven selection for Science Shift.
 - Data architecture:
   - Master DB stores article records and article text.
   - Analysis DB stores summaries, tags, shift annotations, and republic evidence.
@@ -99,6 +103,15 @@ Current factual state:
 - Data freshness is dependent on manual script runs; no scheduled refresh workflow yet.
 - Legal/editorial policy is implied in README but not codified as a release checklist gate.
 - Frontend and data pipeline contracts are not currently validated in CI.
+- Shift pipeline parity is uneven:
+  - Science has explicit research packet + brief artifacts and packet-driven display.
+  - Republic remains DB-embedded evidence without packet-style candidate visibility.
+  - Latest Republic selected set includes 2 non-full-text entries (summary-derived quotes).
+
+## Parity Audit Reference
+
+- Detailed parity comparison and alignment path:
+  - `docs/research/REPUBLIC-SCIENCE-PARITY-AUDIT-2026-02-26.md`
 
 ## Discovery Completion Criteria (For Move to Implementation)
 

@@ -377,3 +377,31 @@ Next 1-3 actions:
 1. Confirm transition from discovery to implementation.
 2. Start implementation using resolved requirements and batched change reporting.
 3. Keep assumption-check prompts only when uncertainty is material.
+
+## 2026-02-26 14:15 PST - Science display refinements + Republic parity audit
+
+User input:
+- Requested documentation refresh after recent Science Shift rendering/data updates.
+- Requested a concrete process/output comparison between Science and Republic shift research paths using the current DB and repo.
+- Requested direction for bringing Republic Shift closer to Science-style research analysis and presentation.
+
+What changed:
+- Updated documentation to reflect current Science packet-driven opinion cards and field-language normalization.
+- Added a dedicated parity audit document comparing generator contracts, evidence artifacts, selection quality, and narrative card fields:
+  - `docs/research/REPUBLIC-SCIENCE-PARITY-AUDIT-2026-02-26.md`
+- Added a Republic alignment implementation sequence (packet generator, full-text strictness, narrative card parity, optional opinion-view packet parity).
+
+Files updated:
+- `README.md`
+- `docs/discovery-analysis.md`
+- `docs/implementation-options.md`
+- `docs/requirements-catalog.md`
+- `docs/next-questions.md`
+- `docs/research/NEXT-OPINION-SHIFT-RESEARCH-KICKOFF.md`
+- `docs/research/REPUBLIC-SCIENCE-PARITY-AUDIT-2026-02-26.md`
+- `docs/COLLABORATION-INPUT-LOG.md`
+
+Next 1-3 actions:
+1. Implement Republic packet generator and brief outputs (Science-style contract).
+2. Enforce/validate full-text strict mode for Republic selected evidence.
+3. Migrate Republic narrative cards to `Summary`/`Takeaway`/`Themes` parity.

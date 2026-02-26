@@ -27,6 +27,7 @@ This workspace contains:
 - Legacy-to-dual migration script: `/Users/praneet/shiv-archive/scripts/migrate_to_dual_db.py`
 - Full text backfill script (master DB): `/Users/praneet/shiv-archive/scripts/backfill_article_texts.py`
 - Republic critical evidence generator (analysis DB): `/Users/praneet/shiv-archive/scripts/generate_republic_critical_evidence.py`
+- Science shift research packet generator: `/Users/praneet/shiv-archive/scripts/generate_science_shift_research_packet.py`
 - DB snapshot script: `/Users/praneet/shiv-archive/scripts/snapshot_db.sh`
 - Public data export script: `/Users/praneet/shiv-archive/scripts/export_public_json.py`
 - Dual-db export script: `/Users/praneet/shiv-archive/scripts/export_public_json_dual.py`
@@ -75,6 +76,7 @@ If you need to rebuild dual DBs from legacy:
 ```bash
 /Users/praneet/shiv-archive/scripts/build_v01_site.sh
 ```
+This run now regenerates shift annotations, Republic critical evidence, Science research packet artifacts, and both public JSON exports.
 
 ## Backfill all missing article URLs (5 at a time)
 ```bash
@@ -155,6 +157,15 @@ Preview mode:
   --min-score 14 \
   --min-anchor-hits 3 \
   --min-group-hits 2
+```
+
+## Generate Science shift research packet + readable brief
+```bash
+/Users/praneet/shiv-archive/scripts/generate_science_shift_research_packet.py \
+  --master-db-path /Users/praneet/shiv-archive/data/shiv_master.db \
+  --analysis-db-path /Users/praneet/shiv-archive/data/shiv_analysis.db \
+  --output-json /Users/praneet/shiv-archive/src/data/science_shift_story_2026-02-26.json \
+  --output-md /Users/praneet/shiv-archive/docs/research/science-shift-brief-2026-02-26.md
 ```
 
 ## Legacy single-db shift annotations (compatibility mode)

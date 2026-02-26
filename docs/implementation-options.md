@@ -1,6 +1,6 @@
 # Implementation Options
 
-Last updated: 2026-02-25 (PST)
+Last updated: 2026-02-26 (PST)
 Scope: Next build phase after discovery
 
 ## Option A: Data Quality and Release Gates First (Recommended)
@@ -54,14 +54,33 @@ Cons:
 Effort: Medium
 Risk: Medium
 
+## Option D: Shift Pipeline Parity First
+
+Summary:
+- Make Republic Shift follow the same research-packet contract used by Science Shift.
+- Add Republic packet artifacts (selected + candidates + brief) and migrate Republic narrative cards to the same `Summary`/`Takeaway`/`Themes` field style.
+
+Pros:
+- Aligns research generation and narrative display contracts across long-form shifts.
+- Improves explainability (candidate-level trace) and reduces model/UI drift.
+- Enables one shared QA policy for both shifts (full-text strictness, quote-source quality, phase balance).
+
+Cons:
+- Requires adding new packet generator and adapting Republic narrative mapper.
+- Adds short-term migration complexity while preserving `republic_critical` compatibility.
+
+Effort: Medium
+Risk: Low to Medium
+
 ## Recommendation and Sequence
 
-Recommended path: Option A -> targeted Option C -> Option B
+Recommended path: Option A -> Option D -> targeted Option C -> Option B
 
 Proposed sequence:
 1. Implement data quality gates and release checklist enforcement.
-2. Add lightweight automation for repeatable data refresh + export verification.
-3. Resume feature roadmap with confidence in data contracts.
+2. Unify Republic and Science shift research/display contracts (packet parity + card field parity).
+3. Add lightweight automation for repeatable data refresh + export verification.
+4. Resume feature roadmap with confidence in data contracts.
 
 ## Prerequisites Before Starting Implementation
 

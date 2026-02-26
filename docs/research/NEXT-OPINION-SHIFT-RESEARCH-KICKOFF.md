@@ -70,3 +70,26 @@ Completed now:
 - Added narrative page implementation:
   - `/Users/praneet/shiv-archive/src/app/deep-analysis/science-shift/page.tsx`
   - `/Users/praneet/shiv-archive/src/components/story/ScienceShiftNarrative.tsx`
+- Added opinion-layer science curation path:
+  - `/Users/praneet/shiv-archive/src/components/layers/OpinionShiftView.tsx`
+  - Uses curated `science_shift_story` records for Science cards.
+- Standardized science evidence card language in long-form page:
+  - `Summary`, `Takeaway`, `Themes` (removed `Science linkage` label).
+- Added parity audit for next cycle planning:
+  - `/Users/praneet/shiv-archive/docs/research/REPUBLIC-SCIENCE-PARITY-AUDIT-2026-02-26.md`
+
+## 7) Republic Alignment Follow-up (Opened)
+
+Goal:
+- Bring Republic Shift research generation and display parity closer to the Science Shift model.
+
+Observed gap highlights (current repo state):
+- Science uses packet-first research artifact (`selected_records` + candidate visibility in docs artifact).
+- Republic uses DB-embedded `republic_critical` and does not expose packet-style candidate output.
+- Science selected set is currently full-text-backed (24/24); Republic selected set includes 2 non-full-text entries.
+
+Proposed next implementation sequence:
+1. Create Republic research packet generator with packet-style output and markdown brief.
+2. Enforce full-text-first strict mode for Republic selected set (with explicit override flag).
+3. Align Republic narrative cards to `Summary`/`Takeaway`/`Themes`.
+4. Optionally migrate Republic opinion cards to packet-first sourcing (with compatibility fallback).
