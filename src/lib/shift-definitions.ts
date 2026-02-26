@@ -2,8 +2,8 @@ import { ShiftDefinition, ShiftId } from "@/lib/types";
 
 export const SHIFT_ORDER: ShiftId[] = [
   "republic_shift",
-  "ecological_shift",
   "science_shift",
+  "ecological_shift",
   "political_shift",
 ];
 
