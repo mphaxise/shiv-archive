@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 import { OpinionEvidenceCard, OpinionEvidenceCardData } from "@/components/shared/OpinionEvidenceCard";
+import republicShiftStory from "@/data/republic_shift_story_2026-02-26.json";
 import scienceShiftStory from "@/data/science_shift_story_2026-02-26.json";
 import { buildShiftSplit } from "@/lib/shift-engine";
 import { SHIFT_DEFINITIONS } from "@/lib/shift-definitions";
@@ -31,6 +32,30 @@ interface ScienceStoryRecord {
 
 interface ScienceShiftStoryPayload {
   selected_records: ScienceStoryRecord[];
+}
+
+interface RepublicStoryRecord {
+  article_uid: string;
+  phase: "before" | "after";
+  published_date: string;
+  url: string | null;
+  publication: string;
+  title: string;
+  summary_snippet: string;
+  signal_tags: string[];
+  lead_group?: string;
+  argument_text?: string;
+  connection_text: string;
+  rationale: string;
+  quote_text: string;
+  quote_source: "body_paragraph" | "summary_sentence" | "title";
+  include_in_story: boolean;
+  relevance_score: number;
+  strength_label: "strong" | "moderate" | "weak";
+}
+
+interface RepublicShiftStoryPayload {
+  selected_records: RepublicStoryRecord[];
 }
 
 function normalizeText(text: string | null | undefined): string {
@@ -130,6 +155,40 @@ const SCIENCE_ARGUMENT_BY_GROUP: Record<"before" | "after", Record<string, strin
   },
 };
 
+const REPUBLIC_ARGUMENT_BY_GROUP: Record<string, string> = {
+  institutional_grammar:
+    "The article argues that constitutional language survives while institutional guarantees are weakening in practice.",
+  decay_diagnostics:
+    "The article argues that democratic erosion is structural and visible in everyday institutional life.",
+  democratic_urgency:
+    "The article argues that ethics, dissent, and civic imagination are prerequisites for democratic repair.",
+  new_grammar:
+    "The article argues that a contested Second Republic is being constructed through new participatory vocabularies.",
+  embodied_ethics:
+    "The article argues that democratic practice must move from abstraction to embodied ethics and public pedagogy.",
+  plural_futures:
+    "The article argues that democratic futures require ecological responsibility and plural knowledge systems.",
+  cross_currents:
+    "The article argues that democratic renewal depends on connecting institutional critique with civic invention.",
+};
+
+function cleanPhaseLinkText(text: string): string {
+  const normalized = normalizeText(text);
+  if (!normalized) {
+    return "";
+  }
+  const stripped = normalized
+    .replace(/^phase\s*\d+\s*link:\s*/i, "")
+    .replace(/^strongly linked to phase\s*\d+\s*because\s*/i, "")
+    .replace(/^strongly linked to first republic because\s*/i, "")
+    .replace(/^strongly linked to second republic because\s*/i, "");
+  if (!stripped) {
+    return "";
+  }
+  const sentence = stripped.charAt(0).toUpperCase() + stripped.slice(1);
+  return punctuate(sentence);
+}
+
 function strongestScienceGroup(record: ScienceStoryRecord): string | null {
   const entries = Object.entries(record.group_hits ?? {});
   if (entries.length === 0) {
@@ -158,6 +217,19 @@ function buildScienceTakeaway(record: ScienceStoryRecord, summaryText: string): 
   }
 
   return deriveTakeaway(summaryText, record.rationale, record.connection_text);
+}
+
+function buildRepublicTakeaway(record: RepublicStoryRecord, summaryText: string): string {
+  const argument =
+    normalizeText(record.argument_text) ||
+    REPUBLIC_ARGUMENT_BY_GROUP[normalizeText(record.lead_group)] ||
+    deriveTakeaway(summaryText, record.rationale, record.connection_text);
+  const bridge = cleanPhaseLinkText(record.connection_text);
+
+  if (bridge && normalizeText(bridge).toLowerCase() !== normalizeText(argument).toLowerCase()) {
+    return `${punctuate(argument)} ${bridge}`.trim();
+  }
+  return punctuate(argument);
 }
 
 function shrink(text: string, maxChars: number): string {
@@ -290,6 +362,93 @@ function buildScienceShiftCards(
   };
 }
 
+function buildRepublicShiftCards(
+  articles: RawArticleRecord[],
+  searchTerm: string,
+  yearFilter: "all" | number
+): { before: OpinionEvidenceCardData[]; after: OpinionEvidenceCardData[]; total: number } {
+  const packet = republicShiftStory as unknown as RepublicShiftStoryPayload;
+  const selected = packet.selected_records.filter((record) => record.include_in_story);
+
+  const articleByUid = new Map<string, RawArticleRecord>();
+  for (const article of articles) {
+    if (article.article_uid) {
+      articleByUid.set(article.article_uid, article);
+    }
+  }
+
+  const cards = selected.map((record) => {
+    const matched = articleByUid.get(record.article_uid);
+    const labelBySlug = new Map((matched?.tags ?? []).map((tag) => [tag.slug, tag.label]));
+    const curatedTags =
+      record.signal_tags.length > 0
+        ? record.signal_tags.map((slug) => labelBySlug.get(slug) ?? slugToLabel(slug))
+        : (matched?.tags ?? []).slice(0, 3).map((tag) => tag.label);
+    const cleanedConnection = cleanPhaseLinkText(record.connection_text);
+    const summaryText = buildCardSummary(matched?.summary ?? record.summary_snippet, cleanedConnection);
+    const takeaway = buildRepublicTakeaway(record, summaryText);
+
+    return {
+      id: record.article_uid,
+      title: record.title,
+      dateIso: record.published_date,
+      url: record.url ?? matched?.url ?? null,
+      publication: record.publication || matched?.publication || "Unknown publication",
+      section: matched?.section ?? "Opinion",
+      readingMinutes: matched?.reading_minutes ?? null,
+      tone: matched?.tone ?? "Perspective",
+      tags: curatedTags,
+      summary: shrink(summaryText, 320),
+      takeaway: shrink(takeaway, 240),
+      quoteText: record.quote_text?.trim() || record.title,
+      phase: record.phase,
+      connection: cleanedConnection || record.connection_text,
+      rationale: record.rationale,
+      strengthLabel: record.strength_label,
+      relevanceScore: record.relevance_score,
+      quoteSource: record.quote_source,
+    } satisfies OpinionEvidenceCardData;
+  });
+
+  const searchProbe = searchTerm.trim().toLowerCase();
+  const searched =
+    searchProbe.length === 0
+      ? cards
+      : cards.filter((card) =>
+          [
+            card.title,
+            card.summary,
+            card.takeaway,
+            card.quoteText,
+            card.publication,
+            card.connection,
+            card.rationale,
+            card.tags.join(" "),
+          ]
+            .join(" ")
+            .toLowerCase()
+            .includes(searchProbe)
+        );
+
+  const yearFiltered =
+    yearFilter === "all"
+      ? searched
+      : searched.filter((card) => Number(card.dateIso.slice(0, 4)) === yearFilter);
+
+  const before = yearFiltered
+    .filter((card) => card.phase === "before")
+    .sort(compareCardChronological);
+  const after = yearFiltered
+    .filter((card) => card.phase === "after")
+    .sort(compareCardChronological);
+
+  return {
+    before,
+    after,
+    total: yearFiltered.length,
+  };
+}
+
 function toOpinionEvidenceCard(record: ShiftProjectionRecord): OpinionEvidenceCardData {
   const summaryText = buildCardSummary(record.analysis.summary, record.shift_context.narrative_note);
   const takeawaySentence = deriveTakeaway(
@@ -364,6 +523,22 @@ export function OpinionShiftView({ articles }: { articles: RawArticleRecord[] })
     beforeCards = scienceCards.before;
     afterCards = scienceCards.after;
     totalRecords = scienceCards.total;
+  } else if (shift.id === "republic_shift") {
+    const republicCards = buildRepublicShiftCards(
+      articles,
+      state.activeFilter.searchTerm,
+      state.activeFilter.year
+    );
+    if (republicCards.total > 0) {
+      beforeCards = republicCards.before;
+      afterCards = republicCards.after;
+      totalRecords = republicCards.total;
+    } else {
+      const split = buildShiftSplit(articles, shift, state.activeFilter.searchTerm, state.activeFilter.year);
+      beforeCards = split.before.map((record) => toOpinionEvidenceCard(record));
+      afterCards = split.after.map((record) => toOpinionEvidenceCard(record));
+      totalRecords = split.total;
+    }
   } else {
     const split = buildShiftSplit(articles, shift, state.activeFilter.searchTerm, state.activeFilter.year);
     beforeCards = split.before.map((record) => toOpinionEvidenceCard(record));

@@ -5,6 +5,41 @@ import { useMemo } from "react";
 
 import { RawArticleRecord } from "@/lib/types";
 
+type LeadGroup =
+  | "institutional_grammar"
+  | "decay_diagnostics"
+  | "democratic_urgency"
+  | "new_grammar"
+  | "embodied_ethics"
+  | "plural_futures"
+  | "cross_currents";
+
+interface RepublicStoryRecord {
+  article_uid: string;
+  phase: "before" | "after";
+  published_date: string;
+  url: string | null;
+  publication: string;
+  title: string;
+  summary_snippet: string;
+  signal_tags: string[];
+  relevance_score: number;
+  strength_label: "strong" | "moderate" | "weak";
+  lead_group?: string;
+  argument_text?: string;
+  connection_text: string;
+  quote_text: string;
+  include_in_story: boolean;
+  rationale?: string;
+}
+
+export interface RepublicShiftStoryPayload {
+  generated_at: string;
+  method: string;
+  version: string;
+  selected_records: RepublicStoryRecord[];
+}
+
 interface NarrativeRecord {
   id: string;
   title: string;
@@ -14,37 +49,32 @@ interface NarrativeRecord {
   year: number;
   phase: "before" | "after";
   summary: string;
-  keyMessage: string;
-  connection: string;
+  takeaway: string;
+  themes: string[];
   quoteText: string;
   relevanceScore: number;
   strengthLabel: "strong" | "moderate" | "weak";
-  leadGroup:
-    | "institutional_grammar"
-    | "democratic_urgency"
-    | "new_grammar"
-    | "embodied_ethics"
-    | "plural_futures"
-    | "cross_currents";
+  leadGroup: LeadGroup;
 }
 
 const REPUBLIC_MILESTONE_YEAR = 2024;
 
-const PHASE_ONE_GROUPS: NarrativeRecord["leadGroup"][] = [
+const PHASE_ONE_GROUPS: LeadGroup[] = [
   "institutional_grammar",
   "democratic_urgency",
   "cross_currents",
 ];
 
-const PHASE_TWO_GROUPS: NarrativeRecord["leadGroup"][] = [
+const PHASE_TWO_GROUPS: LeadGroup[] = [
   "new_grammar",
   "embodied_ethics",
   "plural_futures",
   "cross_currents",
 ];
 
-const GROUP_TITLES: Record<NarrativeRecord["leadGroup"], string> = {
+const GROUP_TITLES: Record<LeadGroup, string> = {
   institutional_grammar: "Institutional grammar: when constitutional language loses traction",
+  decay_diagnostics: "Democratic decay: institutional erosion and public thinning",
   democratic_urgency: "Democratic urgency: civil society, ethics, and public speech",
   new_grammar: "New democratic grammar: participation beyond representation",
   embodied_ethics: "Embodied ethics: everyday morality against securitised politics",
@@ -52,9 +82,11 @@ const GROUP_TITLES: Record<NarrativeRecord["leadGroup"], string> = {
   cross_currents: "Cross-currents: supplementary evidence shaping the transition",
 };
 
-const GROUP_LEADS: Record<NarrativeRecord["leadGroup"], string> = {
+const GROUP_LEADS: Record<LeadGroup, string> = {
   institutional_grammar:
     "These pieces read the First Republic as a constitutional grammar now stripped of social force: the terms remain, but their lived guarantees are unstable.",
+  decay_diagnostics:
+    "This stream tracks institutional wear and democratic desiccation as persistent structural patterns rather than temporary exceptions.",
   democratic_urgency:
     "This cluster insists that majoritarian closure is not only electoral; it is pedagogic and ethical, shrinking the civic imagination required for democracy to function.",
   new_grammar:
@@ -67,13 +99,49 @@ const GROUP_LEADS: Record<NarrativeRecord["leadGroup"], string> = {
     "These texts sit across categories but add connective tissue between institutional critique and emergent democratic alternatives.",
 };
 
+const GROUP_ARGUMENTS: Record<LeadGroup, string> = {
+  institutional_grammar:
+    "The article argues that constitutional language survives while institutional guarantees are weakening in practice.",
+  decay_diagnostics:
+    "The article argues that democratic erosion is structural and visible in everyday institutional life.",
+  democratic_urgency:
+    "The article argues that ethics, dissent, and civic imagination are prerequisites for democratic repair.",
+  new_grammar:
+    "The article argues that a contested Second Republic is being constructed through new participatory vocabularies.",
+  embodied_ethics:
+    "The article argues that democratic practice must move from abstraction to embodied ethics and public pedagogy.",
+  plural_futures:
+    "The article argues that democratic futures require ecological responsibility and plural knowledge systems.",
+  cross_currents:
+    "The article argues that democratic renewal depends on connecting institutional critique with civic invention.",
+};
+
+function normalizeText(text: string | null | undefined): string {
+  return (text ?? "").replace(/\s+/g, " ").trim();
+}
+
+function splitSentences(text: string): string[] {
+  return text
+    .match(/[^.!?]+(?:[.!?]+|$)/g)
+    ?.map((sentence) => sentence.trim())
+    .filter(Boolean) ?? [];
+}
+
+function punctuate(text: string): string {
+  const trimmed = text.trim();
+  if (!trimmed) {
+    return "";
+  }
+  return /[.!?]$/.test(trimmed) ? trimmed : `${trimmed}.`;
+}
+
 function firstSentence(text: string | null): string {
-  const normalized = (text ?? "").replace(/\s+/g, " ").trim();
+  const normalized = normalizeText(text);
   if (!normalized) {
     return "Summary pending.";
   }
   const match = normalized.match(/^(.+?[.!?])(\s|$)/);
-  return (match?.[1] ?? normalized).trim();
+  return (match?.[1] ?? punctuate(normalized)).trim();
 }
 
 function shrink(text: string, maxChars: number): string {
@@ -98,26 +166,21 @@ function formatDate(dateIso: string): string {
   }).format(date);
 }
 
-function cleanKeyMessage(value: string | undefined): string {
-  if (!value) {
-    return "";
-  }
-  return value
-    .replace(/\s*(First Republic signal:|Second Republic signal:).*/i, "")
-    .replace(/\s+/g, " ")
-    .trim();
+function formatSignalTag(slug: string): string {
+  return slug
+    .split("-")
+    .filter(Boolean)
+    .map((word) => (word.length <= 3 ? word.toUpperCase() : `${word[0].toUpperCase()}${word.slice(1)}`))
+    .join(" ");
 }
 
-function cleanConnection(
-  value: string | undefined,
-  phase: "before" | "after"
-): string {
+function cleanConnection(value: string | undefined, phase: "before" | "after"): string {
   const fallback =
     phase === "before"
       ? "Shows how First Republic institutions and citizenship guarantees are weakening in practice."
       : "Shows how the Second Republic is being assembled through new democratic practices.";
 
-  const raw = (value ?? "").replace(/\s+/g, " ").trim();
+  const raw = normalizeText(value);
   if (!raw) {
     return fallback;
   }
@@ -125,6 +188,9 @@ function cleanConnection(
   const lower = raw.toLowerCase();
   if (lower.includes("interrogates constitutional-institutional grammar")) {
     return "Shows constitutional language and institutional guarantees of the First Republic losing force in practice.";
+  }
+  if (lower.includes("diagnoses democratic erosion")) {
+    return "Shows democratic erosion as a systemic process inside First Republic institutions.";
   }
   if (lower.includes("ethics, dissent, and civic urgency")) {
     return "Shows civic and ethical response to institutional decline within the First Republic frame.";
@@ -145,26 +211,56 @@ function cleanConnection(
     .replace(/^strongly linked to first republic because\s*/i, "")
     .replace(/^strongly linked to second republic because\s*/i, "");
   const sentence = cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
-  return sentence || fallback;
+  return punctuate(sentence) || fallback;
 }
 
-function parseLeadGroup(raw: string | undefined): NarrativeRecord["leadGroup"] {
-  const match = raw?.match(/lead_group=([a-z_]+)/);
-  const lead = match?.[1] as NarrativeRecord["leadGroup"] | undefined;
-  if (!lead) {
-    return "cross_currents";
+function buildSummary(summarySource: string | null | undefined, connection: string): string {
+  const normalized = normalizeText(summarySource);
+  if (!normalized) {
+    return connection;
   }
+  const sentences = splitSentences(normalized);
+  const first = sentences[0] ? punctuate(sentences[0]) : "";
+  const second = sentences[1] ? punctuate(sentences[1]) : connection;
+
+  if (first && second && first.toLowerCase() !== second.toLowerCase()) {
+    return `${first} ${second}`;
+  }
+  if (first) {
+    return first;
+  }
+  return connection;
+}
+
+function parseLeadGroup(raw: string | undefined): LeadGroup {
   if (
-    lead === "institutional_grammar" ||
-    lead === "democratic_urgency" ||
-    lead === "new_grammar" ||
-    lead === "embodied_ethics" ||
-    lead === "plural_futures" ||
-    lead === "cross_currents"
+    raw === "institutional_grammar" ||
+    raw === "decay_diagnostics" ||
+    raw === "democratic_urgency" ||
+    raw === "new_grammar" ||
+    raw === "embodied_ethics" ||
+    raw === "plural_futures" ||
+    raw === "cross_currents"
   ) {
-    return lead;
+    return raw;
   }
   return "cross_currents";
+}
+
+function parseLeadGroupFromRationale(raw: string | undefined): LeadGroup {
+  const match = raw?.match(/lead_group=([a-z_]+)/);
+  return parseLeadGroup(match?.[1]);
+}
+
+function buildTakeaway(leadGroup: LeadGroup, connection: string, phase: "before" | "after"): string {
+  const first = GROUP_ARGUMENTS[leadGroup];
+  const second =
+    normalizeText(connection).toLowerCase() !== normalizeText(first).toLowerCase()
+      ? connection
+      : phase === "before"
+        ? "This reframes republic decline as an everyday democratic problem, not a purely legal one."
+        : "This recasts democratic reconstruction as civic practice rather than institutional inheritance.";
+  return `${punctuate(first)} ${punctuate(second)}`.trim();
 }
 
 function yearBand(records: NarrativeRecord[]): string {
@@ -176,7 +272,7 @@ function yearBand(records: NarrativeRecord[]): string {
 }
 
 function groupByLead(records: NarrativeRecord[]) {
-  const bucket = new Map<NarrativeRecord["leadGroup"], NarrativeRecord[]>();
+  const bucket = new Map<LeadGroup, NarrativeRecord[]>();
   for (const record of records) {
     const prior = bucket.get(record.leadGroup) ?? [];
     prior.push(record);
@@ -196,8 +292,10 @@ function toNarrativeRecord(article: RawArticleRecord): NarrativeRecord {
   const critical = article.republic_critical;
   const fallbackPhase: "before" | "after" = article.year < REPUBLIC_MILESTONE_YEAR ? "before" : "after";
   const phase = critical?.phase ?? annotation?.phase ?? fallbackPhase;
-  const summarySentence = firstSentence(article.summary);
-  const cleanedMessage = cleanKeyMessage(annotation?.key_message);
+  const leadGroup = parseLeadGroupFromRationale(critical?.rationale);
+  const connection = cleanConnection(critical?.connection_text ?? annotation?.connection, phase);
+  const summary = buildSummary(article.summary, connection);
+  const takeaway = buildTakeaway(leadGroup, connection, phase);
 
   return {
     id: String(article.id),
@@ -207,16 +305,42 @@ function toNarrativeRecord(article: RawArticleRecord): NarrativeRecord {
     url: article.url,
     publication: article.publication,
     phase,
-    summary: shrink(summarySentence, 230),
-    keyMessage: cleanedMessage || summarySentence,
-    connection: cleanConnection(
-      critical?.connection_text ?? annotation?.connection,
-      phase
-    ),
-    quoteText: critical?.quote_text ?? summarySentence,
+    summary: shrink(summary, 340),
+    takeaway: shrink(takeaway, 260),
+    themes: article.tags.slice(0, 3).map((tag) => tag.label),
+    quoteText: critical?.quote_text ?? firstSentence(article.summary),
     relevanceScore: critical?.relevance_score ?? 0,
     strengthLabel: critical?.strength_label ?? "weak",
-    leadGroup: parseLeadGroup(critical?.rationale),
+    leadGroup,
+  };
+}
+
+function toNarrativeRecordFromStory(record: RepublicStoryRecord): NarrativeRecord {
+  const phase = record.phase;
+  const leadGroup = parseLeadGroup(record.lead_group);
+  const connection = cleanConnection(record.connection_text, phase);
+  const summary = buildSummary(record.summary_snippet, connection);
+  const takeaway = buildTakeaway(leadGroup, connection, phase);
+  const themes =
+    record.signal_tags.length > 0
+      ? record.signal_tags.map((slug) => formatSignalTag(slug))
+      : ["Republic Shift"];
+
+  return {
+    id: record.article_uid,
+    title: record.title,
+    dateIso: record.published_date,
+    year: Number(record.published_date.slice(0, 4)) || REPUBLIC_MILESTONE_YEAR,
+    url: record.url,
+    publication: record.publication,
+    phase,
+    summary: shrink(summary, 340),
+    takeaway: shrink(record.argument_text ? `${record.argument_text} ${connection}` : takeaway, 260),
+    themes,
+    quoteText: normalizeText(record.quote_text) || record.title,
+    relevanceScore: Number(record.relevance_score),
+    strengthLabel: record.strength_label,
+    leadGroup,
   };
 }
 
@@ -248,10 +372,13 @@ function EvidenceEntry({
         <strong>{record.relevanceScore.toFixed(1)}</strong> ({record.strengthLabel})
       </p>
       <p className="longformEvidenceBody">
-        <strong>Key message:</strong> {record.keyMessage}
+        <strong>Summary:</strong> {record.summary}
       </p>
       <p className="longformEvidenceBody">
-        <strong>Republic linkage:</strong> {record.connection}
+        <strong>Takeaway:</strong> {record.takeaway}
+      </p>
+      <p className="longformEvidenceBody">
+        <strong>Themes:</strong> {record.themes.join(", ")}
       </p>
       <blockquote className="longformQuote">"{record.quoteText}"</blockquote>
     </article>
@@ -261,18 +388,28 @@ function EvidenceEntry({
 export function RepublicShiftNarrative({
   articles,
   generatedAtUtc,
+  story,
 }: {
-  articles: RawArticleRecord[];
-  generatedAtUtc: string;
+  articles?: RawArticleRecord[];
+  generatedAtUtc?: string;
+  story?: RepublicShiftStoryPayload;
 }) {
   const sourceRows = useMemo(() => {
-    return articles
+    if (story?.selected_records?.length) {
+      return story.selected_records
+        .filter((record) => record.include_in_story)
+        .map(toNarrativeRecordFromStory)
+        .sort((a, b) => a.dateIso.localeCompare(b.dateIso) || a.title.localeCompare(b.title));
+    }
+
+    const fallbackArticles = articles ?? [];
+    return fallbackArticles
       .filter(
         (article) => article.status !== "draft" && article.republic_critical?.include_in_story === true
       )
       .map(toNarrativeRecord)
       .sort((a, b) => a.dateIso.localeCompare(b.dateIso) || a.title.localeCompare(b.title));
-  }, [articles]);
+  }, [articles, story]);
 
   const phaseOne = useMemo(
     () => sourceRows.filter((record) => record.phase === "before"),
@@ -285,6 +422,11 @@ export function RepublicShiftNarrative({
 
   const phaseOneByGroup = useMemo(() => groupByLead(phaseOne), [phaseOne]);
   const phaseTwoByGroup = useMemo(() => groupByLead(phaseTwo), [phaseTwo]);
+  const sourceNames = useMemo(
+    () => Array.from(new Set(sourceRows.map((record) => record.publication))).sort(),
+    [sourceRows]
+  );
+  const snapshotLabel = story?.generated_at ?? generatedAtUtc ?? "Unknown snapshot";
 
   return (
     <main className="narrativePage">
@@ -301,7 +443,7 @@ export function RepublicShiftNarrative({
           <p className="longformMeta">
             Milestone year: <strong>{REPUBLIC_MILESTONE_YEAR}</strong> | Selected corpus:{" "}
             <strong>{sourceRows.length}</strong> articles ({phaseOne.length} before, {phaseTwo.length}{" "}
-            after) | Archive snapshot: <strong>{generatedAtUtc}</strong>
+            after) | Archive snapshot: <strong>{snapshotLabel}</strong>
           </p>
           <Link href="/" className="narrativeBackLink">
             Back to Shiv Archive
@@ -337,10 +479,10 @@ export function RepublicShiftNarrative({
         <section className="longformSection">
           <h2>Method and Scope</h2>
           <p>
-            The analysis uses only the curated Republic-shift evidence set already marked as
-            narratively strong in the archive pipeline. The aim is not to force every article into
-            one thesis, but to test whether repeated concerns, examples, and conceptual moves
-            accumulate into a historically legible shift.
+            The analysis uses a strict curated Republic-shift evidence set and organizes it into
+            a before/after narrative around the 2024 milestone. The aim is to test whether
+            repeated concerns, examples, and conceptual moves accumulate into a historically
+            legible shift.
           </p>
           <p>
             Pre-2024 writing is treated as First Republic evidence: constitutional assumptions are
@@ -351,7 +493,7 @@ export function RepublicShiftNarrative({
           <ul className="longformStatList">
             <li>First Republic evidence range: {yearBand(phaseOne)}</li>
             <li>Second Republic evidence range: {yearBand(phaseTwo)}</li>
-            <li>Primary sources represented: Scroll.in, Outlook India, The New Indian Express, EPW</li>
+            <li>Primary sources represented: {sourceNames.join(", ")}</li>
           </ul>
         </section>
 
@@ -363,12 +505,6 @@ export function RepublicShiftNarrative({
             performative, and constitutional language remains publicly available but politically
             unenforced. Repeatedly, the writing asks whether democracy can still be lived when it
             is reduced to procedure, numbers, and security.
-          </p>
-          <p>
-            Real-world stress tests are concrete: Kashmir&apos;s human shield episode, CAA-era
-            protests, majoritarian narrowing of minority status, and the public silence around
-            civic injury. The First Republic appears here less as a settled achievement and more as
-            a fading grammar that no longer compels institutions to act democratically.
           </p>
           {PHASE_ONE_GROUPS.map((group) => {
             const groupRows = phaseOneByGroup.get(group) ?? [];
@@ -409,12 +545,6 @@ export function RepublicShiftNarrative({
             fully rejected nor sufficient; it is re-specified through knowledge panchayats, direct
             participation, and expanded notions of responsibility.
           </p>
-          <p>
-            The result is a more unstable but more inventive democratic horizon. The emerging
-            Second Republic is not a doctrinal replacement text. It is an argument for continuous
-            democratic work in which ethics, pedagogy, and ecological survival become central
-            constitutional concerns.
-          </p>
         </section>
 
         <section className="longformSection">
@@ -425,12 +555,6 @@ export function RepublicShiftNarrative({
             democratic speech must become intelligible in everyday language; and constitutional
             reasoning must stretch beyond nation-state security to include ecological limits and
             shared futures.
-          </p>
-          <p>
-            The external reference points are deliberate: Gaza, Trumpian majoritarianism, and South
-            Asian peace imaginaries are used as comparative warnings and pedagogic prompts. The
-            writing treats these not as foreign episodes but as mirrors for Indian democratic
-            design.
           </p>
           {PHASE_TWO_GROUPS.map((group) => {
             const groupRows = phaseTwoByGroup.get(group) ?? [];
@@ -480,11 +604,6 @@ export function RepublicShiftNarrative({
               made democratic?&quot;
             </li>
           </ol>
-          <p>
-            On this reading, the Republic Shift is not a move from order to chaos. It is a move
-            from inherited certainty to deliberate democratic invention under conditions of moral,
-            ecological, and institutional stress.
-          </p>
         </section>
       </article>
     </main>

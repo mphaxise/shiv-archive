@@ -23,11 +23,20 @@ fi
 "$ROOT/scripts/generate_republic_critical_evidence.py" \
   --master-db-path "$MASTER_DB" \
   --analysis-db-path "$ANALYSIS_DB" \
-  --version critical_v2 \
+  --version critical_v3 \
   --max-per-phase 12 \
   --min-score 14 \
   --min-anchor-hits 3 \
   --min-group-hits 2
+
+"$ROOT/scripts/generate_republic_shift_research_packet.py" \
+  --master-db-path "$MASTER_DB" \
+  --analysis-db-path "$ANALYSIS_DB" \
+  --output-json "$ROOT/src/data/republic_shift_story_2026-02-26.json" \
+  --output-md "$ROOT/docs/research/republic-shift-brief-2026-02-26.md"
+
+cp "$ROOT/src/data/republic_shift_story_2026-02-26.json" \
+  "$ROOT/docs/research/republic-shift-evidence-2026-02-26.json"
 
 "$ROOT/scripts/generate_science_shift_research_packet.py" \
   --master-db-path "$MASTER_DB" \

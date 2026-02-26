@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 
-import { RepublicShiftNarrative } from "@/components/story/RepublicShiftNarrative";
-import articlesData from "@/data/articles.json";
-import { DatasetPayload } from "@/lib/types";
+import {
+  RepublicShiftNarrative,
+  RepublicShiftStoryPayload,
+} from "@/components/story/RepublicShiftNarrative";
+import republicShiftStory from "@/data/republic_shift_story_2026-02-26.json";
 
 export const metadata: Metadata = {
   title: "Deep Analysis | Republic Shift | Shiv Archive",
@@ -11,11 +13,9 @@ export const metadata: Metadata = {
 };
 
 export default function RepublicShiftNarrativePage() {
-  const dataset = articlesData as DatasetPayload;
   return (
     <RepublicShiftNarrative
-      articles={dataset.articles}
-      generatedAtUtc={dataset.metadata.generated_at_utc}
+      story={republicShiftStory as unknown as RepublicShiftStoryPayload}
     />
   );
 }

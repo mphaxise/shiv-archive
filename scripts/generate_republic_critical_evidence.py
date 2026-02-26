@@ -389,6 +389,11 @@ def main() -> int:
         help="Minimum number of concept groups with non-zero hits required for selection.",
     )
     parser.add_argument(
+        "--allow-non-full-text",
+        action="store_true",
+        help="Allow non-full-text records to be selected. Default requires text_state='full'.",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Preview without writes.",
@@ -434,7 +439,8 @@ def main() -> int:
             a.title,
             a.published_at,
             CAST(strftime('%Y', a.published_at) AS INTEGER) AS year,
-            COALESCE(tx.body_text, '') AS body_text
+            COALESCE(tx.body_text, '') AS body_text,
+            COALESCE(tx.text_state, 'missing') AS text_state
         FROM articles a
         LEFT JOIN article_texts tx
             ON tx.article_uid = a.article_uid
@@ -450,6 +456,8 @@ def main() -> int:
         title = str(row["title"] or "")
         summary = summary_by_uid.get(article_uid, "")
         body_text = str(row["body_text"] or "")
+        text_state = str(row["text_state"] or "missing")
+        has_full_text = text_state == "full"
         year = int(row["year"])
         phase = "before" if year < MILESTONE_YEAR else "after"
         tag_slugs = tag_slugs_by_uid.get(article_uid, [])
@@ -462,11 +470,12 @@ def main() -> int:
             body_text=body_text,
         )
         strongest_group = max(group_hits.items(), key=lambda item: item[1])[0]
-        should_include = (
+        passes_threshold = (
             score >= float(args.min_score)
             and anchor_hits >= int(args.min_anchor_hits)
             and active_groups >= int(args.min_group_hits)
         )
+        should_include = passes_threshold and (bool(args.allow_non_full_text) or has_full_text)
         quote_text, quote_source, quote_confidence = choose_quote(
             phase=phase,
             body_text=body_text,
@@ -481,6 +490,11 @@ def main() -> int:
             group_hits=group_hits,
             selected=should_include,
         )
+        if passes_threshold and not should_include:
+            rationale = (
+                "Excluded from core narrative because strict mode requires full-text evidence. "
+                f"Current text_state={text_state}. {rationale}"
+            )
         candidates.append(
             {
                 "article_uid": article_uid,
@@ -489,6 +503,8 @@ def main() -> int:
                 "score": score,
                 "strength": strength_label(score),
                 "include": should_include,
+                "passes_threshold": passes_threshold,
+                "text_state": text_state,
                 "connection": connection_text,
                 "rationale": rationale,
                 "quote_text": quote_text,
@@ -528,7 +544,8 @@ def main() -> int:
                 (
                     "Strict selection for Republic shift with "
                     f"max_per_phase={args.max_per_phase}, min_score={args.min_score}, "
-                    f"min_anchor_hits={args.min_anchor_hits}, min_group_hits={args.min_group_hits}."
+                    f"min_anchor_hits={args.min_anchor_hits}, min_group_hits={args.min_group_hits}, "
+                    f"allow_non_full_text={bool(args.allow_non_full_text)}."
                 ),
             ),
         )
