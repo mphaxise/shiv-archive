@@ -33,15 +33,6 @@ interface ScienceShiftStoryPayload {
   selected_records: ScienceStoryRecord[];
 }
 
-function firstSentence(text: string | null): string {
-  const normalized = (text ?? "").replace(/\s+/g, " ").trim();
-  if (!normalized) {
-    return "Summary pending.";
-  }
-  const match = normalized.match(/^(.+?[.!?])(\s|$)/);
-  return (match?.[1] ?? normalized).trim();
-}
-
 function normalizeText(text: string | null | undefined): string {
   return (text ?? "").replace(/\s+/g, " ").trim();
 }
@@ -67,8 +58,44 @@ function stripRepeatedLead(text: string, lead: string): string {
   return text.slice(lead.length).replace(/^[\s,.:;/-]+/, "").trim();
 }
 
-function deriveTakeaway(summarySentence: string, keyMessage: string, connection: string): string {
-  const summaryLead = summarySentence === "Summary pending." ? "" : summarySentence;
+function splitSentences(text: string): string[] {
+  return text
+    .match(/[^.!?]+(?:[.!?]+|$)/g)
+    ?.map((sentence) => sentence.trim())
+    .filter(Boolean) ?? [];
+}
+
+function punctuate(text: string): string {
+  const trimmed = text.trim();
+  if (!trimmed) {
+    return "";
+  }
+  return /[.!?]$/.test(trimmed) ? trimmed : `${trimmed}.`;
+}
+
+function buildCardSummary(summary: string | null | undefined, contextFallback: string): string {
+  const normalizedSummary = normalizeText(summary);
+  if (!normalizedSummary) {
+    const fallbackLead = leadingSentence(contextFallback);
+    return fallbackLead ? punctuate(fallbackLead) : "Summary pending.";
+  }
+
+  const summarySentences = splitSentences(normalizedSummary);
+  if (summarySentences.length >= 2) {
+    return `${summarySentences[0]} ${summarySentences[1]}`.trim();
+  }
+
+  const first = summarySentences[0] ?? punctuate(normalizedSummary);
+  const fallbackLead = leadingSentence(contextFallback);
+  if (fallbackLead && fallbackLead.toLowerCase() !== first.toLowerCase()) {
+    return `${punctuate(first)} ${punctuate(fallbackLead)}`.trim();
+  }
+
+  return punctuate(first);
+}
+
+function deriveTakeaway(summaryText: string, keyMessage: string, connection: string): string {
+  const summaryLead = leadingSentence(summaryText === "Summary pending." ? "" : summaryText);
   const cleanedKeyMessage = normalizeText(keyMessage);
   const dedupedKeyMessage = stripRepeatedLead(cleanedKeyMessage, summaryLead);
   const keyMessageLead = leadingSentence(dedupedKeyMessage);
@@ -120,18 +147,17 @@ function strongestScienceGroup(record: ScienceStoryRecord): string | null {
   return bestGroup || null;
 }
 
-function buildScienceTakeaway(record: ScienceStoryRecord, summarySentence: string): string {
-  const lead = summarySentence === "Summary pending." ? "" : `${summarySentence} `;
+function buildScienceTakeaway(record: ScienceStoryRecord, summaryText: string): string {
   const strongestGroup = strongestScienceGroup(record);
   const groupArgument = strongestGroup
     ? SCIENCE_ARGUMENT_BY_GROUP[record.phase][strongestGroup]
     : undefined;
 
   if (groupArgument) {
-    return `${lead}${groupArgument}`.trim();
+    return groupArgument;
   }
 
-  return deriveTakeaway(summarySentence, record.rationale, record.connection_text);
+  return deriveTakeaway(summaryText, record.rationale, record.connection_text);
 }
 
 function shrink(text: string, maxChars: number): string {
@@ -200,8 +226,8 @@ function buildScienceShiftCards(
       record.signal_tags.length > 0
         ? record.signal_tags.map((slug) => labelBySlug.get(slug) ?? slugToLabel(slug))
         : (matched?.tags ?? []).slice(0, 3).map((tag) => tag.label);
-    const summarySentence = firstSentence(record.summary_snippet || null);
-    const scienceTakeaway = buildScienceTakeaway(record, summarySentence);
+    const summaryText = buildCardSummary(matched?.summary ?? record.summary_snippet, record.connection_text);
+    const scienceTakeaway = buildScienceTakeaway(record, summaryText);
 
     return {
       id: record.article_uid,
@@ -213,7 +239,7 @@ function buildScienceShiftCards(
       readingMinutes: matched?.reading_minutes ?? null,
       tone: matched?.tone ?? "Perspective",
       tags: curatedTags,
-      summary: shrink(summarySentence, 220),
+      summary: shrink(summaryText, 320),
       takeaway: shrink(scienceTakeaway, 210),
       quoteText: record.quote_text?.trim() || record.title,
       phase: record.phase,
@@ -265,12 +291,13 @@ function buildScienceShiftCards(
 }
 
 function toOpinionEvidenceCard(record: ShiftProjectionRecord): OpinionEvidenceCardData {
-  const summarySentence = firstSentence(record.analysis.summary);
+  const summaryText = buildCardSummary(record.analysis.summary, record.shift_context.narrative_note);
   const takeawaySentence = deriveTakeaway(
-    summarySentence,
+    summaryText,
     record.shift_context.key_message,
     record.shift_context.narrative_note
   );
+  const summaryLead = leadingSentence(summaryText);
 
   return {
     id: record.article_id,
@@ -282,9 +309,9 @@ function toOpinionEvidenceCard(record: ShiftProjectionRecord): OpinionEvidenceCa
     readingMinutes: record.meta.reading_minutes,
     tone: record.analysis.tone,
     tags: record.analysis.tags.slice(0, 3).map((tag) => tag.label),
-    summary: shrink(summarySentence, 220),
+    summary: shrink(summaryText, 320),
     takeaway: shrink(takeawaySentence, 210),
-    quoteText: summarySentence === "Summary pending." ? record.meta.title : summarySentence,
+    quoteText: summaryLead || record.meta.title,
     phase: record.shift_context.phase,
     connection: record.shift_context.narrative_note,
     rationale: record.shift_context.key_message,
