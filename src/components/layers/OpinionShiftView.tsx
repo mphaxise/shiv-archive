@@ -70,8 +70,11 @@ function toOpinionEvidenceCard(record: ShiftProjectionRecord): OpinionEvidenceCa
 export function OpinionShiftView({ articles }: { articles: RawArticleRecord[] }) {
   const { state } = useResearchState();
   const shift = SHIFT_DEFINITIONS[state.activeShift];
+  const activeLongformShift = shift.id === "republic_shift" || shift.id === "science_shift";
+  const narrativeHref =
+    shift.id === "science_shift" ? "/deep-analysis/science-shift" : "/deep-analysis/republic-shift";
 
-  if (shift.id !== "republic_shift") {
+  if (!activeLongformShift) {
     return (
       <motion.section
         layout
@@ -86,8 +89,8 @@ export function OpinionShiftView({ articles }: { articles: RawArticleRecord[] })
           <p className="layerKicker">Opinion Shift</p>
           <h2>{shift.label} is queued for a future release.</h2>
           <p className="layerMeta">
-            Version 1 is focused on a deeper Republic Shift reading. Ecological, Science, and
-            Political shifts are parked for the next iteration.
+            Deep narrative reads are currently active for the Republic and Science shifts.
+            Ecological and Political long-form tracks are queued for the next iteration.
           </p>
         </header>
       </motion.section>
@@ -121,8 +124,8 @@ export function OpinionShiftView({ articles }: { articles: RawArticleRecord[] })
           <br />
           <strong>To:</strong> {shift.toStatement}
         </p>
-        <Link href="/deep-analysis/republic-shift" className="analysisNarrativeLink">
-          Open interactive narrative article
+        <Link href={narrativeHref} className="analysisNarrativeLink">
+          Open long-form narrative article
         </Link>
       </header>
 

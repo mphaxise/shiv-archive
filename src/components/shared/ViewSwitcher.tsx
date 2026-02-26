@@ -37,7 +37,7 @@ export function ViewSwitcher() {
           <div className="switchList">
             {SHIFT_ORDER.map((shiftId) => {
               const shift = SHIFT_DEFINITIONS[shiftId];
-              const enabled = shift.id === "republic_shift";
+              const enabled = shift.id === "republic_shift" || shift.id === "science_shift";
               return (
                 <button
                   key={shift.id}
@@ -48,7 +48,7 @@ export function ViewSwitcher() {
                 >
                   <span className="switchTitle">{shift.label}</span>
                   <span className="switchSubtitle">
-                    Milestone {shift.milestoneYear} {enabled ? "| Active in v1" : "| Queued"}
+                    Milestone {shift.milestoneYear} {enabled ? "| Active in v1.1" : "| Queued"}
                   </span>
                 </button>
               );

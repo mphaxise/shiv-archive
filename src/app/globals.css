@@ -187,6 +187,65 @@ body {
   gap: 0.62rem;
 }
 
+.deepTracksPanel {
+  margin-top: 0.84rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.62rem;
+}
+
+.deepTrackCard {
+  border: 1px solid rgba(29, 80, 92, 0.24);
+  border-radius: 14px;
+  padding: 0.8rem 0.86rem;
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.84), rgba(227, 243, 245, 0.82));
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 0.4rem;
+}
+
+.deepTrackKicker {
+  margin: 0;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #2f616f;
+}
+
+.deepTrackCard h3 {
+  margin: 0;
+  font-family: "Spectral", "Times New Roman", serif;
+  font-size: 1.1rem;
+}
+
+.deepTrackCard p {
+  margin: 0;
+  color: #3a4e57;
+  line-height: 1.48;
+  font-size: 0.88rem;
+}
+
+.deepTrackLink {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 0.16rem;
+  border: 1px solid rgba(23, 112, 106, 0.58);
+  border-radius: 999px;
+  padding: 0.26rem 0.7rem;
+  background: rgba(233, 247, 246, 0.85);
+  text-decoration: none;
+  color: #204f59;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.deepTrackLink:hover {
+  border-color: rgba(23, 112, 106, 0.84);
+  background: rgba(226, 243, 241, 0.95);
+}
+
 .introCard {
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -1379,6 +1438,10 @@ body {
   }
 
   .introPanel {
+    grid-template-columns: 1fr;
+  }
+
+  .deepTracksPanel {
     grid-template-columns: 1fr;
   }
 

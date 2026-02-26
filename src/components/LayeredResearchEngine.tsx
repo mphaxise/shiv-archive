@@ -57,7 +57,8 @@ export function LayeredResearchEngine({ dataset }: { dataset: DatasetPayload }) 
                 A learning-first archive that organizes Shiv Visvanathan&apos;s opinion writing into
                 a searchable public corpus across The New Indian Express, Scroll.in, EPW, and
                 Outlook India. The default view is a complete database of articles; the second view
-                traces the Republic Shift as a layered narrative over time.
+                traces long-form opinion shifts (Republic and Science) as layered narratives over
+                time.
               </p>
             </article>
 
@@ -80,6 +81,31 @@ export function LayeredResearchEngine({ dataset }: { dataset: DatasetPayload }) 
             </article>
           </section>
 
+          <section className="deepTracksPanel" aria-label="Deep analysis tracks">
+            <article className="deepTrackCard">
+              <p className="deepTrackKicker">Deep Analysis Track</p>
+              <h3>Republic Shift Narrative</h3>
+              <p>
+                Long-form reading of the transition from First Republic institutional grammar to a
+                contested Second Republic civic vocabulary.
+              </p>
+              <a className="deepTrackLink" href="/deep-analysis/republic-shift">
+                Open Republic Shift
+              </a>
+            </article>
+            <article className="deepTrackCard">
+              <p className="deepTrackKicker">Deep Analysis Track</p>
+              <h3>Science Shift Narrative</h3>
+              <p>
+                Quote-backed story of movement from expert closure toward knowledge panchayats,
+                playful science, and ethical public reasoning.
+              </p>
+              <a className="deepTrackLink" href="/deep-analysis/science-shift">
+                Open Science Shift
+              </a>
+            </article>
+          </section>
+
           <section id="research-archive" className="workspaceHead">
             <div>
               <p className="eyebrow">Research Corpus</p>
@@ -97,7 +123,8 @@ export function LayeredResearchEngine({ dataset }: { dataset: DatasetPayload }) 
             </div>
             <p className="workspaceSources">Sources: {sourceBreakdown}</p>
             <p className="workspaceNote">
-              Default view: full article database. Secondary view: Republic Shift lens.
+              Default view: full article database. Secondary view: opinion-shift lens with
+              long-form Republic and Science tracks.
             </p>
           </section>
 
