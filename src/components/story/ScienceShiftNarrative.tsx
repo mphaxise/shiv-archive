@@ -102,6 +102,23 @@ const GROUP_LEADS: Record<ScienceLeadGroup, string> = {
     "These records bridge multiple lines of argument and help track continuity across the before/after divide.",
 };
 
+const GROUP_ARGUMENTS: Record<ScienceLeadGroup, string> = {
+  institutional_knowledge:
+    "The article argues that institutional expertise has narrowed science's democratic imagination.",
+  diagnosing_closure:
+    "The article argues that bureaucratic science has become conceptually exhausted and publicly distant.",
+  democratic_learning:
+    "The article argues that science must be rebuilt as a democratic commons through dissent and dialogue.",
+  distributed_publics:
+    "The article argues for redistributing scientific authority through knowledge panchayats and plural publics.",
+  playful_science:
+    "The article argues that playful experimentation, not managerial control, is central to scientific renewal.",
+  ethics_of_knowledge:
+    "The article argues that science must answer to ethics, care, and social repair rather than efficiency alone.",
+  cross_currents:
+    "The article argues that science is a civic question about who can know, decide, and participate.",
+};
+
 function formatDate(dateIso: string): string {
   const date = new Date(`${dateIso}T00:00:00Z`);
   return new Intl.DateTimeFormat("en-IN", {
@@ -109,6 +126,75 @@ function formatDate(dateIso: string): string {
     month: "short",
     year: "numeric",
   }).format(date);
+}
+
+function normalizeText(text: string | null | undefined): string {
+  return (text ?? "").replace(/\s+/g, " ").trim();
+}
+
+function splitSentences(text: string): string[] {
+  return text
+    .match(/[^.!?]+(?:[.!?]+|$)/g)
+    ?.map((sentence) => sentence.trim())
+    .filter(Boolean) ?? [];
+}
+
+function punctuate(text: string): string {
+  const trimmed = text.trim();
+  if (!trimmed) {
+    return "";
+  }
+  return /[.!?]$/.test(trimmed) ? trimmed : `${trimmed}.`;
+}
+
+function cleanScienceLinkage(text: string): string {
+  const normalized = normalizeText(text);
+  if (!normalized) {
+    return "";
+  }
+  const stripped = normalized.replace(/^phase\s*\d+\s*link:\s*/i, "");
+  const sentence = stripped.charAt(0).toUpperCase() + stripped.slice(1);
+  return punctuate(sentence);
+}
+
+function formatSignalTag(slug: string): string {
+  return slug
+    .split("-")
+    .filter(Boolean)
+    .map((word) => (word.length <= 3 ? word.toUpperCase() : `${word[0].toUpperCase()}${word.slice(1)}`))
+    .join(" ");
+}
+
+function buildSummary(record: NarrativeRecord): string {
+  const summary = normalizeText(record.summary_snippet);
+  const summarySentences = splitSentences(summary);
+  const first = summarySentences[0] ? punctuate(summarySentences[0]) : "";
+  const secondFromSummary = summarySentences[1] ? punctuate(summarySentences[1]) : "";
+  const secondFromLinkage = cleanScienceLinkage(record.connection_text);
+  const second = secondFromSummary || secondFromLinkage;
+
+  if (first && second && first.toLowerCase() !== second.toLowerCase()) {
+    return `${first} ${second}`;
+  }
+  if (first) {
+    return first;
+  }
+  if (second) {
+    return second;
+  }
+  return "Summary pending.";
+}
+
+function buildTakeaway(record: NarrativeRecord): string {
+  const first = punctuate(GROUP_ARGUMENTS[record.lead_group]);
+  const linkage = cleanScienceLinkage(record.connection_text);
+  const second =
+    linkage && linkage.toLowerCase() !== first.toLowerCase()
+      ? linkage
+      : record.phase === "before"
+        ? "This marks science as a democratic question, not only a technical domain."
+        : "This shifts science toward shared public reasoning instead of expert monopoly.";
+  return `${first} ${second}`;
 }
 
 function yearBand(records: NarrativeRecord[]): string {
@@ -164,7 +250,9 @@ function EvidenceEntry({
   index: number;
   evidenceFrame: string;
 }) {
-  const tags = record.signal_tags.join(", ");
+  const tags = record.signal_tags.map(formatSignalTag).join(", ");
+  const summary = buildSummary(record);
+  const takeaway = buildTakeaway(record);
 
   return (
     <article className="longformEvidenceEntry" id={`science-evidence-${record.article_uid}`}>
@@ -185,10 +273,13 @@ function EvidenceEntry({
         <strong>{record.relevance_score.toFixed(1)}</strong> ({record.strength_label})
       </p>
       <p className="longformEvidenceBody">
-        <strong>Signal tags:</strong> {tags || "None"}
+        <strong>Summary:</strong> {summary}
       </p>
       <p className="longformEvidenceBody">
-        <strong>Science linkage:</strong> {record.connection_text}
+        <strong>Takeaway:</strong> {takeaway}
+      </p>
+      <p className="longformEvidenceBody">
+        <strong>Themes:</strong> {tags || "None"}
       </p>
       <blockquote className="longformQuote">"{record.quote_text}"</blockquote>
     </article>
