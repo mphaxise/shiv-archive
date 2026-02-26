@@ -19,6 +19,7 @@ interface ScienceStoryRecord {
   title: string;
   summary_snippet: string;
   signal_tags: string[];
+  group_hits?: Record<string, number | undefined>;
   connection_text: string;
   rationale: string;
   quote_text: string;
@@ -39,6 +40,98 @@ function firstSentence(text: string | null): string {
   }
   const match = normalized.match(/^(.+?[.!?])(\s|$)/);
   return (match?.[1] ?? normalized).trim();
+}
+
+function normalizeText(text: string | null | undefined): string {
+  return (text ?? "").replace(/\s+/g, " ").trim();
+}
+
+function leadingSentence(text: string | null | undefined): string {
+  const normalized = normalizeText(text);
+  if (!normalized) {
+    return "";
+  }
+  const match = normalized.match(/^(.+?[.!?])(\s|$)/);
+  return (match?.[1] ?? normalized).trim();
+}
+
+function stripRepeatedLead(text: string, lead: string): string {
+  if (!text || !lead) {
+    return text;
+  }
+  const textLower = text.toLowerCase();
+  const leadLower = lead.toLowerCase();
+  if (!textLower.startsWith(leadLower)) {
+    return text;
+  }
+  return text.slice(lead.length).replace(/^[\s,.:;/-]+/, "").trim();
+}
+
+function deriveTakeaway(summarySentence: string, keyMessage: string, connection: string): string {
+  const summaryLead = summarySentence === "Summary pending." ? "" : summarySentence;
+  const cleanedKeyMessage = normalizeText(keyMessage);
+  const dedupedKeyMessage = stripRepeatedLead(cleanedKeyMessage, summaryLead);
+  const keyMessageLead = leadingSentence(dedupedKeyMessage);
+  if (keyMessageLead) {
+    return keyMessageLead;
+  }
+
+  const connectionLead = leadingSentence(connection);
+  if (connectionLead) {
+    return connectionLead;
+  }
+
+  return "Takeaway pending.";
+}
+
+const SCIENCE_ARGUMENT_BY_GROUP: Record<"before" | "after", Record<string, string>> = {
+  before: {
+    institutional_knowledge:
+      "The article argues that institutional expertise has become gatekeeping, narrowing science's democratic dialogue.",
+    diagnosing_closure:
+      "The article argues that bureaucratic science has become conceptually exhausted and cannot handle public complexity.",
+    democratic_learning:
+      "The article argues for science as a democratic commons sustained by dissent and public reasoning.",
+  },
+  after: {
+    distributed_publics:
+      "The article argues for redistributing scientific authority through knowledge panchayats and plural publics.",
+    playful_science:
+      "The article argues that playful experimentation, not managerial Big Science, drives living scientific imagination.",
+    ethics_of_knowledge:
+      "The article argues that science must answer to conscience, care, and social repair, not efficiency alone.",
+  },
+};
+
+function strongestScienceGroup(record: ScienceStoryRecord): string | null {
+  const entries = Object.entries(record.group_hits ?? {});
+  if (entries.length === 0) {
+    return null;
+  }
+  let bestGroup = "";
+  let bestScore = 0;
+  for (const [group, rawScore] of entries) {
+    const score = Number(rawScore ?? 0);
+    if (score > bestScore) {
+      bestGroup = group;
+      bestScore = score;
+    }
+  }
+  return bestGroup || null;
+}
+
+function buildScienceTakeaway(record: ScienceStoryRecord, summarySentence: string): string {
+  const lead = summarySentence === "Summary pending." ? "" : `${summarySentence} `;
+  const strongestGroup = strongestScienceGroup(record);
+  const groupArgument = strongestGroup
+    ? SCIENCE_ARGUMENT_BY_GROUP[record.phase][strongestGroup]
+    : undefined;
+
+  if (groupArgument) {
+    return `${lead}${groupArgument}`.trim();
+  }
+
+  return deriveTakeaway(summarySentence, record.rationale, record.connection_text);
 }
 
 function shrink(text: string, maxChars: number): string {
@@ -107,6 +200,8 @@ function buildScienceShiftCards(
       record.signal_tags.length > 0
         ? record.signal_tags.map((slug) => labelBySlug.get(slug) ?? slugToLabel(slug))
         : (matched?.tags ?? []).slice(0, 3).map((tag) => tag.label);
+    const summarySentence = firstSentence(record.summary_snippet || null);
+    const scienceTakeaway = buildScienceTakeaway(record, summarySentence);
 
     return {
       id: record.article_uid,
@@ -118,8 +213,8 @@ function buildScienceShiftCards(
       readingMinutes: matched?.reading_minutes ?? null,
       tone: matched?.tone ?? "Perspective",
       tags: curatedTags,
-      summary: shrink(record.summary_snippet || "Summary pending.", 220),
-      takeaway: shrink(record.connection_text || record.rationale || "Takeaway pending.", 210),
+      summary: shrink(summarySentence, 220),
+      takeaway: shrink(scienceTakeaway, 210),
       quoteText: record.quote_text?.trim() || record.title,
       phase: record.phase,
       connection: record.connection_text,
@@ -171,7 +266,11 @@ function buildScienceShiftCards(
 
 function toOpinionEvidenceCard(record: ShiftProjectionRecord): OpinionEvidenceCardData {
   const summarySentence = firstSentence(record.analysis.summary);
-  const takeawaySentence = firstSentence(record.shift_context.key_message);
+  const takeawaySentence = deriveTakeaway(
+    summarySentence,
+    record.shift_context.key_message,
+    record.shift_context.narrative_note
+  );
 
   return {
     id: record.article_id,
