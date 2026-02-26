@@ -29,6 +29,15 @@ fi
   --min-anchor-hits 3 \
   --min-group-hits 2
 
+"$ROOT/scripts/generate_science_shift_research_packet.py" \
+  --master-db-path "$MASTER_DB" \
+  --analysis-db-path "$ANALYSIS_DB" \
+  --output-json "$ROOT/src/data/science_shift_story_2026-02-26.json" \
+  --output-md "$ROOT/docs/research/science-shift-brief-2026-02-26.md"
+
+cp "$ROOT/src/data/science_shift_story_2026-02-26.json" \
+  "$ROOT/docs/research/science-shift-evidence-2026-02-26.json"
+
 "$ROOT/scripts/export_public_json_dual.py" \
   --master-db-path "$MASTER_DB" \
   --analysis-db-path "$ANALYSIS_DB" \
