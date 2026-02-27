@@ -2,6 +2,7 @@
 
 Last updated: 2026-02-26 (PST)
 Scope: Next build phase after discovery
+Status note: Option D parity work executed on 2026-02-26 (Republic + Science shift contract alignment complete).
 
 ## Option A: Data Quality and Release Gates First (Recommended)
 
@@ -74,13 +75,12 @@ Risk: Low to Medium
 
 ## Recommendation and Sequence
 
-Recommended path: Option A -> Option D -> targeted Option C -> Option B
+Recommended path: Option A -> targeted Option C -> Option B
 
 Proposed sequence:
 1. Implement data quality gates and release checklist enforcement.
-2. Unify Republic and Science shift research/display contracts (packet parity + card field parity).
-3. Add lightweight automation for repeatable data refresh + export verification.
-4. Resume feature roadmap with confidence in data contracts.
+2. Add lightweight automation for repeatable data refresh + export verification.
+3. Resume feature roadmap with confidence in data contracts.
 
 ## Prerequisites Before Starting Implementation
 

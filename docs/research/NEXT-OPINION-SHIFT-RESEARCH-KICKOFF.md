@@ -78,18 +78,20 @@ Completed now:
 - Added parity audit for next cycle planning:
   - `/Users/praneet/shiv-archive/docs/research/REPUBLIC-SCIENCE-PARITY-AUDIT-2026-02-26.md`
 
-## 7) Republic Alignment Follow-up (Opened)
+## 7) Republic Alignment Follow-up (Completed)
 
 Goal:
 - Bring Republic Shift research generation and display parity closer to the Science Shift model.
 
-Observed gap highlights (current repo state):
-- Science uses packet-first research artifact (`selected_records` + candidate visibility in docs artifact).
-- Republic uses DB-embedded `republic_critical` and does not expose packet-style candidate output.
-- Science selected set is currently full-text-backed (24/24); Republic selected set includes 2 non-full-text entries.
-
-Proposed next implementation sequence:
-1. Create Republic research packet generator with packet-style output and markdown brief.
-2. Enforce full-text-first strict mode for Republic selected set (with explicit override flag).
-3. Align Republic narrative cards to `Summary`/`Takeaway`/`Themes`.
-4. Optionally migrate Republic opinion cards to packet-first sourcing (with compatibility fallback).
+Completed alignment changes:
+1. Added Republic research packet generator:
+   - `/Users/praneet/shiv-archive/scripts/generate_republic_shift_research_packet.py`
+2. Enforced full-text-first strict mode default for Republic selected set:
+   - `/Users/praneet/shiv-archive/scripts/generate_republic_critical_evidence.py` (`--allow-non-full-text` is explicit opt-out)
+3. Added Republic packet and brief artifacts:
+   - `/Users/praneet/shiv-archive/src/data/republic_shift_story_2026-02-26.json`
+   - `/Users/praneet/shiv-archive/docs/research/republic-shift-evidence-2026-02-26.json`
+   - `/Users/praneet/shiv-archive/docs/research/republic-shift-brief-2026-02-26.md`
+4. Migrated Republic narrative and opinion cards to packet-first sourcing (with fallback compatibility):
+   - `/Users/praneet/shiv-archive/src/components/story/RepublicShiftNarrative.tsx`
+   - `/Users/praneet/shiv-archive/src/components/layers/OpinionShiftView.tsx`

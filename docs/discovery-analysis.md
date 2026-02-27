@@ -1,8 +1,8 @@
 # Discovery Analysis: Shiv Archive
 
 Last updated: 2026-02-26 (PST)
-Discovery status: Extended for shift parity alignment (new assumptions open)
-Implementation gate: Pending explicit user approval
+Discovery status: Completed for shift parity alignment (parity work implemented)
+Implementation gate: Approved and executed for Option D on 2026-02-26 (local)
 
 ## Scope and Constraints
 
@@ -44,7 +44,7 @@ Current factual state:
   - Next.js layered archive explorer.
   - Dedicated deep-analysis narrative page for Republic Shift.
   - Dedicated deep-analysis narrative page for Science Shift.
-  - Opinion Shift card layer uses curated packet-driven selection for Science Shift.
+  - Opinion Shift card layer uses curated packet-driven selection for Science and Republic.
 - Data architecture:
   - Master DB stores article records and article text.
   - Analysis DB stores summaries, tags, shift annotations, and republic evidence.
@@ -103,10 +103,12 @@ Current factual state:
 - Data freshness is dependent on manual script runs; no scheduled refresh workflow yet.
 - Legal/editorial policy is implied in README but not codified as a release checklist gate.
 - Frontend and data pipeline contracts are not currently validated in CI.
-- Shift pipeline parity is uneven:
-  - Science has explicit research packet + brief artifacts and packet-driven display.
-  - Republic remains DB-embedded evidence without packet-style candidate visibility.
-  - Latest Republic selected set includes 2 non-full-text entries (summary-derived quotes).
+- Shift parity implementation is now in place:
+  - Science and Republic both have explicit research packet + brief artifacts.
+  - Opinion Shift cards are packet-first for both tracks with compatibility fallback.
+  - Republic strict mode now defaults to full-text-backed selected evidence.
+- Remaining parity hardening gap:
+  - No standalone parity gate script yet to fail release on phase-balance/full-text/quote-source regressions.
 
 ## Parity Audit Reference
 

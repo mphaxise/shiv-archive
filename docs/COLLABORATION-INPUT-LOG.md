@@ -405,3 +405,33 @@ Next 1-3 actions:
 1. Implement Republic packet generator and brief outputs (Science-style contract).
 2. Enforce/validate full-text strict mode for Republic selected evidence.
 3. Migrate Republic narrative cards to `Summary`/`Takeaway`/`Themes` parity.
+
+## 2026-02-26 16:20 PST - Recommended parity path executed + docs synchronized
+
+User input:
+- Approved the recommended parity path and asked to proceed.
+- Requested documentation updates to reflect new Republic research/display workflow and parity status.
+
+What changed:
+- Executed Republic parity implementation path:
+  - strict full-text default for Republic evidence selection,
+  - Republic packet generator and packet artifacts,
+  - packet-first Republic opinion/deep-analysis rendering with compatibility fallback,
+  - standardized long-form card fields to `Summary`, `Takeaway`, `Themes`.
+- Updated strategy/discovery/requirements docs to close previously open parity items.
+- Refreshed parity audit to post-implementation status and reduced next actions to parity regression gating only.
+
+Files updated:
+- `README.md`
+- `docs/discovery-analysis.md`
+- `docs/implementation-options.md`
+- `docs/requirements-catalog.md`
+- `docs/next-questions.md`
+- `docs/research/NEXT-OPINION-SHIFT-RESEARCH-KICKOFF.md`
+- `docs/research/REPUBLIC-SCIENCE-PARITY-AUDIT-2026-02-26.md`
+- `docs/COLLABORATION-INPUT-LOG.md`
+
+Next 1-3 actions:
+1. Add parity regression check script/check block in release gating.
+2. Deploy latest build so Workers production reflects packet-based Republic parity.
+3. Resume Option A quality-gate hardening sequence.

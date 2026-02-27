@@ -36,9 +36,9 @@ Status legend:
 | RQ-025 | Default sign-off owner | Project owner is the default release-owner sign-off role for transparency pages and safe notes. | resolved | User decision 2026-02-25 |
 | RQ-026 | Coverage exception escalation | No automatic SLA escalation is required; escalation for unresolved exceptions is owner-driven during review cadence. | resolved | User decision 2026-02-25 |
 | RQ-027 | Science opinion-view curation | Science Opinion Shift cards must use curated packet-selected evidence records, not generic heuristic fallback selection. | resolved | `src/components/layers/OpinionShiftView.tsx` |
-| RQ-028 | Narrative card language parity | Long-form evidence cards should standardize on `Summary`, `Takeaway`, and `Themes` field labels for consistency across views. | unresolved | User request 2026-02-26 + current Republic/Science UI diff |
-| RQ-029 | Republic packet parity | Republic Shift should gain a dedicated research packet artifact (selected + candidate records + selection params) analogous to Science Shift. | unresolved | Parity audit 2026-02-26 |
-| RQ-030 | Full-text strict mode parity | In strict mode, selected long-form shift evidence should default to full-text-backed records only. | unresolved | Parity audit 2026-02-26 |
+| RQ-028 | Narrative card language parity | Long-form evidence cards should standardize on `Summary`, `Takeaway`, and `Themes` field labels for consistency across views. | resolved | `src/components/story/RepublicShiftNarrative.tsx`, `src/components/story/ScienceShiftNarrative.tsx` |
+| RQ-029 | Republic packet parity | Republic Shift should gain a dedicated research packet artifact (selected + candidate records + selection params) analogous to Science Shift. | resolved | `scripts/generate_republic_shift_research_packet.py`, `src/data/republic_shift_story_2026-02-26.json` |
+| RQ-030 | Full-text strict mode parity | In strict mode, selected long-form shift evidence should default to full-text-backed records only. | resolved | `scripts/generate_republic_critical_evidence.py` (`--allow-non-full-text` opt-out flag) |
 
 ## Open Acceptance Criteria to Finalize
 
