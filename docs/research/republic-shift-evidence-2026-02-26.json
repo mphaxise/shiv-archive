@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-27 00:05:20 UTC",
+  "generated_at": "2026-02-27 15:41:03 UTC",
   "shift_id": "republic_shift",
   "method": "republic_research_packet",
   "version": "republic_research_v1",
@@ -22,16 +22,16 @@
     "after": 12
   },
   "source_run": {
-    "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-    "started_at": "2026-02-27 00:05:20",
-    "finished_at": "2026-02-27 00:05:20",
+    "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+    "started_at": "2026-02-22 22:08:07",
+    "finished_at": "2026-02-22 22:08:07",
     "method": "rule_based_critical",
-    "version": "critical_v3",
+    "version": "critical_v2",
     "inserted_count": 97,
     "skipped_count": 0,
     "selected_before_count": 12,
     "selected_after_count": 11,
-    "notes": "Strict selection for Republic shift with max_per_phase=12, min_score=14.0, min_anchor_hits=3, min_group_hits=2, allow_non_full_text=False."
+    "notes": "Strict selection for Republic shift with max_per_phase=12, min_score=14.0, min_anchor_hits=3, min_group_hits=2."
   },
   "selected_records": [
     {
@@ -64,9 +64,9 @@
       "fingerprint": "1225b7849b7020b5933b66b1b94c0f7535b95b57",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_ca0bfaf92543b45f0ddb",
@@ -97,9 +97,9 @@
       "fingerprint": "b71f098f5b382644ef2180b283909a7409333257",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_7b589d77fbfd4546c05d",
@@ -131,9 +131,9 @@
       "fingerprint": "29be0731fbefac50f7fe9f4e8079a84aaebe6071",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_418f263dc7c0dd4a1466",
@@ -165,9 +165,9 @@
       "fingerprint": "df6138c55ef2b1f411541a9d16b52ac66ccc2070",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_49ce2446c407d352ff35",
@@ -199,9 +199,9 @@
       "fingerprint": "63cf6d64f38d338bd819df067277ad2462ec5c55",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_1c205b88ee0cae347d4c",
@@ -233,9 +233,9 @@
       "fingerprint": "c459061e820e531c4a539e8d8cb1a95adf3df19b",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_e3eb8c142eb8864e8d1d",
@@ -267,9 +267,9 @@
       "fingerprint": "d87c5b83ad472e07adfc942e8ab7407526491f47",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_ad6038fe1265a12b5312",
@@ -301,9 +301,9 @@
       "fingerprint": "215fc4196547656a8aa77b557cd7d31f8a1d684b",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_63eb9af110be8d2ba654",
@@ -335,9 +335,9 @@
       "fingerprint": "eece4051507d50d0a137aeee90a095ded980849b",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_b159ae5438501ff3c2af",
@@ -368,9 +368,9 @@
       "fingerprint": "5873e3177676c5c783bf5dd58ecca743ffd067ac",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_774464e70b55acd5f0e1",
@@ -402,9 +402,9 @@
       "fingerprint": "409fca9f4c7f23b7ffb04758e37051d7e03cf47d",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_157158549c50c6cf1c33",
@@ -436,9 +436,9 @@
       "fingerprint": "86728c1187c937f71b80222474a6c3115cb955b3",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_b722828c985f7f4d66eb",
@@ -470,9 +470,9 @@
       "fingerprint": "3e6d61e56b67e8bd29fd31aae2e3435ad6100e0a",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_a228b1c1447782422f92",
@@ -502,9 +502,9 @@
       "fingerprint": "47663612e6fe1b97793a2ef241f4351d603d3442",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_0539f19837d7cfcbcf2c",
@@ -535,9 +535,9 @@
       "fingerprint": "4b8397e71f1a8b7129f7e24bcd4ac3bbf9a626cf",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_5df879f169a009fc3f46",
@@ -567,9 +567,9 @@
       "fingerprint": "4f13971fd14567531e3c423bed665e3113d88daf",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_6e6ab83991e57960c17e",
@@ -599,9 +599,9 @@
       "fingerprint": "97b42500d406d6b0285b6513faa5c38cf9281b3c",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_a6bcdf9dbd04e9b37b57",
@@ -630,9 +630,9 @@
       "fingerprint": "85bb4052c5a0d720ebed75a33fba4810f8408a00",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_9eea39362a0a28c1194b",
@@ -663,9 +663,9 @@
       "fingerprint": "c02acb2eeb18d11de3528ec65baece2f77752db5",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_7273cdb0ed7c996ec339",
@@ -697,9 +697,41 @@
       "fingerprint": "35ea4ffda104b033c95aafd056d39dc360b212e6",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
+    },
+    {
+      "article_uid": "art_184a191fa7f965f1040b",
+      "phase": "before",
+      "published_date": "2022-08-27",
+      "publication": "The New Indian Express",
+      "title": "The sadness of the university",
+      "url": "https://www.newindianexpress.com/opinion/2022/Aug/27/the-sadness-of-the-university-today-2492151.html",
+      "summary_snippet": "A university is one of the great inventions of modern life. It is a theatre for ideas, a domain of play, and a commons for dissenting academics. Yet the univers",
+      "signal_tags": [
+        "education-policy",
+        "public-sphere"
+      ],
+      "signal_count": 2,
+      "relevance_score": 22.200000000000003,
+      "strength_label": "strong",
+      "lead_group": "institutional_grammar",
+      "argument_text": "The article argues that constitutional language is surviving while institutional guarantees are weakening in practice.",
+      "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+      "quote_text": "Memories become crucial to university. It cannot survive without storytelling. I remember my PhD guide Andre Beteille, a legend in the sociology department. We used to quarrel over everything from ideas to events to my delays in submitting my chapter. We met once thirty years later in Canada. He stopped, looked at me impishly, and said, \u201cI am still recovering from you.\u201d I remember when he was on the board for a Professorship, he chose me.",
+      "quote_source": "body_paragraph",
+      "quote_confidence": 0.675,
+      "candidate_include": false,
+      "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=22.2; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:9, decay_diagnostics:6, democratic_urgency:3].",
+      "include_in_story": true,
+      "selection_reason": "backfill_to_phase_cap",
+      "fingerprint": "2647590c8ede0632f8cd684d85f6d7e7d210036c",
+      "text_state": "full",
+      "evidence_method": "rule_based_critical",
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_d3dd322428e6c347d371",
@@ -729,9 +761,42 @@
       "fingerprint": "4102ad4d1f721ffbad2e76c406e3abf3f7349d7a",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
+    },
+    {
+      "article_uid": "art_b79e5e1db56f005b8e9a",
+      "phase": "before",
+      "published_date": "2017-08-02",
+      "publication": "Scroll.in",
+      "title": "Is Modi The Mahmud Ghazni Of The Nehruvian Nation State?",
+      "url": "https://scroll.in/article/845389",
+      "summary_snippet": "Modi realised only when Nehru as a paradigm and exemplar of nation building was erased, could his era begin.",
+      "signal_tags": [
+        "democracy",
+        "nationalism",
+        "public-sphere"
+      ],
+      "signal_count": 3,
+      "relevance_score": 21.5,
+      "strength_label": "strong",
+      "lead_group": "institutional_grammar",
+      "argument_text": "The article argues that constitutional language is surviving while institutional guarantees are weakening in practice.",
+      "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
+      "quote_text": "Neither Nehru nor his Jeeves, VK Krishna Menon, knew much about security. So security becomes the key word in the post-Nehruvian script. Security is Modi\u2019s hedgehog to the Nehruvian fox of nation-building. Security creates a sense of panopticon and enclosure. What security challenged was the word \u201cdiversity\u201d. The word that described the Nehruvian aesthetic of nation-building was now anti-national. Minority, margin, dissent did not wear the uniform of the nation state.",
+      "quote_source": "body_paragraph",
+      "quote_confidence": 0.675,
+      "candidate_include": false,
+      "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=21.5; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:12, decay_diagnostics:2, democratic_urgency:2].",
+      "include_in_story": true,
+      "selection_reason": "backfill_to_phase_cap",
+      "fingerprint": "e5e49956d2911bb8c0d18037b40f28bad16a40bc",
+      "text_state": "full",
+      "evidence_method": "rule_based_critical",
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_dfbe946261c6ead17252",
@@ -761,74 +826,9 @@
       "fingerprint": "2e7a640700066884e310b8596c31c894016e57af",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
-    },
-    {
-      "article_uid": "art_cb16f01fc5215c84aab8",
-      "phase": "before",
-      "published_date": "2023-01-25",
-      "publication": "The New Indian Express",
-      "title": "Importance of dialogue in democracy",
-      "url": "https://www.newindianexpress.com/opinion/2023/Jan/25/importance-of-dialogue-in-democracy-2541353.html",
-      "summary_snippet": "One of the beautiful aspects of democracy is its sense of diversity and complexity. When the official theories of democracy are wearing out and its major concep",
-      "signal_tags": [
-        "democracy",
-        "public-sphere"
-      ],
-      "signal_count": 2,
-      "relevance_score": 19.4,
-      "strength_label": "strong",
-      "lead_group": "democratic_urgency",
-      "argument_text": "The article argues that ethics, dissent, and civic imagination are now prerequisites for democratic repair.",
-      "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
-      "quote_text": "One of the beautiful aspects of democracy is its sense of diversity and complexity. When the official theories of democracy are wearing out and its major concepts look mouldy, democracy is busy reinventing itself at the margins. At a time when electoral democracy is ossifying in majoritarian authoritarianism, minorities are reinventing a direct and dialogic democracy. This experiment in dialogic democracy has as its roots the dialogue of religions.",
-      "quote_source": "body_paragraph",
-      "quote_confidence": 0.9,
-      "candidate_include": true,
-      "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.4; phase=before; anchors=6; lead_group=democratic_urgency; group_hits=[democratic_urgency:7, institutional_grammar:4, decay_diagnostics:1].",
-      "include_in_story": true,
-      "selection_reason": "passed_threshold",
-      "fingerprint": "f4b285071f5cd68e35bebe637594b30a02dc6c6a",
-      "text_state": "full",
-      "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
-    },
-    {
-      "article_uid": "art_7f40d3cb8aa66858f91e",
-      "phase": "before",
-      "published_date": "2017-03-07",
-      "publication": "Scroll.in",
-      "title": "The Violent Clash When Left Snobbery Meets Right Populism Is Killing The University",
-      "url": "https://scroll.in/article/830915",
-      "summary_snippet": "The campus has become a site for a civil war of interests rather than a battleground of ideas.",
-      "signal_tags": [
-        "democracy",
-        "education-policy",
-        "public-sphere"
-      ],
-      "signal_count": 3,
-      "relevance_score": 19.1,
-      "strength_label": "strong",
-      "lead_group": "institutional_grammar",
-      "argument_text": "The article argues that constitutional language is surviving while institutional guarantees are weakening in practice.",
-      "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
-      "quote_text": "The sadness was that this inane exchange of messages got caught between populism and elitism. Javed Akhtar, the poet and Hindi movie script writer, condemned a \u201chardly literate player or a wrestler\u201d. There is a snobbery here that is distressing especially from someone who was the Sehwag of film scripts. Others dismissed Randeep Hooda, someone who had found Sehwag\u2019s humour very funny, on parochial grounds. Sadly, Left snobbery met Right populism which turned its obsession with nationalism into an official gestate.",
-      "quote_source": "body_paragraph",
-      "quote_confidence": 0.7250000000000001,
-      "candidate_include": true,
-      "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.1; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:9, decay_diagnostics:2, democratic_urgency:1].",
-      "include_in_story": true,
-      "selection_reason": "passed_threshold",
-      "fingerprint": "da4fae5c23353df847f03105382db50a7bd8bae7",
-      "text_state": "full",
-      "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     }
   ],
   "candidate_records": [
@@ -862,9 +862,9 @@
       "fingerprint": "1225b7849b7020b5933b66b1b94c0f7535b95b57",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_ca0bfaf92543b45f0ddb",
@@ -895,9 +895,9 @@
       "fingerprint": "b71f098f5b382644ef2180b283909a7409333257",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_613bc3e385caebe8ae6f",
@@ -929,9 +929,9 @@
       "fingerprint": "00a257e14d1c5ef810ec4e0308252bcccf7bac73",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_7b589d77fbfd4546c05d",
@@ -963,9 +963,9 @@
       "fingerprint": "29be0731fbefac50f7fe9f4e8079a84aaebe6071",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_418f263dc7c0dd4a1466",
@@ -997,9 +997,9 @@
       "fingerprint": "df6138c55ef2b1f411541a9d16b52ac66ccc2070",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_49ce2446c407d352ff35",
@@ -1031,9 +1031,9 @@
       "fingerprint": "63cf6d64f38d338bd819df067277ad2462ec5c55",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_1c205b88ee0cae347d4c",
@@ -1065,9 +1065,9 @@
       "fingerprint": "c459061e820e531c4a539e8d8cb1a95adf3df19b",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_e3eb8c142eb8864e8d1d",
@@ -1099,9 +1099,9 @@
       "fingerprint": "d87c5b83ad472e07adfc942e8ab7407526491f47",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_ad6038fe1265a12b5312",
@@ -1133,9 +1133,9 @@
       "fingerprint": "215fc4196547656a8aa77b557cd7d31f8a1d684b",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_63eb9af110be8d2ba654",
@@ -1167,9 +1167,9 @@
       "fingerprint": "eece4051507d50d0a137aeee90a095ded980849b",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_7b8c5ee49eea3a7f0376",
@@ -1201,9 +1201,9 @@
       "fingerprint": "707d3a1af4cd058fc471d87ccf1f8bc9197259d8",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_b159ae5438501ff3c2af",
@@ -1234,9 +1234,9 @@
       "fingerprint": "5873e3177676c5c783bf5dd58ecca743ffd067ac",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_774464e70b55acd5f0e1",
@@ -1268,9 +1268,9 @@
       "fingerprint": "409fca9f4c7f23b7ffb04758e37051d7e03cf47d",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_157158549c50c6cf1c33",
@@ -1302,9 +1302,9 @@
       "fingerprint": "86728c1187c937f71b80222474a6c3115cb955b3",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_20e06398c0be8789d75d",
@@ -1336,9 +1336,9 @@
       "fingerprint": "fcc4794f3a21c14ba4d538c70ec462a4699aa061",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_f1e60c87d38d83c0f9c1",
@@ -1371,9 +1371,9 @@
       "fingerprint": "9af7644abf1d0f6b79836ef4236c9d58cb46d1f4",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_6c64d50f94353c1f3421",
@@ -1405,9 +1405,9 @@
       "fingerprint": "767bfe213e96df2ac84a19d5fb7a1a0c23f36b01",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_a5466334a964c00f163f",
@@ -1439,9 +1439,9 @@
       "fingerprint": "921de9425305455c7726103667fc5889ad1549eb",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_6520cbdae1117cc3be34",
@@ -1473,9 +1473,9 @@
       "fingerprint": "3d754c12c79462aabac638a9f75277897254f2da",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_bb84f9bf479df60f8387",
@@ -1507,9 +1507,9 @@
       "fingerprint": "2b8e4388396c05a9decb7159294ae9b9a0517641",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_1326c7d4c18c6b30439e",
@@ -1541,9 +1541,9 @@
       "fingerprint": "7204b58297a52a0e0a7e549c92610222f92ef1ab",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_e44370b657b7cb643d93",
@@ -1575,9 +1575,9 @@
       "fingerprint": "9b73da26f448409ab3b351859399d3b0d4718682",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_2e6c4bceb53257185ee5",
@@ -1609,9 +1609,9 @@
       "fingerprint": "f693212b83b18a8d4f1999fb6aa059cd5aee8c4c",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_8d5b5d94a8b229f907cf",
@@ -1642,9 +1642,9 @@
       "fingerprint": "4c287a6be521fbd500db0600305cc3bcef84b222",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_4adb099cf46c9f479b93",
@@ -1676,9 +1676,9 @@
       "fingerprint": "8abd444879da9f0dede25e4f522bce3353c8d7ad",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_55c83bdbb0fd997e2f3c",
@@ -1710,9 +1710,9 @@
       "fingerprint": "3f1fdac9082d17c6f0a9c6cef40bc40b90c4b4a8",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_a85c20c4ddcfe922e0b8",
@@ -1744,9 +1744,9 @@
       "fingerprint": "d6ca0ffc66e1f5f00bab4c195f043c7722a4abd6",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_999d1f7d01a1462b6ab1",
@@ -1778,9 +1778,9 @@
       "fingerprint": "eebae35b9f9662d7b32a093b151561bf4dff3848",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_272365c06a8131d99ed3",
@@ -1811,9 +1811,9 @@
       "fingerprint": "ce8b11d0e8e4140c6f609a6e08e0625019b55c1a",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_0c27b53ff7d0ec72a4f1",
@@ -1844,9 +1844,9 @@
       "fingerprint": "476acd486e1cbbbb60cf355ddfa4567eb513f983",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_70ab5437dd462d42f33e",
@@ -1878,9 +1878,9 @@
       "fingerprint": "9f2b3c0973e6206dc31a8356128dbf3412d50522",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_d1f140bd8af34af22ded",
@@ -1912,9 +1912,9 @@
       "fingerprint": "64e1e31a04790fb50093fd39c64ee34d98a0b124",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_d74a001259227818dd5d",
@@ -1922,7 +1922,7 @@
       "published_date": "2026-02-20",
       "publication": "The New Indian Express",
       "title": "Andre Beteille: A grammarian of culture",
-      "url": "https://www.newindianexpress.com/opinions/2026/Feb/20/andre-beteille-a-grammarian-of-culture",
+      "url": "https://www.newindianexpress.com/opinion/2026/Feb/20/andr%C3%A9-b%C3%A9teille-a-grammarian-of-culture",
       "summary_snippet": "A tribute to Beteille's sociological rigor, contrasting it with the modern 'tutorial' college culture.",
       "signal_tags": [
         "democracy",
@@ -1946,9 +1946,9 @@
       "fingerprint": "83a06a73877a5ccbe9a4aa11694aca370c1e3b09",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_b722828c985f7f4d66eb",
@@ -1980,9 +1980,9 @@
       "fingerprint": "3e6d61e56b67e8bd29fd31aae2e3435ad6100e0a",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_a228b1c1447782422f92",
@@ -2012,9 +2012,9 @@
       "fingerprint": "47663612e6fe1b97793a2ef241f4351d603d3442",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_0539f19837d7cfcbcf2c",
@@ -2045,9 +2045,9 @@
       "fingerprint": "4b8397e71f1a8b7129f7e24bcd4ac3bbf9a626cf",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_5df879f169a009fc3f46",
@@ -2077,9 +2077,9 @@
       "fingerprint": "4f13971fd14567531e3c423bed665e3113d88daf",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_6e6ab83991e57960c17e",
@@ -2109,9 +2109,9 @@
       "fingerprint": "97b42500d406d6b0285b6513faa5c38cf9281b3c",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_a6bcdf9dbd04e9b37b57",
@@ -2140,9 +2140,9 @@
       "fingerprint": "85bb4052c5a0d720ebed75a33fba4810f8408a00",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_9eea39362a0a28c1194b",
@@ -2173,9 +2173,9 @@
       "fingerprint": "c02acb2eeb18d11de3528ec65baece2f77752db5",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_7273cdb0ed7c996ec339",
@@ -2207,9 +2207,9 @@
       "fingerprint": "35ea4ffda104b033c95aafd056d39dc360b212e6",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_184a191fa7f965f1040b",
@@ -2234,14 +2234,14 @@
       "quote_confidence": 0.675,
       "candidate_include": false,
       "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=22.2; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:9, decay_diagnostics:6, democratic_urgency:3].",
-      "include_in_story": false,
-      "selection_reason": "below_cutoff",
+      "include_in_story": true,
+      "selection_reason": "backfill_to_phase_cap",
       "fingerprint": "2647590c8ede0632f8cd684d85f6d7e7d210036c",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_94617b2f4ddc12966f17",
@@ -2264,16 +2264,16 @@
       "quote_text": "The idea of minority as a category evokes representation, number in stereotyped ways.",
       "quote_source": "summary_sentence",
       "quote_confidence": 0.42,
-      "candidate_include": false,
-      "rationale": "Excluded from core narrative because strict mode requires full-text evidence. Current text_state=missing. Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=21.8; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:8, decay_diagnostics:4, democratic_urgency:4].",
+      "candidate_include": true,
+      "rationale": "Not selected for packet because strict mode requires full-text evidence. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=21.8; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:8, decay_diagnostics:4, democratic_urgency:4].",
       "include_in_story": false,
-      "selection_reason": "below_cutoff",
+      "selection_reason": "blocked_non_full_text",
       "fingerprint": "35ec8c5eef0799ebd85b87d0bf537f8a8e0023b8",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_d3dd322428e6c347d371",
@@ -2303,9 +2303,9 @@
       "fingerprint": "4102ad4d1f721ffbad2e76c406e3abf3f7349d7a",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_b79e5e1db56f005b8e9a",
@@ -2331,14 +2331,14 @@
       "quote_confidence": 0.675,
       "candidate_include": false,
       "rationale": "Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=21.5; phase=before; anchors=2; lead_group=institutional_grammar; group_hits=[institutional_grammar:12, decay_diagnostics:2, democratic_urgency:2].",
-      "include_in_story": false,
-      "selection_reason": "below_cutoff",
+      "include_in_story": true,
+      "selection_reason": "backfill_to_phase_cap",
       "fingerprint": "e5e49956d2911bb8c0d18037b40f28bad16a40bc",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_84f3d88f8ef0f7e9ef8a",
@@ -2361,16 +2361,16 @@
       "quote_text": "The Citizenship law, which pretended to be a humanitarian exercise, became a parochial, communal act exposing the cosmopolitan pretensions of the BJP.",
       "quote_source": "summary_sentence",
       "quote_confidence": 0.42,
-      "candidate_include": false,
-      "rationale": "Excluded from core narrative because strict mode requires full-text evidence. Current text_state=missing. Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=21.0; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:12, democratic_urgency:4, decay_diagnostics:0].",
+      "candidate_include": true,
+      "rationale": "Not selected for packet because strict mode requires full-text evidence. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=21.0; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:12, democratic_urgency:4, decay_diagnostics:0].",
       "include_in_story": false,
-      "selection_reason": "below_cutoff",
+      "selection_reason": "blocked_non_full_text",
       "fingerprint": "480de374be819a0c86a6cffeaf1c94d4814b5891",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_dfbe946261c6ead17252",
@@ -2400,9 +2400,9 @@
       "fingerprint": "2e7a640700066884e310b8596c31c894016e57af",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_cb16f01fc5215c84aab8",
@@ -2425,16 +2425,16 @@
       "quote_text": "One of the beautiful aspects of democracy is its sense of diversity and complexity. When the official theories of democracy are wearing out and its major concepts look mouldy, democracy is busy reinventing itself at the margins. At a time when electoral democracy is ossifying in majoritarian authoritarianism, minorities are reinventing a direct and dialogic democracy. This experiment in dialogic democracy has as its roots the dialogue of religions.",
       "quote_source": "body_paragraph",
       "quote_confidence": 0.9,
-      "candidate_include": true,
-      "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.4; phase=before; anchors=6; lead_group=democratic_urgency; group_hits=[democratic_urgency:7, institutional_grammar:4, decay_diagnostics:1].",
-      "include_in_story": true,
-      "selection_reason": "passed_threshold",
+      "candidate_include": false,
+      "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.4; phase=before; anchors=6; lead_group=democratic_urgency; group_hits=[democratic_urgency:7, institutional_grammar:4, decay_diagnostics:1].",
+      "include_in_story": false,
+      "selection_reason": "below_cutoff",
       "fingerprint": "f4b285071f5cd68e35bebe637594b30a02dc6c6a",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_7f40d3cb8aa66858f91e",
@@ -2458,16 +2458,16 @@
       "quote_text": "The sadness was that this inane exchange of messages got caught between populism and elitism. Javed Akhtar, the poet and Hindi movie script writer, condemned a \u201chardly literate player or a wrestler\u201d. There is a snobbery here that is distressing especially from someone who was the Sehwag of film scripts. Others dismissed Randeep Hooda, someone who had found Sehwag\u2019s humour very funny, on parochial grounds. Sadly, Left snobbery met Right populism which turned its obsession with nationalism into an official gestate.",
       "quote_source": "body_paragraph",
       "quote_confidence": 0.7250000000000001,
-      "candidate_include": true,
-      "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.1; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:9, decay_diagnostics:2, democratic_urgency:1].",
-      "include_in_story": true,
-      "selection_reason": "passed_threshold",
+      "candidate_include": false,
+      "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.1; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:9, decay_diagnostics:2, democratic_urgency:1].",
+      "include_in_story": false,
+      "selection_reason": "below_cutoff",
       "fingerprint": "da4fae5c23353df847f03105382db50a7bd8bae7",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_906280810c37fcb5cbb1",
@@ -2499,9 +2499,9 @@
       "fingerprint": "84a479adeca309be33f85ee18bd1e4ee27c5187d",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_8d88d7b1c583ffb4bbea",
@@ -2531,9 +2531,9 @@
       "fingerprint": "e4fd41b60796f039934ce0c134c39d0b2e519486",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_b450d86447b2fda24f44",
@@ -2563,9 +2563,9 @@
       "fingerprint": "b3863d8a59de9f908725ff0bb773f4cb2880abc6",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_6891db1a93944ca4f2aa",
@@ -2596,9 +2596,9 @@
       "fingerprint": "a89863f7947b0b4c29787cdaa8051b284a7025d3",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_9f7d90217f993134e331",
@@ -2628,9 +2628,9 @@
       "fingerprint": "e7aca7be3f33b5010e0f3ffbe99551f08f250b40",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_dfdf02f1adcfd4572709",
@@ -2661,9 +2661,9 @@
       "fingerprint": "fc69ad1b1f152ad55c5a2ca8f78df6ebe701a4fc",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_7ba02a1196b4f349a608",
@@ -2693,9 +2693,9 @@
       "fingerprint": "95567bff6410b1afefa0ddfb0c8292b9258d2c26",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_a5dc6fd2fa0b79770541",
@@ -2724,9 +2724,9 @@
       "fingerprint": "75fdc9040355fade7873cc7cdbbb3d6cf4533b7d",
       "text_state": "partial",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_7a8b57e296c008533e2b",
@@ -2756,9 +2756,9 @@
       "fingerprint": "e92037c5cdfaaaa64dea60ee3154fcda9f9b2cd2",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_33dd9897f813349929dd",
@@ -2788,9 +2788,9 @@
       "fingerprint": "1730b411bc21c6f06d48c4c6edb8f504c0a6c2ad",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_cff456c4af53342ae69e",
@@ -2822,9 +2822,9 @@
       "fingerprint": "2b0fd26371e140182de7f8963b6fc5b06c97b999",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_449aa6fc1d6073b6a260",
@@ -2853,9 +2853,9 @@
       "fingerprint": "e3c86b09550f17cf3638693161ea71c8c0835df7",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_aabd7d3bb222e4bb8a32",
@@ -2885,9 +2885,9 @@
       "fingerprint": "e1304945b24ff40f37dea8c024e0a77a4d81cd17",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_3ca6019b571c4b4bec81",
@@ -2917,9 +2917,9 @@
       "fingerprint": "25efa3804a0f5a227c028d83f4b8198b765d73d5",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_da18bc96502e3b4afa94",
@@ -2950,9 +2950,9 @@
       "fingerprint": "1b73bc7ab717df69266de79aa73862616cfdfe16",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_207a0847a227879dc227",
@@ -2982,9 +2982,9 @@
       "fingerprint": "d17b8c2662f3ec1c07fd6fec10bb6207eeaea9f7",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_d84d5fd76d16739c4e69",
@@ -3014,9 +3014,9 @@
       "fingerprint": "ff21f5a2b4e1e87f4ed1d2e89a6cd8a93f961fc9",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_8f317370a107e1a157c4",
@@ -3046,9 +3046,9 @@
       "fingerprint": "1b8929fb5914d314e4e30ffcf288ded2ff1a92c9",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_fc8837dd74fec9bd6316",
@@ -3079,9 +3079,9 @@
       "fingerprint": "fae9ec7806abcef5507ad4a706f383687f9cca12",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_afebec5fe0d57562f30b",
@@ -3111,9 +3111,9 @@
       "fingerprint": "11bcd4107752533cf713214bddb4fff2fea05a04",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_d28a03fb9e123830b992",
@@ -3142,9 +3142,9 @@
       "fingerprint": "5d4fd715c54f393a4510dd525d54219701e4d933",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_31d4ccd3ccba37b25e1d",
@@ -3174,9 +3174,9 @@
       "fingerprint": "abd3e71cd6b3716a459fb089e1f4db22bfcff4b8",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_557c0e75cc39cc5202e9",
@@ -3205,9 +3205,9 @@
       "fingerprint": "5ed5a7378dc4fea9bc39a5201e02efe4b6bc7fab",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_86abf97d5ff7047404e9",
@@ -3236,9 +3236,9 @@
       "fingerprint": "cdec600671f2061dcd52cb1b177523de79151590",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_2c1e7184f68695e20d2c",
@@ -3268,9 +3268,9 @@
       "fingerprint": "b5a9a010423d7809549f98e71e322dbb43d16202",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_f48af08d0b4873f09512",
@@ -3300,9 +3300,9 @@
       "fingerprint": "38f5b52f9c5b20d6ed23c150f65e1f7c1bbf7bef",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_01cc13531f238cabc7a0",
@@ -3332,9 +3332,9 @@
       "fingerprint": "13462adc42203e8b570cf504c54fd27915375550",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_dac232d4ee28f821da5e",
@@ -3365,9 +3365,9 @@
       "fingerprint": "54a1648e7793cf445ef8db7168c7d11c8ec1ac4a",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_10357ef23150da81b6db",
@@ -3394,9 +3394,9 @@
       "fingerprint": "a0d9090a66ec4e422be359f06374b1870b7fb3a9",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_473fdbbbb8f5a6efdbee",
@@ -3423,9 +3423,9 @@
       "fingerprint": "5cb701a65625086dd5655c2aa0bd13beb4df9a30",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_d721b2e16a7661bbbece",
@@ -3454,9 +3454,9 @@
       "fingerprint": "924a7b4a46871607d9822b98a58d6f0ff859a876",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_e9a340ee692546553a30",
@@ -3486,9 +3486,9 @@
       "fingerprint": "d47a6c10685e58a63002fe7e6365ce20f4c78755",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_c5167d2c1e45d2476525",
@@ -3517,9 +3517,9 @@
       "fingerprint": "ef7ebc64faae610b752fb0ece5047c910929e393",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_fcb6accdf63b42242f2b",
@@ -3549,9 +3549,9 @@
       "fingerprint": "35a8dea2ab435ea46900b4fed6c0d89ca28579ba",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_5a5f06fa642fb6566b83",
@@ -3582,9 +3582,9 @@
       "fingerprint": "ea1545990898f61b4691923b1a8e822d7bfecab7",
       "text_state": "partial",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_55efcf26454ce73ab53c",
@@ -3613,9 +3613,9 @@
       "fingerprint": "8dcced0d1259b7618ffe81348cf8b5bf361371c0",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_d5234ee8c51d24f8dcfe",
@@ -3644,9 +3644,9 @@
       "fingerprint": "5a8b134d14ed54193054036670e5fc3a34f9186f",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_ebfd79b05a970da8b2c1",
@@ -3673,9 +3673,9 @@
       "fingerprint": "53a8576c7234c2418923327b65c3a7d6776dcb52",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_2e8f49edc12952c47f21",
@@ -3704,9 +3704,9 @@
       "fingerprint": "5873c4debe886279625b128e35a92e6f6492a449",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_d04cc6f759defb43cc7e",
@@ -3736,9 +3736,9 @@
       "fingerprint": "164041773f325b5b6bb9d19cf62803e61c51f55b",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_c58fe672abc611f0692d",
@@ -3768,9 +3768,9 @@
       "fingerprint": "ce3d8b23adb6ae63db44b94f8779fac15a877ca5",
       "text_state": "full",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_657ad5be0c07547e31bc",
@@ -3800,9 +3800,9 @@
       "fingerprint": "871a0d20dc8b7c6958cdb4c3525492e82693a56c",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_b7a05a623c852c9cff26",
@@ -3832,9 +3832,9 @@
       "fingerprint": "5ff5e2cee8538532ef4fad45d5415a29f0eba4df",
       "text_state": "partial",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_8127c622da00242d0b0d",
@@ -3864,9 +3864,9 @@
       "fingerprint": "5b45ce52ad6260806c7c584fd758d94ee8e854b6",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_16c47c54ba16c9f8b60d",
@@ -3896,9 +3896,9 @@
       "fingerprint": "1821ea315aeb050187e9a273669c13866fffc924",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_c6335fc6eeecec840f27",
@@ -3928,9 +3928,9 @@
       "fingerprint": "24879d22fb5a619e6a8ed5c31895156c8ebee0b1",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_99e2b3eaff4d40f589ac",
@@ -3960,9 +3960,9 @@
       "fingerprint": "f53227385e9b0f3bc204919b02d6720c5b959c79",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     },
     {
       "article_uid": "art_5abdfdc30a9ce757b30f",
@@ -3989,9 +3989,9 @@
       "fingerprint": "aa3771f63f72b0af7079d6d50000fd082b803d6c",
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
-      "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-      "evidence_generated_at": "2026-02-27 00:05:20"
+      "evidence_version": "critical_v2",
+      "evidence_run_uid": "repcrit-20260222T220807Z-4b07ff75",
+      "evidence_generated_at": "2026-02-22 22:08:07"
     }
   ]
 }

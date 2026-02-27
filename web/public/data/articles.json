@@ -2,7 +2,7 @@
   "metadata": {
     "project": "Shiv Visvanathan Opinion Archive",
     "dataset": "Multi-publication archive v1.1 (97 verified articles across 4 sources)",
-    "generated_at_utc": "2026-02-27T00:05:48Z",
+    "generated_at_utc": "2026-02-27T15:41:03Z",
     "database_mode": "dual_db",
     "article_count": 97,
     "verified_count": 97,
@@ -204,7 +204,7 @@
       "title": "Andre Beteille: A grammarian of culture",
       "date_iso": "2026-02-20",
       "year": 2026,
-      "url": "https://www.newindianexpress.com/opinions/2026/Feb/20/andre-beteille-a-grammarian-of-culture",
+      "url": "https://www.newindianexpress.com/opinion/2026/Feb/20/andr%C3%A9-b%C3%A9teille-a-grammarian-of-culture",
       "has_source_url": true,
       "publication": "The New Indian Express",
       "section": "Opinion",
@@ -319,10 +319,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "83a06a73877a5ccbe9a4aa11694aca370c1e3b09",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -448,10 +448,10 @@
         "quote_confidence": 0.65,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "921de9425305455c7726103667fc5889ad1549eb",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -577,10 +577,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "d87c5b83ad472e07adfc942e8ab7407526491f47",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -706,10 +706,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "64e1e31a04790fb50093fd39c64ee34d98a0b124",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -835,10 +835,10 @@
         "quote_confidence": 0.575,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "9af7644abf1d0f6b79836ef4236c9d58cb46d1f4",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -964,10 +964,10 @@
         "quote_confidence": 0.575,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "4c287a6be521fbd500db0600305cc3bcef84b222",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -1093,10 +1093,10 @@
         "quote_confidence": 0.55,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "707d3a1af4cd058fc471d87ccf1f8bc9197259d8",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -1222,10 +1222,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "86728c1187c937f71b80222474a6c3115cb955b3",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -1351,10 +1351,10 @@
         "quote_confidence": 0.675,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "5873e3177676c5c783bf5dd58ecca743ffd067ac",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -1480,10 +1480,10 @@
         "quote_confidence": 0.575,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "00a257e14d1c5ef810ec4e0308252bcccf7bac73",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -1609,10 +1609,10 @@
         "quote_confidence": 0.575,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "476acd486e1cbbbb60cf355ddfa4567eb513f983",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -1738,10 +1738,10 @@
         "quote_confidence": 0.775,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "b71f098f5b382644ef2180b283909a7409333257",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -1867,10 +1867,10 @@
         "quote_confidence": 0.7,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "63cf6d64f38d338bd819df067277ad2462ec5c55",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -1996,10 +1996,10 @@
         "quote_confidence": 0.875,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "409fca9f4c7f23b7ffb04758e37051d7e03cf47d",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -2125,10 +2125,10 @@
         "quote_confidence": 0.575,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "ce8b11d0e8e4140c6f609a6e08e0625019b55c1a",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -2254,10 +2254,10 @@
         "quote_confidence": 0.575,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "9f2b3c0973e6206dc31a8356128dbf3412d50522",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -2383,10 +2383,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "3d754c12c79462aabac638a9f75277897254f2da",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -2512,10 +2512,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "df6138c55ef2b1f411541a9d16b52ac66ccc2070",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -2641,10 +2641,10 @@
         "quote_confidence": 0.8,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "2b8e4388396c05a9decb7159294ae9b9a0517641",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -2770,10 +2770,10 @@
         "quote_confidence": 0.7250000000000001,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "767bfe213e96df2ac84a19d5fb7a1a0c23f36b01",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -2899,10 +2899,10 @@
         "quote_confidence": 0.5,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "3f1fdac9082d17c6f0a9c6cef40bc40b90c4b4a8",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -3028,10 +3028,10 @@
         "quote_confidence": 0.95,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "c459061e820e531c4a539e8d8cb1a95adf3df19b",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -3157,10 +3157,10 @@
         "quote_confidence": 0.675,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "215fc4196547656a8aa77b557cd7d31f8a1d684b",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -3286,10 +3286,10 @@
         "quote_confidence": 0.6,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "eebae35b9f9662d7b32a093b151561bf4dff3848",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -3415,10 +3415,10 @@
         "quote_confidence": 0.925,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "1225b7849b7020b5933b66b1b94c0f7535b95b57",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -3544,10 +3544,10 @@
         "quote_confidence": 0.6,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "9b73da26f448409ab3b351859399d3b0d4718682",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -3673,10 +3673,10 @@
         "quote_confidence": 0.775,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "29be0731fbefac50f7fe9f4e8079a84aaebe6071",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -3802,10 +3802,10 @@
         "quote_confidence": 0.675,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "fcc4794f3a21c14ba4d538c70ec462a4699aa061",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -3931,10 +3931,10 @@
         "quote_confidence": 0.6,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "8abd444879da9f0dede25e4f522bce3353c8d7ad",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -4060,10 +4060,10 @@
         "quote_confidence": 0.6,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "d6ca0ffc66e1f5f00bab4c195f043c7722a4abd6",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -4189,10 +4189,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "7204b58297a52a0e0a7e549c92610222f92ef1ab",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -4318,10 +4318,10 @@
         "quote_confidence": 0.5,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "f693212b83b18a8d4f1999fb6aa059cd5aee8c4c",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -4447,10 +4447,10 @@
         "quote_confidence": 0.7250000000000001,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "eece4051507d50d0a137aeee90a095ded980849b",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -4562,10 +4562,10 @@
         "quote_confidence": 0.675,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "abd3e71cd6b3716a459fb089e1f4db22bfcff4b8",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -4677,10 +4677,10 @@
         "quote_confidence": 0.8,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "5d4fd715c54f393a4510dd525d54219701e4d933",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -4792,10 +4792,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "cdec600671f2061dcd52cb1b177523de79151590",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -4907,10 +4907,10 @@
         "quote_confidence": 0.55,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "d47a6c10685e58a63002fe7e6365ce20f4c78755",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -5022,10 +5022,10 @@
         "quote_confidence": 0.875,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "1730b411bc21c6f06d48c4c6edb8f504c0a6c2ad",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -5137,10 +5137,10 @@
         "quote_confidence": 0.7,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "ef7ebc64faae610b752fb0ece5047c910929e393",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -5252,10 +5252,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "e4fd41b60796f039934ce0c134c39d0b2e519486",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -5367,10 +5367,10 @@
         "quote_confidence": 0.95,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "97b42500d406d6b0285b6513faa5c38cf9281b3c",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -5482,10 +5482,10 @@
         "quote_confidence": 0.7,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "53a8576c7234c2418923327b65c3a7d6776dcb52",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -5597,10 +5597,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "95567bff6410b1afefa0ddfb0c8292b9258d2c26",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -5712,10 +5712,10 @@
         "quote_confidence": 0.925,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "b3863d8a59de9f908725ff0bb773f4cb2880abc6",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -5827,10 +5827,10 @@
         "quote_confidence": 0.575,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "5873c4debe886279625b128e35a92e6f6492a449",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -5956,10 +5956,10 @@
         "quote_confidence": 1.0,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "3e6d61e56b67e8bd29fd31aae2e3435ad6100e0a",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -6071,10 +6071,10 @@
         "quote_confidence": 0.8,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "e3c86b09550f17cf3638693161ea71c8c0835df7",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -6186,10 +6186,10 @@
         "quote_confidence": 1.0,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "85bb4052c5a0d720ebed75a33fba4810f8408a00",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -6301,10 +6301,10 @@
         "quote_confidence": 0.7,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "a0d9090a66ec4e422be359f06374b1870b7fb3a9",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -6416,10 +6416,10 @@
         "quote_confidence": 0.95,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "e92037c5cdfaaaa64dea60ee3154fcda9f9b2cd2",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -6531,10 +6531,10 @@
         "quote_confidence": 0.625,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "5a8b134d14ed54193054036670e5fc3a34f9186f",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -6646,10 +6646,10 @@
         "quote_confidence": 0.9,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "4102ad4d1f721ffbad2e76c406e3abf3f7349d7a",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -6761,10 +6761,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "5ed5a7378dc4fea9bc39a5201e02efe4b6bc7fab",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -6876,10 +6876,10 @@
         "quote_confidence": 0.7,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "11bcd4107752533cf713214bddb4fff2fea05a04",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -6991,10 +6991,10 @@
         "quote_confidence": 0.9750000000000001,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "4f13971fd14567531e3c423bed665e3113d88daf",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -7096,20 +7096,20 @@
       },
       "republic_critical": {
         "phase": "before",
-        "include_in_story": true,
+        "include_in_story": false,
         "relevance_score": 19.4,
         "strength_label": "strong",
         "connection_text": "Strongly linked to Phase 1 because it treats ethics, dissent, and civic urgency as responses to institutional decline.",
-        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.4; phase=before; anchors=6; lead_group=democratic_urgency; group_hits=[democratic_urgency:7, institutional_grammar:4, decay_diagnostics:1].",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.4; phase=before; anchors=6; lead_group=democratic_urgency; group_hits=[democratic_urgency:7, institutional_grammar:4, decay_diagnostics:1].",
         "quote_text": "One of the beautiful aspects of democracy is its sense of diversity and complexity. When the official theories of democracy are wearing out and its major concepts look mouldy, democracy is busy reinventing itself at the margins. At a time when electoral democracy is ossifying in majoritarian authoritarianism, minorities are reinventing a direct and dialogic democracy. This experiment in dialogic democracy has as its roots the dialogue of religions.",
         "quote_source": "body_paragraph",
         "quote_confidence": 0.9,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "f4b285071f5cd68e35bebe637594b30a02dc6c6a",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -7221,10 +7221,10 @@
         "quote_confidence": 0.625,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "b5a9a010423d7809549f98e71e322dbb43d16202",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -7322,10 +7322,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "aa3771f63f72b0af7079d6d50000fd082b803d6c",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -7437,10 +7437,10 @@
         "quote_confidence": 1.0,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "2e7a640700066884e310b8596c31c894016e57af",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -7552,10 +7552,10 @@
         "quote_confidence": 0.575,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "924a7b4a46871607d9822b98a58d6f0ff859a876",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -7667,10 +7667,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "13462adc42203e8b570cf504c54fd27915375550",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -7782,10 +7782,10 @@
         "quote_confidence": 0.625,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "35a8dea2ab435ea46900b4fed6c0d89ca28579ba",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -7897,10 +7897,10 @@
         "quote_confidence": 0.625,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "8dcced0d1259b7618ffe81348cf8b5bf361371c0",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -8012,10 +8012,10 @@
         "quote_confidence": 0.7250000000000001,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "e7aca7be3f33b5010e0f3ffbe99551f08f250b40",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -8127,10 +8127,10 @@
         "quote_confidence": 0.95,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "47663612e6fe1b97793a2ef241f4351d603d3442",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -8256,10 +8256,10 @@
         "quote_confidence": 0.575,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "2b0fd26371e140182de7f8963b6fc5b06c97b999",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -8371,10 +8371,10 @@
         "quote_confidence": 0.675,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "2647590c8ede0632f8cd684d85f6d7e7d210036c",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -8472,10 +8472,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "5cb701a65625086dd5655c2aa0bd13beb4df9a30",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -8587,10 +8587,10 @@
         "quote_confidence": 0.875,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "25efa3804a0f5a227c028d83f4b8198b765d73d5",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -8716,10 +8716,10 @@
         "quote_confidence": 0.625,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "1b8929fb5914d314e4e30ffcf288ded2ff1a92c9",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -8845,10 +8845,10 @@
         "quote_confidence": 0.6,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "75fdc9040355fade7873cc7cdbbb3d6cf4533b7d",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -8974,10 +8974,10 @@
         "quote_confidence": 0.625,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "84a479adeca309be33f85ee18bd1e4ee27c5187d",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -9093,20 +9093,20 @@
       },
       "republic_critical": {
         "phase": "before",
-        "include_in_story": false,
+        "include_in_story": true,
         "relevance_score": 21.0,
         "strength_label": "strong",
         "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
-        "rationale": "Excluded from core narrative because strict mode requires full-text evidence. Current text_state=missing. Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=21.0; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:12, democratic_urgency:4, decay_diagnostics:0].",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=21.0; phase=before; anchors=3; lead_group=institutional_grammar; group_hits=[institutional_grammar:12, democratic_urgency:4, decay_diagnostics:0].",
         "quote_text": "The Citizenship law, which pretended to be a humanitarian exercise, became a parochial, communal act exposing the cosmopolitan pretensions of the BJP.",
         "quote_source": "summary_sentence",
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "480de374be819a0c86a6cffeaf1c94d4814b5891",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -9232,10 +9232,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "164041773f325b5b6bb9d19cf62803e61c51f55b",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -9351,20 +9351,20 @@
       },
       "republic_critical": {
         "phase": "before",
-        "include_in_story": false,
+        "include_in_story": true,
         "relevance_score": 21.8,
         "strength_label": "strong",
         "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
-        "rationale": "Excluded from core narrative because strict mode requires full-text evidence. Current text_state=missing. Excluded from core narrative because relevance is insufficient under strict selection criteria. Score=21.8; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:8, decay_diagnostics:4, democratic_urgency:4].",
+        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=21.8; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:8, decay_diagnostics:4, democratic_urgency:4].",
         "quote_text": "The idea of minority as a category evokes representation, number in stereotyped ways.",
         "quote_source": "summary_sentence",
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "35ec8c5eef0799ebd85b87d0bf537f8a8e0023b8",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -9490,10 +9490,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "f53227385e9b0f3bc204919b02d6720c5b959c79",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -9619,10 +9619,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "24879d22fb5a619e6a8ed5c31895156c8ebee0b1",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -9748,10 +9748,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "d17b8c2662f3ec1c07fd6fec10bb6207eeaea9f7",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -9877,10 +9877,10 @@
         "quote_confidence": 1.0,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "4b8397e71f1a8b7129f7e24bcd4ac3bbf9a626cf",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -10006,10 +10006,10 @@
         "quote_confidence": 0.7250000000000001,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "35ea4ffda104b033c95aafd056d39dc360b212e6",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -10135,10 +10135,10 @@
         "quote_confidence": 0.7,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "e1304945b24ff40f37dea8c024e0a77a4d81cd17",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -10264,10 +10264,10 @@
         "quote_confidence": 0.675,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "a89863f7947b0b4c29787cdaa8051b284a7025d3",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -10393,10 +10393,10 @@
         "quote_confidence": 0.7,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "fae9ec7806abcef5507ad4a706f383687f9cca12",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -10522,10 +10522,10 @@
         "quote_confidence": 0.675,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "e5e49956d2911bb8c0d18037b40f28bad16a40bc",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -10651,10 +10651,10 @@
         "quote_confidence": 0.7,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "54a1648e7793cf445ef8db7168c7d11c8ec1ac4a",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -10780,10 +10780,10 @@
         "quote_confidence": 0.75,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "c02acb2eeb18d11de3528ec65baece2f77752db5",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -10909,10 +10909,10 @@
         "quote_confidence": 0.825,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "1b73bc7ab717df69266de79aa73862616cfdfe16",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -11038,10 +11038,10 @@
         "quote_confidence": 0.8,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "fc69ad1b1f152ad55c5a2ca8f78df6ebe701a4fc",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -11157,20 +11157,20 @@
       },
       "republic_critical": {
         "phase": "before",
-        "include_in_story": true,
+        "include_in_story": false,
         "relevance_score": 19.1,
         "strength_label": "strong",
         "connection_text": "Strongly linked to Phase 1 because it interrogates constitutional-institutional grammar central to the First Republic.",
-        "rationale": "Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.1; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:9, decay_diagnostics:2, democratic_urgency:1].",
+        "rationale": "Excluded due to per-phase cap despite passing score threshold. Selected for narrative because relevance is high and concept coverage is multi-dimensional. Score=19.1; phase=before; anchors=4; lead_group=institutional_grammar; group_hits=[institutional_grammar:9, decay_diagnostics:2, democratic_urgency:1].",
         "quote_text": "The sadness was that this inane exchange of messages got caught between populism and elitism. Javed Akhtar, the poet and Hindi movie script writer, condemned a \u201chardly literate player or a wrestler\u201d. There is a snobbery here that is distressing especially from someone who was the Sehwag of film scripts. Others dismissed Randeep Hooda, someone who had found Sehwag\u2019s humour very funny, on parochial grounds. Sadly, Left snobbery met Right populism which turned its obsession with nationalism into an official gestate.",
         "quote_source": "body_paragraph",
         "quote_confidence": 0.7250000000000001,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "da4fae5c23353df847f03105382db50a7bd8bae7",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -11296,10 +11296,10 @@
         "quote_confidence": 0.775,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "ff21f5a2b4e1e87f4ed1d2e89a6cd8a93f961fc9",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -11411,10 +11411,10 @@
         "quote_confidence": 0.575,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "ce3d8b23adb6ae63db44b94f8779fac15a877ca5",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -11540,10 +11540,10 @@
         "quote_confidence": 0.5,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "ea1545990898f61b4691923b1a8e822d7bfecab7",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -11669,10 +11669,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "1821ea315aeb050187e9a273669c13866fffc924",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -11798,10 +11798,10 @@
         "quote_confidence": 0.625,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "38f5b52f9c5b20d6ed23c150f65e1f7c1bbf7bef",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -11920,10 +11920,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "5b45ce52ad6260806c7c584fd758d94ee8e854b6",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -12049,10 +12049,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "5ff5e2cee8538532ef4fad45d5415a29f0eba4df",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     },
@@ -12178,10 +12178,10 @@
         "quote_confidence": 0.42,
         "audit": {
           "method": "rule_based_critical",
-          "version": "critical_v3",
+          "version": "critical_v2",
           "input_fingerprint": "871a0d20dc8b7c6958cdb4c3525492e82693a56c",
-          "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
-          "generated_at": "2026-02-27 00:05:20"
+          "run_uid": "repcrit-20260222T220807Z-4b07ff75",
+          "generated_at": "2026-02-22 22:08:07"
         }
       }
     }
