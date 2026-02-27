@@ -1,6 +1,6 @@
 # Republic vs Science Shift Parity Audit
 
-Last updated: 2026-02-26 (local)
+Last updated: 2026-02-27 (local)
 Scope: compare research generation, evidence artifacts, and narrative display between Science Shift and Republic Shift.
 
 ## Snapshot (Post-Implementation)
@@ -26,6 +26,11 @@ Scope: compare research generation, evidence artifacts, and narrative display be
    - `src/components/layers/OpinionShiftView.tsx`
 5. Standardized card fields:
    - `Summary`, `Takeaway`, `Themes` across long-form shift cards.
+6. Reduced Republic takeaway templating in both Republic views:
+   - takeaways now prefer article-specific support sentences from summary evidence before phase-link fallback.
+   - summary builders now avoid placeholder summary tokens and prefer two-sentence summaries when available.
+7. Hardened build script execution path:
+   - `scripts/build_v01_site.sh` now invokes packet generators via `python3` to avoid execute-bit failures.
 
 ## Current Comparison
 
@@ -38,6 +43,11 @@ Scope: compare research generation, evidence artifacts, and narrative display be
 | Phase balancing | Backfill to phase cap | Backfill to phase cap | Aligned |
 | Opinion view source | Packet-first | Packet-first (with compatibility fallback) | Aligned |
 | Deep-analysis card fields | `Summary` / `Takeaway` / `Themes` | `Summary` / `Takeaway` / `Themes` | Aligned |
+
+## Verification Notes (2026-02-27 live check)
+
+- Republic deep-analysis page now renders 24/24 unique takeaway lines (previously highly templated).
+- Republic deep-analysis page summaries are two-sentence in all 24 selected evidence cards.
 
 ## Remaining Gap
 

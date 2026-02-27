@@ -435,3 +435,34 @@ Next 1-3 actions:
 1. Add parity regression check script/check block in release gating.
 2. Deploy latest build so Workers production reflects packet-based Republic parity.
 3. Resume Option A quality-gate hardening sequence.
+
+## 2026-02-27 00:35 PST - Republic page verification pass + next-iteration brainstorm docs
+
+User input:
+- Requested verification of Republic deep-analysis page quality and targeted edits if needed.
+- Requested documentation refresh and a dedicated brainstorm page for next-iteration improvements.
+
+What changed:
+- Patched Republic rendering logic to reduce templated takeaways and improve evidence specificity:
+  - `src/components/story/RepublicShiftNarrative.tsx`
+  - `src/components/layers/OpinionShiftView.tsx`
+- Added placeholder-summary guard handling and stronger two-sentence summary behavior in Republic mapping paths.
+- Fixed pipeline robustness issue in `scripts/build_v01_site.sh` by invoking packet generators through `python3` (avoids execute-bit failures).
+- Added dedicated brainstorm artifact for next cycle:
+  - `docs/research/NEXT-ITERATION-BRAINSTORM.md`
+- Updated core strategy/discovery docs to reflect this verification pass.
+
+Files updated:
+- `src/components/story/RepublicShiftNarrative.tsx`
+- `src/components/layers/OpinionShiftView.tsx`
+- `scripts/build_v01_site.sh`
+- `docs/discovery-analysis.md`
+- `docs/next-questions.md`
+- `docs/research/REPUBLIC-SCIENCE-PARITY-AUDIT-2026-02-26.md`
+- `docs/research/NEXT-ITERATION-BRAINSTORM.md`
+- `docs/COLLABORATION-INPUT-LOG.md`
+
+Next 1-3 actions:
+1. Run full build/deploy and verify Republic page output in production.
+2. Commit and push code + docs updates together.
+3. Start parity gate-script implementation from brainstorm priority item #1.

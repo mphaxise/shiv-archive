@@ -107,6 +107,7 @@ Current factual state:
   - Science and Republic both have explicit research packet + brief artifacts.
   - Opinion Shift cards are packet-first for both tracks with compatibility fallback.
   - Republic strict mode now defaults to full-text-backed selected evidence.
+  - Republic narrative/opinion takeaway rendering now prefers article-specific support text over direct template repetition.
 - Remaining parity hardening gap:
   - No standalone parity gate script yet to fail release on phase-balance/full-text/quote-source regressions.
 

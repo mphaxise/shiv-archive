@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-26 23:52:33 UTC",
+  "generated_at": "2026-02-27 00:05:20 UTC",
   "shift_id": "republic_shift",
   "method": "republic_research_packet",
   "version": "republic_research_v1",
@@ -22,9 +22,9 @@
     "after": 12
   },
   "source_run": {
-    "run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-    "started_at": "2026-02-26 23:52:23",
-    "finished_at": "2026-02-26 23:52:23",
+    "run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+    "started_at": "2026-02-27 00:05:20",
+    "finished_at": "2026-02-27 00:05:20",
     "method": "rule_based_critical",
     "version": "critical_v3",
     "inserted_count": 97,
@@ -65,8 +65,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_ca0bfaf92543b45f0ddb",
@@ -98,8 +98,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_7b589d77fbfd4546c05d",
@@ -132,8 +132,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_418f263dc7c0dd4a1466",
@@ -166,8 +166,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_49ce2446c407d352ff35",
@@ -200,8 +200,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_1c205b88ee0cae347d4c",
@@ -234,8 +234,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_e3eb8c142eb8864e8d1d",
@@ -268,8 +268,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_ad6038fe1265a12b5312",
@@ -302,8 +302,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_63eb9af110be8d2ba654",
@@ -336,8 +336,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_b159ae5438501ff3c2af",
@@ -369,8 +369,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_774464e70b55acd5f0e1",
@@ -403,8 +403,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_157158549c50c6cf1c33",
@@ -437,8 +437,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_b722828c985f7f4d66eb",
@@ -471,8 +471,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_a228b1c1447782422f92",
@@ -503,8 +503,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_0539f19837d7cfcbcf2c",
@@ -536,8 +536,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_5df879f169a009fc3f46",
@@ -568,8 +568,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_6e6ab83991e57960c17e",
@@ -600,8 +600,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_a6bcdf9dbd04e9b37b57",
@@ -631,8 +631,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_9eea39362a0a28c1194b",
@@ -664,8 +664,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_7273cdb0ed7c996ec339",
@@ -698,8 +698,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_d3dd322428e6c347d371",
@@ -730,8 +730,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_dfbe946261c6ead17252",
@@ -762,8 +762,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_cb16f01fc5215c84aab8",
@@ -794,8 +794,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_7f40d3cb8aa66858f91e",
@@ -827,8 +827,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     }
   ],
   "candidate_records": [
@@ -863,8 +863,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_ca0bfaf92543b45f0ddb",
@@ -896,8 +896,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_613bc3e385caebe8ae6f",
@@ -930,8 +930,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_7b589d77fbfd4546c05d",
@@ -964,8 +964,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_418f263dc7c0dd4a1466",
@@ -998,8 +998,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_49ce2446c407d352ff35",
@@ -1032,8 +1032,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_1c205b88ee0cae347d4c",
@@ -1066,8 +1066,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_e3eb8c142eb8864e8d1d",
@@ -1100,8 +1100,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_ad6038fe1265a12b5312",
@@ -1134,8 +1134,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_63eb9af110be8d2ba654",
@@ -1168,8 +1168,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_7b8c5ee49eea3a7f0376",
@@ -1202,8 +1202,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_b159ae5438501ff3c2af",
@@ -1235,8 +1235,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_774464e70b55acd5f0e1",
@@ -1269,8 +1269,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_157158549c50c6cf1c33",
@@ -1303,8 +1303,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_20e06398c0be8789d75d",
@@ -1337,8 +1337,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_f1e60c87d38d83c0f9c1",
@@ -1372,8 +1372,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_6c64d50f94353c1f3421",
@@ -1406,8 +1406,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_a5466334a964c00f163f",
@@ -1440,8 +1440,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_6520cbdae1117cc3be34",
@@ -1474,8 +1474,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_bb84f9bf479df60f8387",
@@ -1508,8 +1508,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_1326c7d4c18c6b30439e",
@@ -1542,8 +1542,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_e44370b657b7cb643d93",
@@ -1576,8 +1576,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_2e6c4bceb53257185ee5",
@@ -1610,8 +1610,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_8d5b5d94a8b229f907cf",
@@ -1643,8 +1643,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_4adb099cf46c9f479b93",
@@ -1677,8 +1677,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_55c83bdbb0fd997e2f3c",
@@ -1711,8 +1711,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_a85c20c4ddcfe922e0b8",
@@ -1745,8 +1745,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_999d1f7d01a1462b6ab1",
@@ -1779,8 +1779,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_272365c06a8131d99ed3",
@@ -1812,8 +1812,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_0c27b53ff7d0ec72a4f1",
@@ -1845,8 +1845,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_70ab5437dd462d42f33e",
@@ -1879,8 +1879,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_d1f140bd8af34af22ded",
@@ -1913,8 +1913,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_d74a001259227818dd5d",
@@ -1947,8 +1947,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_b722828c985f7f4d66eb",
@@ -1981,8 +1981,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_a228b1c1447782422f92",
@@ -2013,8 +2013,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_0539f19837d7cfcbcf2c",
@@ -2046,8 +2046,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_5df879f169a009fc3f46",
@@ -2078,8 +2078,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_6e6ab83991e57960c17e",
@@ -2110,8 +2110,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_a6bcdf9dbd04e9b37b57",
@@ -2141,8 +2141,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_9eea39362a0a28c1194b",
@@ -2174,8 +2174,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_7273cdb0ed7c996ec339",
@@ -2208,8 +2208,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_184a191fa7f965f1040b",
@@ -2240,8 +2240,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_94617b2f4ddc12966f17",
@@ -2272,8 +2272,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_d3dd322428e6c347d371",
@@ -2304,8 +2304,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_b79e5e1db56f005b8e9a",
@@ -2337,8 +2337,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_84f3d88f8ef0f7e9ef8a",
@@ -2369,8 +2369,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_dfbe946261c6ead17252",
@@ -2401,8 +2401,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_cb16f01fc5215c84aab8",
@@ -2433,8 +2433,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_7f40d3cb8aa66858f91e",
@@ -2466,8 +2466,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_906280810c37fcb5cbb1",
@@ -2500,8 +2500,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_8d88d7b1c583ffb4bbea",
@@ -2532,8 +2532,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_b450d86447b2fda24f44",
@@ -2564,8 +2564,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_6891db1a93944ca4f2aa",
@@ -2597,8 +2597,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_9f7d90217f993134e331",
@@ -2629,8 +2629,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_dfdf02f1adcfd4572709",
@@ -2662,8 +2662,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_7ba02a1196b4f349a608",
@@ -2694,8 +2694,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_a5dc6fd2fa0b79770541",
@@ -2725,8 +2725,8 @@
       "text_state": "partial",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_7a8b57e296c008533e2b",
@@ -2757,8 +2757,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_33dd9897f813349929dd",
@@ -2789,8 +2789,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_cff456c4af53342ae69e",
@@ -2823,8 +2823,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_449aa6fc1d6073b6a260",
@@ -2854,8 +2854,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_aabd7d3bb222e4bb8a32",
@@ -2886,8 +2886,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_3ca6019b571c4b4bec81",
@@ -2918,8 +2918,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_da18bc96502e3b4afa94",
@@ -2951,8 +2951,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_207a0847a227879dc227",
@@ -2983,8 +2983,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_d84d5fd76d16739c4e69",
@@ -3015,8 +3015,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_8f317370a107e1a157c4",
@@ -3047,8 +3047,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_fc8837dd74fec9bd6316",
@@ -3080,8 +3080,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_afebec5fe0d57562f30b",
@@ -3112,8 +3112,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_d28a03fb9e123830b992",
@@ -3143,8 +3143,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_31d4ccd3ccba37b25e1d",
@@ -3175,8 +3175,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_557c0e75cc39cc5202e9",
@@ -3206,8 +3206,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_86abf97d5ff7047404e9",
@@ -3237,8 +3237,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_2c1e7184f68695e20d2c",
@@ -3269,8 +3269,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_f48af08d0b4873f09512",
@@ -3301,8 +3301,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_01cc13531f238cabc7a0",
@@ -3333,8 +3333,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_dac232d4ee28f821da5e",
@@ -3366,8 +3366,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_10357ef23150da81b6db",
@@ -3395,8 +3395,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_473fdbbbb8f5a6efdbee",
@@ -3424,8 +3424,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_d721b2e16a7661bbbece",
@@ -3455,8 +3455,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_e9a340ee692546553a30",
@@ -3487,8 +3487,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_c5167d2c1e45d2476525",
@@ -3518,8 +3518,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_fcb6accdf63b42242f2b",
@@ -3550,8 +3550,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_5a5f06fa642fb6566b83",
@@ -3583,8 +3583,8 @@
       "text_state": "partial",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_55efcf26454ce73ab53c",
@@ -3614,8 +3614,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_d5234ee8c51d24f8dcfe",
@@ -3645,8 +3645,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_ebfd79b05a970da8b2c1",
@@ -3674,8 +3674,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_2e8f49edc12952c47f21",
@@ -3705,8 +3705,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_d04cc6f759defb43cc7e",
@@ -3737,8 +3737,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_c58fe672abc611f0692d",
@@ -3769,8 +3769,8 @@
       "text_state": "full",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_657ad5be0c07547e31bc",
@@ -3801,8 +3801,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_b7a05a623c852c9cff26",
@@ -3833,8 +3833,8 @@
       "text_state": "partial",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_8127c622da00242d0b0d",
@@ -3865,8 +3865,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_16c47c54ba16c9f8b60d",
@@ -3897,8 +3897,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_c6335fc6eeecec840f27",
@@ -3929,8 +3929,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_99e2b3eaff4d40f589ac",
@@ -3961,8 +3961,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     },
     {
       "article_uid": "art_5abdfdc30a9ce757b30f",
@@ -3990,8 +3990,8 @@
       "text_state": "missing",
       "evidence_method": "rule_based_critical",
       "evidence_version": "critical_v3",
-      "evidence_run_uid": "repcrit-20260226T235223Z-de6c8a0f",
-      "evidence_generated_at": "2026-02-26 23:52:23"
+      "evidence_run_uid": "repcrit-20260227T000520Z-a8dbf98a",
+      "evidence_generated_at": "2026-02-27 00:05:20"
     }
   ]
 }

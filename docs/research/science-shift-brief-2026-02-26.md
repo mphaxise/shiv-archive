@@ -1,6 +1,6 @@
 # Science Shift Research Brief
 
-Generated at: 2026-02-26 05:57:21 UTC
+Generated at: 2026-02-27 00:05:43 UTC
 Method/version: rule_based_research/science_research_v1
 
 ## Selection Parameters

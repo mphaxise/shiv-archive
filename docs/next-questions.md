@@ -68,3 +68,5 @@ Decision process preference: auto-resolve high-confidence decisions; ask only as
 
 1. Add a parity gate script/check block to fail releases on selected full-text/phase-balance/quote-source regressions.
 2. Continue Option A quality-gate/release-checklist hardening sequence.
+3. Prioritize and execute next-iteration brainstorm items:
+   - `docs/research/NEXT-ITERATION-BRAINSTORM.md`

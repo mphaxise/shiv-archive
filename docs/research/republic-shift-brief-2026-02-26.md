@@ -1,6 +1,6 @@
 # Republic Shift Research Brief
 
-Generated at: 2026-02-26 23:52:33 UTC
+Generated at: 2026-02-27 00:05:20 UTC
 Method/version: republic_research_packet/republic_research_v1
 
 ## Selection Parameters

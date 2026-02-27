@@ -120,6 +120,21 @@ function normalizeText(text: string | null | undefined): string {
   return (text ?? "").replace(/\s+/g, " ").trim();
 }
 
+function sentenceKey(text: string): string {
+  return normalizeText(text)
+    .toLowerCase()
+    .replace(/[.!?]+$/g, "");
+}
+
+function sameSentence(a: string, b: string): boolean {
+  return sentenceKey(a) !== "" && sentenceKey(a) === sentenceKey(b);
+}
+
+function isPlaceholderSummary(text: string): boolean {
+  const normalized = normalizeText(text);
+  return /^\$[a-z0-9_-]*$/i.test(normalized);
+}
+
 function splitSentences(text: string): string[] {
   return text
     .match(/[^.!?]+(?:[.!?]+|$)/g)
@@ -216,20 +231,23 @@ function cleanConnection(value: string | undefined, phase: "before" | "after"): 
 
 function buildSummary(summarySource: string | null | undefined, connection: string): string {
   const normalized = normalizeText(summarySource);
-  if (!normalized) {
+  if (!normalized || isPlaceholderSummary(normalized)) {
     return connection;
   }
   const sentences = splitSentences(normalized);
   const first = sentences[0] ? punctuate(sentences[0]) : "";
-  const second = sentences[1] ? punctuate(sentences[1]) : connection;
+  const second = sentences[1] ? punctuate(sentences[1]) : punctuate(connection);
 
   if (first && second && first.toLowerCase() !== second.toLowerCase()) {
     return `${first} ${second}`;
   }
   if (first) {
+    if (!sameSentence(first, connection)) {
+      return `${first} ${punctuate(connection)}`;
+    }
     return first;
   }
-  return connection;
+  return punctuate(connection);
 }
 
 function parseLeadGroup(raw: string | undefined): LeadGroup {
@@ -252,15 +270,47 @@ function parseLeadGroupFromRationale(raw: string | undefined): LeadGroup {
   return parseLeadGroup(match?.[1]);
 }
 
-function buildTakeaway(leadGroup: LeadGroup, connection: string, phase: "before" | "after"): string {
-  const first = GROUP_ARGUMENTS[leadGroup];
-  const second =
-    normalizeText(connection).toLowerCase() !== normalizeText(first).toLowerCase()
-      ? connection
-      : phase === "before"
-        ? "This reframes republic decline as an everyday democratic problem, not a purely legal one."
-        : "This recasts democratic reconstruction as civic practice rather than institutional inheritance.";
-  return `${punctuate(first)} ${punctuate(second)}`.trim();
+function buildTakeawaySupport(
+  summarySource: string | null | undefined,
+  connection: string,
+  fallback: string
+): string {
+  const normalizedSummary = normalizeText(summarySource);
+  if (normalizedSummary && !isPlaceholderSummary(normalizedSummary)) {
+    const summarySentences = splitSentences(normalizedSummary).map((sentence) => punctuate(sentence));
+    if (summarySentences[1]) {
+      return summarySentences[1];
+    }
+    if (summarySentences[0]) {
+      return summarySentences[0];
+    }
+  }
+
+  const connectionSentence = punctuate(connection);
+  if (connectionSentence) {
+    return connectionSentence;
+  }
+  return punctuate(fallback);
+}
+
+function buildTakeaway(
+  leadGroup: LeadGroup,
+  connection: string,
+  phase: "before" | "after",
+  summarySource: string | null | undefined,
+  argumentOverride?: string
+): string {
+  const first = punctuate(normalizeText(argumentOverride) || GROUP_ARGUMENTS[leadGroup]);
+  const fallback =
+    phase === "before"
+      ? "This reframes republic decline as an everyday democratic problem, not a purely legal one."
+      : "This recasts democratic reconstruction as civic practice rather than institutional inheritance.";
+  const support = buildTakeawaySupport(summarySource, connection, fallback);
+  const second = sameSentence(first, support) ? punctuate(fallback) : support;
+  if (!second || sameSentence(first, second)) {
+    return first;
+  }
+  return `${first} ${second}`.trim();
 }
 
 function yearBand(records: NarrativeRecord[]): string {
@@ -295,7 +345,7 @@ function toNarrativeRecord(article: RawArticleRecord): NarrativeRecord {
   const leadGroup = parseLeadGroupFromRationale(critical?.rationale);
   const connection = cleanConnection(critical?.connection_text ?? annotation?.connection, phase);
   const summary = buildSummary(article.summary, connection);
-  const takeaway = buildTakeaway(leadGroup, connection, phase);
+  const takeaway = buildTakeaway(leadGroup, connection, phase, article.summary);
 
   return {
     id: String(article.id),
@@ -320,7 +370,13 @@ function toNarrativeRecordFromStory(record: RepublicStoryRecord): NarrativeRecor
   const leadGroup = parseLeadGroup(record.lead_group);
   const connection = cleanConnection(record.connection_text, phase);
   const summary = buildSummary(record.summary_snippet, connection);
-  const takeaway = buildTakeaway(leadGroup, connection, phase);
+  const takeaway = buildTakeaway(
+    leadGroup,
+    connection,
+    phase,
+    record.summary_snippet,
+    record.argument_text
+  );
   const themes =
     record.signal_tags.length > 0
       ? record.signal_tags.map((slug) => formatSignalTag(slug))
@@ -335,7 +391,7 @@ function toNarrativeRecordFromStory(record: RepublicStoryRecord): NarrativeRecor
     publication: record.publication,
     phase,
     summary: shrink(summary, 340),
-    takeaway: shrink(record.argument_text ? `${record.argument_text} ${connection}` : takeaway, 260),
+    takeaway: shrink(takeaway, 260),
     themes,
     quoteText: normalizeText(record.quote_text) || record.title,
     relevanceScore: Number(record.relevance_score),

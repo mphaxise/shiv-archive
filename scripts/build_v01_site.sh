@@ -29,7 +29,7 @@ fi
   --min-anchor-hits 3 \
   --min-group-hits 2
 
-"$ROOT/scripts/generate_republic_shift_research_packet.py" \
+python3 "$ROOT/scripts/generate_republic_shift_research_packet.py" \
   --master-db-path "$MASTER_DB" \
   --analysis-db-path "$ANALYSIS_DB" \
   --output-json "$ROOT/src/data/republic_shift_story_2026-02-26.json" \
@@ -38,7 +38,7 @@ fi
 cp "$ROOT/src/data/republic_shift_story_2026-02-26.json" \
   "$ROOT/docs/research/republic-shift-evidence-2026-02-26.json"
 
-"$ROOT/scripts/generate_science_shift_research_packet.py" \
+python3 "$ROOT/scripts/generate_science_shift_research_packet.py" \
   --master-db-path "$MASTER_DB" \
   --analysis-db-path "$ANALYSIS_DB" \
   --output-json "$ROOT/src/data/science_shift_story_2026-02-26.json" \

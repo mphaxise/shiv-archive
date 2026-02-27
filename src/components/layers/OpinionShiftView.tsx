@@ -62,6 +62,20 @@ function normalizeText(text: string | null | undefined): string {
   return (text ?? "").replace(/\s+/g, " ").trim();
 }
 
+function sentenceKey(text: string): string {
+  return normalizeText(text)
+    .toLowerCase()
+    .replace(/[.!?]+$/g, "");
+}
+
+function sameSentence(a: string, b: string): boolean {
+  return sentenceKey(a) !== "" && sentenceKey(a) === sentenceKey(b);
+}
+
+function isPlaceholderSummary(text: string): boolean {
+  return /^\$[a-z0-9_-]*$/i.test(normalizeText(text));
+}
+
 function leadingSentence(text: string | null | undefined): string {
   const normalized = normalizeText(text);
   if (!normalized) {
@@ -100,7 +114,7 @@ function punctuate(text: string): string {
 
 function buildCardSummary(summary: string | null | undefined, contextFallback: string): string {
   const normalizedSummary = normalizeText(summary);
-  if (!normalizedSummary) {
+  if (!normalizedSummary || isPlaceholderSummary(normalizedSummary)) {
     const fallbackLead = leadingSentence(contextFallback);
     return fallbackLead ? punctuate(fallbackLead) : "Summary pending.";
   }
@@ -220,16 +234,29 @@ function buildScienceTakeaway(record: ScienceStoryRecord, summaryText: string): 
 }
 
 function buildRepublicTakeaway(record: RepublicStoryRecord, summaryText: string): string {
-  const argument =
+  const argument = punctuate(
     normalizeText(record.argument_text) ||
-    REPUBLIC_ARGUMENT_BY_GROUP[normalizeText(record.lead_group)] ||
-    deriveTakeaway(summaryText, record.rationale, record.connection_text);
+      REPUBLIC_ARGUMENT_BY_GROUP[normalizeText(record.lead_group)] ||
+      deriveTakeaway(summaryText, record.rationale, record.connection_text)
+  );
   const bridge = cleanPhaseLinkText(record.connection_text);
+  const summarySentences = splitSentences(normalizeText(record.summary_snippet))
+    .map((sentence) => punctuate(sentence))
+    .filter(Boolean);
 
-  if (bridge && normalizeText(bridge).toLowerCase() !== normalizeText(argument).toLowerCase()) {
-    return `${punctuate(argument)} ${bridge}`.trim();
+  const supportCandidates = [
+    summarySentences[1] ?? "",
+    summarySentences[0] ?? "",
+    bridge,
+    leadingSentence(summaryText),
+  ].filter(Boolean);
+
+  const support = supportCandidates.find((candidate) => !sameSentence(candidate, argument));
+
+  if (support) {
+    return `${argument} ${support}`.trim();
   }
-  return punctuate(argument);
+  return argument;
 }
 
 function shrink(text: string, maxChars: number): string {
